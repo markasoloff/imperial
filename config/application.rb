@@ -20,6 +20,7 @@ Bundler.require(*Rails.groups)
 module Imperial
   class Application < Rails::Application
     config.generators.assets = false
+    config.serve_static_assets = true
         config.generators.helper = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
