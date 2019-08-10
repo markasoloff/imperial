@@ -1,7 +1,0 @@
-{
-  "name": "imperial",
-  "private": true,
-  "dependencies": {
-    "amd-loader": "0.0.8"
-  }
-}
