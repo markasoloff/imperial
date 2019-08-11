@@ -101,7 +101,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="/assets/templogo.png" alt="" title="" rel="assets" /></img></a>
+        <a href="#hero"><img src="templogo.png" alt="" title="" rel="assets" /></img></a>
        
 
 
@@ -159,7 +159,7 @@
       <div class="row">
 
         <div class="col-lg-6 about-img">
-          <img src="/assets/about-img.jpg" alt="">
+          <img src="about-img.jpg" alt="">
         </div>
 
         <div class="col-md-6 about-content">
@@ -260,7 +260,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-1.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-1.jpg);" href="">
             <div class="details">
               <h4>Portfolio 1</h4>
               <span>Alored dono par</span>
@@ -269,7 +269,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-2.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-2.jpg);" href="">
             <div class="details">
               <h4>Portfolio 2</h4>
               <span>Alored dono par</span>
@@ -278,7 +278,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-3.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-3.jpg);" href="">
             <div class="details">
               <h4>Portfolio 3</h4>
               <span>Alored dono par</span>
@@ -287,7 +287,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-4.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-4.jpg);" href="">
             <div class="details">
               <h4>Portfolio 4</h4>
               <span>Alored dono par</span>
@@ -296,7 +296,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-5.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-5.jpg);" href="">
             <div class="details">
               <h4>Portfolio 5</h4>
               <span>Alored dono par</span>
@@ -305,7 +305,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-6.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-6.jpg);" href="">
             <div class="details">
               <h4>Portfolio 6</h4>
               <span>Alored dono par</span>
@@ -314,7 +314,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-7.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-7.jpg);" href="">
             <div class="details">
               <h4>Portfolio 7</h4>
               <span>Alored dono par</span>
@@ -323,7 +323,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(/assets/portfolio-8.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(portfolio-8.jpg);" href="">
             <div class="details">
               <h4>Portfolio 8</h4>
               <span>Alored dono par</span>
@@ -540,19 +540,22 @@
   <!-- Required JavaScript raries -->
   <!-- <script src="bower_components/Morphext/dist/morphext.min.js"></script>
  -->  
-  <script src="/assets/jquery.min.js" rel="assets"></script>
- <script src="/assets/morphext/morphext.min.js" rel="assets"></script>
-  <script src="/assets/bootstrap.min.js" rel="assets"></script>
-  <script src="/assets/superfish/hoverIntent.js" rel="assets"></script>
-  <script src="/assets/superfish/superfish.min.js" rel="assets"></script>
-  <script src="/assets/wow/wow.min.js" rel="assets"></script>
-  <script src="/assets/stickyjs/sticky.js" rel="assets"></script>
-  <script src="/assets/easing/easing.js" rel="assets"></script>
+
+ <%= javascript_include_tag "application" %> 
+
+  <script src="jquery.min.js"></script>
+ <script src="morphext.min.js" ></script>
+  <script src="bootstrap.min.js" ></script>
+  <script src="hoverIntent.js" ></script>
+  <script src="superfish.min.js" ></script>
+  <script src="wow.min.js" ></script>
+  <script src="sticky.js" ></script>
+  <script src="easing.js" ></script>
 
   <!-- Template Specisifc Custom Javascript File -->
-  <script src="/assets/custom.js" rel="assets"></script>
+  <script src="custom.js" ></script>
 
-  <script src="/assets/contactform/contactform.js" rel="assets"></script>
+  <script src="contactform/contactform.js" ></script>
 
 
 </body>
