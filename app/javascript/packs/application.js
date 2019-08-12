@@ -9,9 +9,9 @@
 
 // console.log('Hello World from Webpacker')
 // require("@rails/ujs").start()
+require("jquery").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-// require("jquery").start()
 // require("sticky").start()
 // require("morphtext").start()
 // require("easing").start()

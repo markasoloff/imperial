@@ -27,7 +27,10 @@
   <!-- <script src="assets/jquery.sticky.js"></script> -->
   <!-- skull tags javascript_include_tag "application"   -->
 
-  <%= javascript_pack_tag 'application' %>
+  <%= javascript_include_tag 'application' %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
 
 
   <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
@@ -115,7 +118,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="templogo.png" alt="" title="" rel="assets" /></img></a>
+        <a href="#hero"><img src="/assets/templogo.png" alt="" title="" rel="assets" /></img></a>
        
 
 
@@ -173,7 +176,7 @@
       <div class="row">
 
         <div class="col-lg-6 about-img">
-          <img src="about-img.jpg" alt="">
+          <img src="/assets/about-img.jpg" alt="">
         </div>
 
         <div class="col-md-6 about-content">
@@ -328,7 +331,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-7.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(/assets/portfolio-7.jpg);" href="">
             <div class="details">
               <h4>Portfolio 7</h4>
               <span>Alored dono par</span>
@@ -337,7 +340,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-8.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(/assets/portfolio-8.jpg);" href="">
             <div class="details">
               <h4>Portfolio 8</h4>
               <span>Alored dono par</span>

@@ -6,8 +6,8 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 
-# gem 'jquery-rails', '>= 1.0.17'
-# gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails', '>= 1.0.17'
+gem 'uglifier', '>= 1.3.0'
 # Use Uglifier as compressor for JavaScript assets
 
 # Use postgresql as the database for Active Record
@@ -23,7 +23,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'jbuilder', '~> 2.5'
 
 # >..<
-gem 'webpacker', '~> 3.5'
+# gem 'webpacker', '~> 3.5'
 gem 'sticky-rails'
 gem 'superfish-rails'
 gem 'jquery-easing-rails'
