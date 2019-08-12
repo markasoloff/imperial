@@ -118,7 +118,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="/assets/templogo.png" alt="" title="" rel="assets" /></img></a>
+        <a href="#hero"> <% image_tag("templogo.png") %></a>
        
 
 
@@ -176,7 +176,7 @@
       <div class="row">
 
         <div class="col-lg-6 about-img">
-          <img src="/assets/about-img.jpg" alt="">
+          <%= image_tag("about-img.jpg") %>
         </div>
 
         <div class="col-md-6 about-content">
@@ -286,7 +286,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url('/assets/portfolio-2.jpg')" href="">
+          <a class="portfolio-item" style="background-image: <%= image_tag('portfolio-2.jpg') %>"> 
             <div class="details">
               <h4>Portfolio 2</h4>
               <span>Alored dono par</span>
@@ -368,7 +368,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><img src="/assets/client-1.jpg" alt=""></div>
+            <div class="pic"><%= image_tag("client-1.jpg")%> </div>
             <h4>Saul Goodman</h4>
             <span>Lawless Inc</span>
           </div>
@@ -383,7 +383,7 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="/assets/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="/assets/quote_sign_right.png" alt=""></small>
+            <b> <%= image_tag("quote_sign_left.png") %> </b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="/assets/quote_sign_right.png" alt=""></small>
           </div>
         </div>
         <div class="col-md-3">
@@ -560,7 +560,7 @@
   <!-- Required JavaScript raries -->
   
 
-<script src="assets/morphext.js"></script>
+<!-- <script src="assets/morphext.js"></script> -->
 <!-- <script src="assets/javascripts/sticky.js"></script> -->
 
   <!-- <script src="bower_components/Morphext/dist/morphext.min.js"></script> -->
