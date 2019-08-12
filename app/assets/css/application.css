@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require superfish
+ *= require superfish-vertical
+ *= require superfish-navbar
  */

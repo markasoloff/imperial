@@ -23,13 +23,21 @@
   <meta name="twitter:image" content="">
 
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <!-- <script src="assets/jquery.js"></script> -->
+  <!-- <script src="assets/jquery.sticky.js"></script> -->
+  <!-- skull tags javascript_include_tag "application"   -->
+
+  <%= javascript_pack_tag 'application' %>
+
+
+  <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
+
+  <!-- <link href="favicon.ico" rel="shortcut icon">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- 
-  <link href="favicon.ico" rel="shortcut icon"> -->
+  <link rel="manifest" href="/site.webmanifest"> -->
 
   <!-- Google Fonts -->
  <!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="assets">
@@ -266,7 +274,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-1.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url('/assets/portfolio-1.jpg')" href="">
             <div class="details">
               <h4>Portfolio 1</h4>
               <span>Alored dono par</span>
@@ -275,7 +283,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-2.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url('/assets/portfolio-2.jpg')" href="">
             <div class="details">
               <h4>Portfolio 2</h4>
               <span>Alored dono par</span>
@@ -284,7 +292,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-3.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url('/assets/portfolio-3.jpg')" href="">
             <div class="details">
               <h4>Portfolio 3</h4>
               <span>Alored dono par</span>
@@ -293,7 +301,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-4.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url('/assets/portfolio-4.jpg')" href="">
             <div class="details">
               <h4>Portfolio 4</h4>
               <span>Alored dono par</span>
@@ -302,7 +310,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-5.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url('/assets/portfolio-5.jpg')" href="">
             <div class="details">
               <h4>Portfolio 5</h4>
               <span>Alored dono par</span>
@@ -311,7 +319,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(portfolio-6.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url('/assets/portfolio-6.jpg')" href="">
             <div class="details">
               <h4>Portfolio 6</h4>
               <span>Alored dono par</span>
@@ -547,11 +555,13 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- Required JavaScript raries -->
-  <!-- <script src="bower_components/Morphext/dist/morphext.min.js"></script>
- -->  
+  
 
- <% javascript_include_tag "application" %> 
- <% javascript_include_tag "jquery" %> 
+<script src="assets/morphext.js"></script>
+<!-- <script src="assets/javascripts/sticky.js"></script> -->
+
+  <!-- <script src="bower_components/Morphext/dist/morphext.min.js"></script> -->
+
 
 
 

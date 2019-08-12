@@ -11,6 +11,9 @@
 // about supported directives.
 
 //= require jquery
-//= require rails-ujs
-//= require activestorage
+//= require sticky
+//= require superfish
+//= require hoverIntent
+//= require jquery.easing
+//= require wow
 //= require_tree .
