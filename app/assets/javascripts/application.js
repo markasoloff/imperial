@@ -18,5 +18,6 @@
 //= require jquery.easing
 //= require wow
 //= require bootstrap
+//= require_tree .
 
 
