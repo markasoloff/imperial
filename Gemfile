@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.3'
 gem 'jquery-rails', '>= 3.0'
 gem 'jquery-ui-rails', '>= 6.0'
 gem 'uglifier', '>= 1.3.0'
+# gem 'turbolinks'
 # Use Uglifier as compressor for JavaScript assets
 
 # Use postgresql as the database for Active Record
@@ -28,6 +29,7 @@ gem 'sticky-rails'
 gem 'superfish-rails'
 gem 'jquery-easing-rails'
 gem 'wow-rails'
+gem 'font-awesome-rails'
 gem 'erubis', '>=2.7.0'
 gem 'haml', '>=4.0'
 
