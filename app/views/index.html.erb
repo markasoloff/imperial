@@ -22,15 +22,17 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <!-- <script src="assets/jquery.js"></script> -->
   <!-- <script src="assets/jquery.sticky.js"></script> -->
   <!-- skull tags javascript_include_tag "application"   -->
 
-  <%= javascript_include_tag 'application' %>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
+<!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script> -->
 
 
   <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
@@ -277,7 +279,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url('/assets/portfolio-1.jpg')" href="">
+          <a class="portfolio-item" style="background-image: <%= image_tag('portfolio-1.jpg') %>>">
             <div class="details">
               <h4>Portfolio 1</h4>
               <span>Alored dono par</span>
@@ -375,7 +377,8 @@
         </div>
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="/assets/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="/assets/quote_sign_right.png" alt=""></small>
+            <b><div class="pic"><% image_tag "quote_sign_left.png" %> </div>
+            </b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small> <% image_tag "quote_sign_right.png" %> </small>
           </div>
         </div>
       </div>
@@ -383,12 +386,12 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b> <%= image_tag("quote_sign_left.png") %> </b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="/assets/quote_sign_right.png" alt=""></small>
+            <b> <%= image_tag "quote_sign_left.png" %> </b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><% image_tag "quote_sign_right.png" %></small>
           </div>
         </div>
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><img src="/assets/client-2.jpg" alt=""></div>
+            <div class="pic"><% image_tag "client-2.jpg" %></div>
             <h4>Sara Wilsson</h4>
             <span>Odeo Inc</span>
           </div>
@@ -415,7 +418,6 @@
         <div class="col-md-3">
           <div class="member">
             <div class="pic">
-              <!-- <img src="/assets/team-1.jpg" alt=""> -->
                <% image_tag "team-1.jpg" %> </div>
 
             <h4>Walter White</h4>
@@ -431,7 +433,7 @@
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="/assets/team-2.jpg" alt=""></div>
+            <div class="pic"><% image_tag "team-2.jpg" %> </div>
             <h4>Sarah Jhinson</h4>
             <span>Product Manager</span>
             <div class="social">
@@ -445,7 +447,7 @@
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="/assets/team-3.jpg" alt=""></div>
+            <div class="pic"><% image_tag "team-3.jpg" %> </div>
             <h4>William Anderson</h4>
             <span>CTO</span>
             <div class="social">
@@ -459,7 +461,7 @@
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="/assets/team-4.jpg" alt=""></div>
+            <div class="pic"><% image_tag "team-4.jpg" %> </div>
             <h4>Amanda Jepson</h4>
             <span>Accountant</span>
             <div class="social">
@@ -559,13 +561,7 @@
 
   <!-- Required JavaScript raries -->
   
-
-<!-- <script src="assets/morphext.js"></script> -->
-<!-- <script src="assets/javascripts/sticky.js"></script> -->
-
-  <!-- <script src="bower_components/Morphext/dist/morphext.min.js"></script> -->
-
-
+<%= javascript_include_tag 'application' %>
 
 
 </body>
