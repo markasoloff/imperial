@@ -10,11 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 
-//= require jquery
+//= require jquery3
 //= require jquery-ui
 //= require sticky
 //= require superfish
 //= require hoverIntent
 //= require jquery.easing
 //= require wow
+//= require bootstrap
+
 

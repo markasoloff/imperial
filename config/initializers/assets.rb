@@ -13,9 +13,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # >..<
 Rails.application.config.assets.paths << Rails.root.join("public", "fonts")
 
-Rails.application.config.assets.precompile += %w( jquery/dist/jquery.js  ) 
+# Rails.application.config.assets.precompile += %w( jquery/dist/jquery.js  ) 
 
-Rails.application.config.assets.precompile += %w( style.css )
+Rails.application.config.assets.precompile += %w( style.css.scss )
 
 
 # >..<
