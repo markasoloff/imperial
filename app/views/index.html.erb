@@ -34,7 +34,16 @@
  <!-- <script src="/jquery.min.js"></script> -->
 
   <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
+  
 
+
+
+<%= javascript_include_tag('application')%>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.min.js"></script>
+<!--   <script src="assets/sizzle.min.js"></script>
+ -->
   <!-- <link href="favicon.ico" rel="shortcut icon">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -49,7 +58,7 @@
 
 <!-- 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.4/sizzle.js"></script> -->
-<script src="assets/jquery.js"></script>
+<!-- <script src="assets/jquery.js"></script> -->
 <!-- <script src="assets/application.js"></script>
  --><!-- <link href="assets/application.css"> -->
 
@@ -81,7 +90,9 @@
 </head>
 
 <body>
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
+
+  <!-- >..< Commented out preloader to improve links -->
 
   <!--==========================
   Hero Section
@@ -288,7 +299,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image:<% image_tag('portfolio-1.jpg') %>">
+          <a class="portfolio-item" style="background-image: 'portfolio-1.jpg' ">
             <div class="details">
               <h4>Portfolio 1</h4>
               <span>Alored dono par</span>
@@ -297,13 +308,14 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: <%= image_tag('portfolio-2.jpg') %>"> 
+          <a class="portfolio-item" style='background-image: <%= image_tag("portfolio-2.jpg") %>'> 
             <div class="details">
               <h4>Portfolio 2</h4>
               <span>Alored dono par</span>
             </div>
           </a>
         </div>
+
 
         <div class="col-md-3">
           <a class="portfolio-item" style="background-image: <%= image_tag('portfolio-3.jpg') %>">
