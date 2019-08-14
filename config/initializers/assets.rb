@@ -13,21 +13,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # >..<
 Rails.application.config.assets.paths << Rails.root.join("public", "fonts")
 
-# Rails.application.config.assets.precompile += %w(jquery/jquery.min.js) 
-
-# Rails.application.config.assets.precompile += %w(animate.min.css)
-# Rails.application.config.assets.precompile += %w(bootstrap.css)
-
-
-# Rails.application.config.assets.precompile += %w(style.css.scss)
-# Rails.application.config.assets.precompile += %w(sticky.js)
-# Rails.application.config.assets.precompile += %w(jquery.js)
-# Rails.application.config.assets.precompile += %w(bootstrap.js)
-# Rails.application.config.assets.precompile += %w(hoverIntent.js)
-# Rails.application.config.assets.precompile += %w(superfish.min.js)
-# Rails.application.config.assets.precompile += %w(morphext.min.js)
-# Rails.application.config.assets.precompile += %w(wow.js)
-
+Rails.application.config.assets.precompile += %w( jquery.js animate.min.css bootstrap.css style.css.scss ) 
 
 # >..<
 # Rails.application.config.public_file_server.enabled 
