@@ -191,8 +191,12 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   background: #111;
-  padding: 20px 0;
-  height: 90px;
+  padding: 20px 0 2px;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2;
+  top: 0;
+
 }
 
 #header #logo {
@@ -232,9 +236,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.is-sticky #header {
+/* .is-sticky #header {
   background: rgba(0, 0, 0, 0.85);
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
