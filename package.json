@@ -2,11 +2,11 @@
   "dependencies": {
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "^4.0.7",
     "jquery": "^3.4.1",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "^3.8.0"
   }
 }
