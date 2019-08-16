@@ -92,7 +92,7 @@
 <body>
   <!-- <div id="preloader"></div> -->
 
-  <!-- >..< Commented out preloader to improve links -->
+  <!-- >..< Commented out preloader because it breaks the links -->
 
   <!--==========================
   Hero Section
@@ -154,9 +154,9 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <!-- <li><a href="#testimonials">Testimonials</a></li> -->
           <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+         <!--  <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -171,7 +171,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -270,7 +270,7 @@
   <!--==========================
   Subscrbe Section
   ============================-->
-  <section id="subscribe">
+ <!--  <section id="subscribe">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-8">
@@ -283,7 +283,7 @@
       </div>
     </div>
   </section>
-
+ -->
   <!--==========================
   Porfolio Section
   ============================-->
@@ -378,7 +378,7 @@
   <!--==========================
   Testimonials Section
   ============================-->
-  <section id="testimonials">
+<!--   <section id="testimonials">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -391,15 +391,20 @@
       <div class="row">
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><%= image_tag("client-1.jpg")%> </div>
+            <div class="pic">
+            <%= image_tag("client-1.jpg")%> 
+            </div>
             <h4>Saul Goodman</h4>
             <span>Lawless Inc</span>
           </div>
         </div>
         <div class="col-md-9">
           <div class="quote">
-            <b><div class="pic"><% image_tag "quote_sign_left.png" %> </div>
-            </b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small> <% image_tag "quote_sign_right.png" %> </small>
+            <b><div class="pic">
+            <% image_tag "quote_sign_left.png" %>
+            </div>
+            </b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small> <% image_tag "quote_sign_right.png" %>
+            </small>
           </div>
         </div>
       </div>
@@ -407,12 +412,18 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b> <%= image_tag "quote_sign_left.png" %> </b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><% image_tag "quote_sign_right.png" %></small>
+            <b> 
+            <%= image_tag "quote_sign_left.png" %>
+            </b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small>
+            <% image_tag "quote_sign_right.png" %>
+            </small>
           </div>
         </div>
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><% image_tag "client-2.jpg" %></div>
+            <div class="pic">
+            <% image_tag "client-2.jpg" %>
+            </div>
             <h4>Sara Wilsson</h4>
             <span>Odeo Inc</span>
           </div>
@@ -420,7 +431,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!--==========================
   Team Section
@@ -439,7 +450,7 @@
         <div class="col-md-3">
           <div class="member">
             <div class="pic">
-               <% image_tag "team-1.jpg" %> </div>
+               <% image_tag("team-1.jpg") %> </div>
 
             <h4>Walter White</h4>
             <span>Chief Executive Officer</span>

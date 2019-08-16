@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
+
   background: rgba(0.6, 0.6, 0.6, 0.7);
   /*background: rgba(0, 0, 0, 0.8);*/
   display: table-cell;
@@ -586,7 +587,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), asset-data-url("subscribe-bg.jpg") fixed center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image_path("subscribe-bg.jpg")) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
