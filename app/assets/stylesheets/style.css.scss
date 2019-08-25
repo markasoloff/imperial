@@ -85,20 +85,24 @@ h1, h2, h3, h4, h5, h6 {
 # Welcome
 --------------------------------------------------------------*/
 #hero {
-  display: table;
+  /* display: table; */
   width: 100%;
   height: 100vh;
-  background-image: asset-data-url("hero-bg.jpg") top center;
+  background-image: image-url("hero-bg.jpg");
   background-size: cover;
+  text-align: center;
+
 }
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    text-align: center;
   }
 }
 
 #hero .hero-logo {
+  text-align: center;
   margin: 20px;
 }
 
@@ -108,7 +112,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .hero-container {
 
-  background: rgba(0.6, 0.6, 0.6, 0.7);
+  /*background: rgba(0.6, 0.6, 0.6, 0.7);*/
+  background-image: asset-data-url("hero-bg.jpg") top center;
   /*background: rgba(0, 0, 0, 0.8);*/
   display: table-cell;
   margin: 0;
@@ -122,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
 }
 
