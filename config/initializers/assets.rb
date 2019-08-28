@@ -13,7 +13,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # >..<
 Rails.application.config.assets.paths << Rails.root.join("public", "fonts")
 
-Rails.application.config.assets.precompile += %w( jquery.js animate.min.css bootstrap.css style.css.scss ) 
+Rails.application.config.assets.precompile += %w( jquery.js wow.js animate.min.css bootstrap.css style.css.scss ) 
 
 # >..<
 # Rails.application.config.public_file_server.enabled 
