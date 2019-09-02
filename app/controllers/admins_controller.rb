@@ -1,5 +1,4 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery with: :null_session
+class AdminsController < ApplicationController
 
   def current_admin
       auth_headers = request.headers['Authorization']
@@ -26,4 +25,27 @@ class ApplicationController < ActionController::Base
         render json: {}, status: :unauthorized
       end
     end
+
+
+  def create
+    user = Admin.new(
+      name: params[:name],
+      email: params[:email],
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
+    )
+
+    if admin.save
+      render json: {message: 'Admin created successfully'}, status: :created
+    else
+      render json: {errors: admin.errors.full_messages}, status: :bad_request
+    end
+  end
+
+
+    #not a standard show action
+  def show
+    render "cms.html"
+  end
+
 end

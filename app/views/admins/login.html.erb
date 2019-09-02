@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+  
+
+
+  <h1>Log in</h1>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+  <%= form_for :session, url: login_path do |f| %>
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email, autofocus: true, class: 'form-control' %>
+    </div>
+    <div>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
+    <div>
+      <%= f.submit "Log In", class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+  <% end %>
+
+  
+</body>
+</html>
