@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # log in page with form:
 
-  # get "/admins/login" => "admins#login"
+  get "/admins/login" => "admins#login"
   get '/login' => 'sessions#new'
 
   # create (post) action for when log in form is submitted:

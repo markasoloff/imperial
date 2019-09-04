@@ -1,17 +1,25 @@
 class SessionsController < ApplicationController
  
- def new
+def create
+   admin = Admin.find_by(email: params[:email])
+   if admin && admin.authenticate(params[:password])
+     jwt = JWT.encode(
+       {
+        admin_id: admin.id, # the data to encode
+        exp: 24.hours.from_now.to_i # the expiration time
+        },
+        "butterscotch", # the secret key
+        'HS256' # the encryption algorithm
+     )
+     render json: {jwt: jwt, email: admin.email, admin_id: admin.id}, status: :created
+   else
+     render json: {}, status: :unauthorized
+   end
  end
 
- def create
-   admin = Admin.find_by(email: params[:session][:email].downcase)
-   if admin && admin.authenticate(params[:session][:password])
-     log_in admin
-     redirect_to admin
-   else
-     flash.now[:danger] = 'Invalid email/password combination'
-     render 'new'
-   end
+
+
+ def new
  end
 
  def destroy

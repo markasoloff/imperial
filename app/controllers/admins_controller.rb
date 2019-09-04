@@ -14,6 +14,8 @@ class AdminsController < ApplicationController
           Admin.find_by(id: decoded_token[0]["admin_id"])
         rescue JWT::ExpiredSignature
           nil
+      else
+        flash.now[:danger] = 'Invalid email/password combination'
         end
       end
   end
@@ -45,7 +47,8 @@ class AdminsController < ApplicationController
 
     #not a standard show action
   def show
-    render "cms.html"
+    # render "login.html"
+    render "admins/cms.html"
   end
 
 end
