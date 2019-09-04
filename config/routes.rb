@@ -7,18 +7,19 @@ Rails.application.routes.draw do
 
   # log in page with form:
 
-  get "/admins/login" => "admins#login"
-  get '/login' => 'sessions#new'
+  # get "/admins/login" => "admins#login"
+  # get '/login' => 'sessions#new'
 
   # create (post) action for when log in form is submitted:
-  post '/login' => 'sessions#create'
+  # post '/login' => 'sessions#create'
 
   # delete action to log out:
-  delete '/logout' => 'sessions#destroy'  
+  delete '/logout' => 'sessions#destroy' 
 
 
 
 
-  resources :admins
+
+  resources :admins, :sessions
   
 end

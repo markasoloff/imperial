@@ -27,7 +27,7 @@
 /public/packs
 /public/packs-test
 /node_modules
-app/controllers/sessions/sessions_controller
+/app/controllers/sessions/sessions_controller
 yarn-debug.log*
 .yarn-integrity
 .env
