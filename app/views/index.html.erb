@@ -27,17 +27,10 @@
 
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
  
-
-
-
-
  <!-- <script src="/jquery.min.js"></script> -->
 
   <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
   
-
-
-
 <%= javascript_include_tag('application')%>
 
 
@@ -99,10 +92,12 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-          <h1 style="font-family: Raleway, sans-serif; font-weight: 200; font-size: 4em; text-align: center;"> FarSight Technologies</h1>
+          <h1 style="font-family: Raleway, sans-serif; font-weight: 200; font-size: 4em;"> FarSight Technologies</h1>
       <div class="wow fadeIn">
         <div class="hero-logo">
             
+          <h3 style="font-family: Raleway, sans-serif; font-weight: 200; font-size: 2em; padding-top: 3em"> Do the impossible </h3>
+
 
         </div>
           <br>
@@ -114,7 +109,12 @@
           <!-- Josefin Sans, sans-serif; font-weight: 900; font-style: italic;  -->
         </div>
 
-        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        
         <br>
         <br>
         <br>
@@ -123,8 +123,6 @@
         <br>
         <br>
         <br>
-        <h4 style="font-family: Josefin Sans, sans-serif; font-weight: 100; font-style: italic; font-size: 1.75em;">Do the impossible
-          <h2 class="rotating" style="font-family: Josefin Sans, sans-serif; font-weight: 100; font-style: bold; font-size: 5em; justify-content: center">Aerospace, Defense, Science</h2></h4>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Started</a>
           <a href="#services" class="btn-services">Our Services</a>
@@ -208,7 +206,7 @@
       <div class="row">
 
         <div class="col-lg-6 about-img">
-          <%= image_tag("about-img.jpg") %>
+          <%= image_tag("kaboom.jpg") %>
         </div>
 
         <div class="col-md-6 about-content">
@@ -247,23 +245,31 @@
           <div class="col-md-6 service-item">
 
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Space Systems</a></h4>
-          <p class="service-description">farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
-          </p>
+          <h3 class="service-title"><a href="">Space Systems</a></h3>
+          <p id="fade-description" class="service-description fade-in.one" >
           
+            <!-- <div id="HiddenText"> -->
+            farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
+
+          </p>
+        <!-- </div> -->
+          <div id="HiddenText">
+          <div class="fade-in">  
            <UL TYPE="square">
-<li>Mission design and architecture development</li>
-<li>Systems Engineering & Integration</li>
-<li>Science Payload Development</li>
-<li>Spacecraft Bus Development</li>
-<li>Propulsion and Guidance</li>
-<li>Communications and Avionics Systems</li>
-<li>Hardware and Software Verification and Validation (V&V)</li>
-<li>Flight and Ground Test Planning and Operations</li>
-<li>Launch and Early Orbit Phase</li>
-<li>Space Mission and Payload Operations</li>
-<li>Ground and space-based communication and navigation systems and supporting networks</li>
+<li class="fade-in.one">Mission design and architecture development</li>
+<li class="fade-in.two">Systems Engineering & Integration</li>
+<li class="fade-in.three">Science Payload Development</li>
+<li class="fade-in.four">Spacecraft Bus Development</li>
+<li class="fade-in.five">Propulsion and Guidance</li>
+<li class="fade-in.six">Communications and Avionics Systems</li>
+<li class="fade-in.seven">Hardware and Software Verification and Validation (V&V)</li>
+<li class="fade-in.eight">Flight and Ground Test Planning and Operations</li>
+<li class="fade-in.nine">Launch and Early Orbit Phase</li>
+<li class="fade-in.ten">Space Mission and Payload Operations</li>
+<li class="fade-in.eleven">Ground and space-based communication and navigation systems and supporting networks</li>
 </UL>
+</div>
+</div>
 
         </div>
 
@@ -273,6 +279,7 @@
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="service-title"><a href="">Cyber / Information Assurance</a></h4>
           <p class="service-description">farSight personnel possess expertise in offensive and defensive cyber as well as risk assessment methodologies. Additionally, farSight personnel are intimately familiar with Federal requirements and policies regarding cybersecurity and information assurance. Whether its performing upfront risk assessments or red-teaming an operating network, farSight is ready to support your mission. Specific areas of expertise include:
+  <div id="HiddenText">
   <ul TYPE="square">
 
   <li>  Defensive Cyber and Computer Network Operations (CNO)</li>
@@ -281,6 +288,7 @@
   <li>Secure network design, integration, test, and operation (including National Security Systems)</li>
   <li>Federal cyber and information protection interpretation and compliance (FIPS policies, CNSS instructions, FISMA and HIPAA)</li>
   </ul>
+</div>
 </p>
   
 
@@ -289,9 +297,12 @@
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
           <h4 class="service-title"><a href="">Space Control</a></h4>
           <p class="service-description">farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
+            <div id="HiddenText">
+
             <ol>Space Surveillance Systems (RADAR, LIDAR)</ol>
             <ol>Counterspace Techniques and Defensive Mitigations</ol>
             <ol>Maneuver Detection and Object Characterization</ol>
+          </div>
           </p>
 
         </div>
@@ -304,7 +315,7 @@
           <div class="service-icon"><i class="fa fa-road"></i></div>
           <h4 class="service-title"><a href="">C4ISR – Command, Control, Communications, Intelligence, Surveillance, and Reconnaissance</a></h4>
           <p class="service-description">farSight personnel have decades of experience in the design, integration, test, and operations of advanced and special application C4ISR systems. farSight has practical C4ISR experience ranging from capability concept specification, through assembly, integration, and test, to deployed operations. farSight-developed systems are operating in all mission domains from fixed and ground-mobile, through airborne UAV and manned platforms, to space-based systems. farSight personnel have expertise in delay/disruption tolerance techniques for disadvantaged networks as well as RF and signal design for low probability of intercept communications. Specific areas of expertise include:
-
+  <div id="HiddenText">
   <ul TYPE="square">
   <li>Delay / Disruption Tlierant Networking (DTN)</li>
   <li>Assured Position, Navigation, and Timing (PNT)</li>
@@ -314,6 +325,7 @@
   <li>High Assurance Communications</li>
   <li>Fixed, Ground-Mobile, Airborne, and Space-Based C4ISR Architecture and System Design, Development, Test, and Operation</li>
   </ul>
+</div>
 
 
           </p>

@@ -1,8 +1,7 @@
-class SessionsController < ApplicationController
- 
+class SessionsController < AdminsController
 def create
-   admin = Admin.find_by(email: params[:email])
-   if admin && admin.authenticate(params[:password])
+   admin = Admin.find_by(email: params[:session][:email].downcase)
+   if admin && admin.authenticate(params[:session][:password])
      jwt = JWT.encode(
        {
         admin_id: admin.id, # the data to encode
@@ -12,33 +11,37 @@ def create
         'HS256' # the encryption algorithm
      )
      session[:admin_id] = admin.id
-     redirect_to root_url, notice: "Logged in!"
+     log_in admin
+     redirect_to admin, notice: "Logged in!"
+     # redirect_to root_url, notice: "Logged in!"
      # render json: {jwt: jwt, email: admin.email, admin_id: admin.id}, status: :created
    else
-     render json: {Error: "Unauthorized password and/or email" }, status: :unauthorized
+     # render json: {Error: "Unauthorized"}, status: :unauthorized
+     flash.now[:danger] = 'Invalid email/password combination'
+     render 'new'
    end
  end
 
 
- def current_admin
-     auth_headers = request.headers['Authorization']
-     if auth_headers.present? && auth_headers[/(?<=\A(Bearer ))\S+\z/]
-       token = auth_headers[/(?<=\A(Bearer ))\S+\z/]
-       begin
-         decoded_token = JWT.decode(
-           token,
-           Rails.application.credentials.fetch(:secret_key_base),
-           true,
-           { algorithm: 'HS256' }
-         )
-         Admin.find_by(id: decoded_token[0]["admin_id"])
-       rescue JWT::ExpiredSignature
-         nil
-     else
-       flash.now[:danger] = 'Invalid email/password combination'
-       end
-     end
- end
+ # def current_admin
+ #     auth_headers = request.headers['Authorization']
+ #     if auth_headers.present? && auth_headers[/(?<=\A(Bearer ))\S+\z/]
+ #       token = auth_headers[/(?<=\A(Bearer ))\S+\z/]
+ #       begin
+ #         decoded_token = JWT.decode(
+ #           token,
+ #           Rails.application.credentials.fetch(:secret_key_base),
+ #           true,
+ #           { algorithm: 'HS256' }
+ #         )
+ #         Admin.find_by(id: decoded_token[0]["admin_id"])
+ #       rescue JWT::ExpiredSignature
+ #         nil
+ #     else
+ #       flash.now[:danger] = 'Invalid email/password combination'
+ #       end
+ #     end
+ # end
 
    helper_method :current_admin
 

@@ -22,33 +22,36 @@ class AdminsController < ApplicationController
 
     helper_method :current_admin
 
-    def authenticate_admin
-      unless current_admin
-        render json: {}, status: :unauthorized
-      end
-    end
+    # def authenticate_admin
+    #   unless current_admin
+    #     render json: {}, status: :unauthorized
+    #   end
+    # end
 
 
-  def create
-    user = Admin.new(
-      name: params[:name],
-      email: params[:email],
-      password: params[:password],
-      password_confirmation: params[:password_confirmation]
-    )
+  # def create
+  #   admin = Admin.new(
+  #     name: params[:name],
+  #     email: params[:email],
+  #     password: params[:password],
+  #     password_confirmation: params[:password_confirmation]
+  #   )
 
-    if admin.save
-      render json: {message: 'Admin created successfully'}, status: :created
-    else
-      render json: {errors: admin.errors.full_messages}, status: :bad_request
-    end
-  end
+  #   if admin.save
+  #     render json: {message: 'Admin created successfully'}, status: :created
+  #   else
+  #     render json: {errors: admin.errors.full_messages}, status: :bad_request
+  #   end
+  # end
 
 
     #not a standard show action
-  def show
-    # render "login.html"
-    render "admins/cms.html"
-  end
+  # def login
+  #   if current_admin
+  #   # render "login.html"
+  #     render "admins/cms.html"
+  #   else render json: {}
+  #   end
+  # end
 
 end

@@ -14,12 +14,19 @@ Rails.application.routes.draw do
   # post '/login' => 'sessions#create'
 
   # delete action to log out:
+
+  get 'signup', to: 'admins#new', as: 'signup'
+  
+  get 'login', to: 'sessions#new', as: 'login'
+
+  post 'login', to: 'admins#cms', as: 'cms'
+
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
+
   delete '/logout' => 'sessions#destroy' 
 
 
-
-
-
-  resources :admins, :sessions
+  resources :admins, :sessions, only: [:new, :create, :destroy]
   
 end
