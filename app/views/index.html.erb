@@ -34,7 +34,6 @@
 <%= javascript_include_tag('application')%>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.min.js"></script>
 <!--   <script src="assets/sizzle.min.js"></script>
  -->
   <!-- <link href="favicon.ico" rel="shortcut icon">
@@ -67,6 +66,16 @@
 
  <!-- >..< -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- <script src="js/wow.min.js"></script>
+ -->          
+ <script> new WOW().init(); </script>
 
 
  <!-- <link href="assets/animate.min.css" rel="stylesheet"> -->
@@ -122,7 +131,6 @@
         <br>
         <br>
         <br>
-        <br>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Started</a>
           <a href="#services" class="btn-services">Our Services</a>
@@ -150,7 +158,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
           <li><a href="#portfolio">Portfolio</a></li>
           <!-- <li><a href="#testimonials">Testimonials</a></li> -->
           <li><a href="#team">Team</a></li>
@@ -185,23 +193,35 @@
   <section id="about">
     <div class="container wow fadeInUp">
       <div class="row">
-        <div class="col-md-12">
           <h3 class="section-title">About Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">farSight Technologies is a dedicated team of experienced engineers, technologists, and operations experts. Combining decades of hands on and in-the-field experience with partnerships that span academia, research institutes, and government allows farSight to bring just the right skills to solving our clients’ challenges and enabling vital missions in:
-<UL TYPE="square">
-<li>Space Exploration</li>
-<li>Homeland Security</li>
-<li>Defense</li>
-<li>National Security and Intelligence</li>
-<li>Disaster Preparation and Recovery</li>
-<li>Disadvantaged communication networks</li>
-</ul>
-</p>
+          <div class="col-md-6 service-item">
 
+          <p class="section-description" style="font-size: 105%;">farSight Technologies is a dedicated team of experienced engineers, technologists, and operations experts. 
+          Combining decades of hands on and in-the-field experience with partnerships that span academia, research institutes, and government allows farSight to bring just the right skills to solving our clients’ challenges and enabling vital missions in:
+          </p>
+        </div>
+        <!-- <div class=container>  -->
+        <!-- <div class="col-sm-1 service-item"></div> -->
+          <div class="col-md-5 service-item">
+          <section class="wow fadeInRight" data-wow-duration="2s" data-wow-delay=".15s">
+            <!-- <div class="about-bullets"> -->
+          <ul TYPE="square">
+          <li>Space Exploration</li>
+          <li>Homeland Security</li>
+          <li>Defense</li>
+          <li>National Security and Intelligence</li>
+          <li>Disaster Preparation and Recovery</li>
+          <li>Disadvantaged communication networks</li>
+          </ul>
+          </section>
+          </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
     <div class="container about-container wow fadeInUp">
       <div class="row">
 
@@ -241,18 +261,17 @@
       </div>
 
       <div class="row">
-        <!-- <div class="col-md-4 service-item"> -->
           <div class="col-md-6 service-item">
-
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
           <h3 class="service-title"><a href="">Space Systems</a></h3>
-          <p id="fade-description" class="service-description fade-in.one" >
+          <p id="fade-description" class="service-description">
+            <div id="service-description-space-systems">
           
             <!-- <div id="HiddenText"> -->
             farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
 
           </p>
-        <!-- </div> -->
+        </div>
           <div id="HiddenText">
           <div class="fade-in">  
            <UL TYPE="square">
@@ -267,37 +286,57 @@
 <li class="fade-in.nine">Launch and Early Orbit Phase</li>
 <li class="fade-in.ten">Space Mission and Payload Operations</li>
 <li class="fade-in.eleven">Ground and space-based communication and navigation systems and supporting networks</li>
-</UL>
+</ul>
 </div>
 </div>
-
-        </div>
+</div>
 
         <!-- <div class="col-md-4 service-item"> -->
           <div class="col-md-6 service-item">
+            <div id="service-item-cyber">
 
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="service-title"><a href="">Cyber / Information Assurance</a></h4>
           <p class="service-description">farSight personnel possess expertise in offensive and defensive cyber as well as risk assessment methodologies. Additionally, farSight personnel are intimately familiar with Federal requirements and policies regarding cybersecurity and information assurance. Whether its performing upfront risk assessments or red-teaming an operating network, farSight is ready to support your mission. Specific areas of expertise include:
+
   <div id="HiddenText">
+    <div class="fade-in">  
+
   <ul TYPE="square">
 
-  <li>  Defensive Cyber and Computer Network Operations (CNO)</li>
-  <li>Red-Team and Penetration Testing</li>
-  <li>Threat and Vulnerability Analysis</li>
-  <li>Secure network design, integration, test, and operation (including National Security Systems)</li>
-  <li>Federal cyber and information protection interpretation and compliance (FIPS policies, CNSS instructions, FISMA and HIPAA)</li>
+    <li class="fade-in.one">Defensive Cyber and Computer Network Operations (CNO)</li>
+    <li class="fade-in.two">Red-Team and Penetration Testing</li>
+    <li class="fade-in.three">Threat and Vulnerability Analysis</li>
+    <li class="fade-in.four">Secure network design, integration, test, and operation (including National Security Systems)</li>
+    <li class="fade-in.five">Federal cyber and information protection interpretation and compliance (FIPS policies, CNSS instructions, FISMA and HIPAA)</li> 
   </ul>
 </div>
 </p>
-  
+</div>
+</div>
 
-        </div>
+    </div>
         <div class="col-md-6 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
           <h4 class="service-title"><a href="">Space Control</a></h4>
           <p class="service-description">farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
             <div id="HiddenText">
+
+             <!--  <div id="HiddenText">
+              <ul TYPE="square">
+
+                <li class="fade-in.one"></li>
+                <li class="fade-in.two"></li>
+                <li class="fade-in.three"></li>
+                <li class="fade-in.four"></li>
+                <li class="fade-in.five"></li>
+                <li class="fade-in.six"></li>
+                <li class="fade-in.seven"></li>
+                <li class="fade-in.eight"></li>
+                <li class="fade-in.nine"></li>
+                <li class="fade-in.ten"></li>
+                <li class="fade-in.eleven"></li> -->
+
 
             <ol>Space Surveillance Systems (RADAR, LIDAR)</ol>
             <ol>Counterspace Techniques and Defensive Mitigations</ol>
@@ -354,7 +393,7 @@
   <!--==========================
   Porfolio Section
   ============================-->
-  <section id="portfolio">
+ <!--  <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -441,7 +480,7 @@
       </div>
     </div>
   </section>
-
+ -->
   <!--==========================
   Testimonials Section
   ============================-->
