@@ -585,24 +585,115 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 24px;
 }
 
-#services .service-item:hover .service-icon {
-  background: #fff;
+
+
+// #content{
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-auto-rows: minmax(100px, auto);
+//     grid-gap: 10px;
+//     max-width: 960px;
+//     margin: 0 auto;
+//     grid-template-areas:
+//         "header header header header"
+//         "footer footer footer footer"
+//         "main main main main"
+//         "main main main main"
+//         "aside aside nav nav"
+//         "section section section section"
+//         "section section section section";
+// }
+    /* desktop grid */
+//     @media screen and (min-width: 760px){
+//     #content{
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       grid-auto-rows: minmax(100px, auto);
+//       grid-gap: 10px;
+//       max-width: 960px;
+//       margin: 0 auto;
+//             grid-template-areas:
+//                 "spaceSystems"
+//                 "cyber"
+//                 "spaceControl c4isr "
+//                 "c4isr"
+//                 "cRFsys";
+//     }
+//     }
+// #content > *{
+//   padding: 30px;
+// }
+//     spaceSystems{
+//         grid-area: spaceSystems;
+//     }
+//     cyber{
+//         grid-area: cyber;
+//     }
+//     spaceControl{
+//         grid-area: spaceControl;
+//     }
+//     c4isr{
+//         grid-area: c4isr;
+//     }
+//     cRFsys{
+//         grid-area: cRFsys;
+//     }
+
+
+
+
+
+
+
+
+
+// #services .service-item:hover .service-icon {
+//   background: #fff;
+// }
+
+// #services .service-item:hover .service-icon i {
+//   color: #03C4EB; 
+// }
+
+// #services .service-item:hover {
+//     display:block;
+//     transition-duration: 2s;
+//     transition-timing-function: ease-out;
+//     color: #111;
+// }
+
+#SpaceSysText {
+  display: none;
+  color: #111;
 }
 
-#services .service-item:hover .service-icon i {
-  color: #03C4EB; 
+#SpaceControlText,
+#CyberInfoAssuranceText,
+ {
+  display: none;
 }
 
-#services .service-item:hover #HiddenText {
-    display:block;
-    transition-duration: 2s;
-    transition-timing-function: ease-out;
-    color: #111;
+.fa-desktop:hover ~ #SpaceSysText {
+  transition: 0.5s;
+  display: block;
+  color: #111;
 }
 
-#HiddenText {
-    display: none;
+.fa-paper-plane:hover ~ #SpaceControlText {
+  transition: 0.5s;
+  display: block;
+  color: #111;
 }
+
+
+.fa-bar-chart:hover ~ #CyberInfoAssuranceText {
+  transition: 0.5s;
+  display: block;
+  color: #111;
+
+}
+
+
 
 ol {
   list-style: none;
@@ -700,11 +791,11 @@ ol li {
 //   animation-delay: 3s;
 // }
 
-.fade-in.twelve {
-  -webkit-animation-delay: 3.3s;
-  -moz-animation-delay: 3.3s;
-  animation-delay: 3.3s;
-}
+// .fade-in.twelve {
+//   -webkit-animation-delay: 3.3s;
+//   -moz-animation-delay: 3.3s;
+//   animation-delay: 3.3s;
+// }
 
 
 
@@ -733,7 +824,6 @@ color: black;
 
 
 #services .service-description {
-  flex:  ;
   margin-left: 80px;
   line-height: 24px;
   color: #111;
