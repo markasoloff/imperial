@@ -9,7 +9,7 @@
 --------------------------------------------------------------*/
 body {
   background: #fff;
-  color: #b7b7b7;
+  color: #111;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -595,14 +595,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 //     max-width: 960px;
 //     margin: 0 auto;
 //     grid-template-areas:
-//         "header header header header"
-//         "footer footer footer footer"
-//         "main main main main"
-//         "main main main main"
-//         "aside aside nav nav"
-//         "section section section section"
-//         "section section section section";
-// }
+       
+// #content{
+//       display: grid;
+//       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+//       grid-template-columns: 1fr;
+//       grid-gap: 10px;
+//       height: auto;
+//     }
+//     #content > div {
+//       font-size: 4vw;
+//       padding: 10px;
+//     }
+
     /* desktop grid */
 //     @media screen and (min-width: 760px){
 //     #content{
@@ -641,12 +646,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-
-
-
-
-
-
 // #services .service-item:hover .service-icon {
 //   background: #fff;
 // }
@@ -662,38 +661,40 @@ body.mobile-nav-active #mobile-nav-toggle {
 //     color: #111;
 // }
 
-#SpaceSysText {
-  display: none;
-  color: #111;
-}
+// #spaceSysText {
+//   display: none;
+// }
 
-#SpaceControlText,
-#CyberInfoAssuranceText,
- {
-  display: none;
-}
+// #cyberInfoAssuranceText {
+//   display: none;
+// }
 
-.fa-desktop:hover ~ #SpaceSysText {
+// #spaceControlText {
+//   display: none;
+// }
+
+// #c4isrText {
+//   display: none;
+// }
+
+// i.fa-desktop:hover ~ #spaceSysText {
+//   display: block;
+// }
+
+.fa .fa-bar-chart:hover ~ #cyberInfoAssuranceText {
   transition: 0.5s;
   display: block;
-  color: #111;
+  color: black;
 }
 
-.fa-paper-plane:hover ~ #SpaceControlText {
-  transition: 0.5s;
+.fa .fa-paper-plane:hover ~ #spaceControlText {
   display: block;
-  color: #111;
 }
 
 
-.fa-bar-chart:hover ~ #CyberInfoAssuranceText {
-  transition: 0.5s;
+.fa .fa-road:hover ~ #c4isrText {
   display: block;
-  color: #111;
-
 }
-
-
 
 ol {
   list-style: none;
