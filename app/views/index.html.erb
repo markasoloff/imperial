@@ -34,6 +34,37 @@
 <%= javascript_include_tag('application')%>
 
 
+  <script>
+  function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+  }
+
+  function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+  }
+
+  // function myFunction() {
+  //   var element = document.getElementById("myDIV");
+
+  //   if (element.classList) { 
+  //     element.classList.toggle("myStyle");
+  //   } else {
+  //     var classes = element.className.split(" ");
+  //     var i = classes.indexOf("myStyle");
+
+  //     if (i >= 0) 
+  //       classes.splice(i, 1);
+  //     else 
+  //       classes.push("myStyle");
+  //       element.className = classes.join(" "); 
+  //   }
+  // }
+
+  </script>
+
+
 <!--   <script src="assets/sizzle.min.js"></script>
  -->
   <!-- <link href="favicon.ico" rel="shortcut icon">
@@ -90,8 +121,7 @@
 
   <!-- Main Stylesheet File -->
   <%= stylesheet_link_tag ('style') %>
-  <!-- <link href="assets/style.css.scss" rel="assets"> -->
-
+ 
 </head>
 
 <body>
@@ -263,26 +293,50 @@
         </div>
       </div>
     </div>
-        <div id="content">
 
-          <div class="container wow fadeInUp">
-            <div class="row">
-                <div class="col-md-12 service-item">
+
+    <!-- ------------------------------------------------ -->
+   
+
+<!-- <div id="notService"> -->
+      
+        <!-- <div id="content"> -->
+<div class="container wow fadeInUp">
+            <!-- <div class="row"> -->
+                <!-- <div class="col-md-12 service-item"> -->
+                        
                         <div class="service-icon">
                          <i class="fa fa-desktop"></i>
                         </div>
 
+
+
+
+                        <!-- ______________________________________ -->
+
+
+                        <!-- <button onclick="myFunction()">Try it</button> -->
+
+
+                        <!-- ______________________________________ -->
+
+
                     <h3 class="service-title">Space Systems</h3>
-                  
-                        <p class="section-description" style="font-size: 110%; ">
+                  <!-- <div id="myDIV"> -->
+                        <p class="section-description" style="font-size: 110%; " >
                          farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
                         </p>
-                  </div>
+                  
                             
                       <!-- <div class="col-md-5 service-item"> -->
-                         <section class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".20s">
+
+
+                  <!-- 
+
+                         <section class="wow fadeIn
+                         " data-wow-duration="3s" data-wow-delay=".20s"> -->
                       <!-- <div id="HiddenText"> -->
-                         <div id="spaceSysText" style="justify-content: center;">
+<!--                          <div id="spaceSysText" style="justify-content: center;"> -->
                              <ul>Mission design and architecture development</ul>
                              <ul>Systems Engineering & Integration</ul>
                              <ul>Science Payload Development</ul>
@@ -295,15 +349,15 @@
                              <ul>Space Mission and Payload Operations</ul>
                              <ul>Ground and space-based communication and navigation systems and supporting networks</ul>
                              </ul>
-                         </div>
-                        </section>
-                      <!-- </div> -->
+                    <!-- </div> -->
+                        <!-- </section> -->
+                  <!-- </div> -->
+                
                   <br>
 
           <!-- <div id="HiddenText"> -->
           <!-- <div class="wow fadeIn">   -->
-        <cyber>
-          <div class="row">
+          <!-- <div class="row"> -->
               
               <div class="service-icon">
                 <i class="fa fa-bar-chart"></i>
@@ -313,7 +367,7 @@
               <p class="service-description">farSight personnel possess expertise in offensive and 
                 defensive cyber as well as risk assessment methodologies. Additionally, farSight personnel are intimately familiar with Federal requirements and policies regarding cybersecurity and information assurance. Whether its performing upfront risk assessments or red-teaming an operating network, farSight is ready to support your mission. Specific areas of expertise include:
               </p>
-          </div>
+          <!-- </div> -->
 
 
 
@@ -326,12 +380,12 @@
     <ul>Federal cyber and information protection interpretation and compliance (FIPS policies, CNSS instructions, FISMA and HIPAA)</ul> 
   </ul>
   </div>
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-</cyber>
+                    <br>
 
-<spaceControl>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+
           <div class="service-icon">
             <i class="fa fa-paper-plane"></i>
           </div>
@@ -364,9 +418,8 @@
             <ul>Counterspace Techniques and Defensive Mitigations</ul>
             <ul>Maneuver Detection and Object Characterization</ul>
           </div>
-          </spaceControl>
+                    <br>
 
-          <c4isr>
           <div class="service-icon">
             <i class="fa fa-road"></i>
           </div>
@@ -386,9 +439,11 @@
     <ul>High Assurance Communications</ul>
     <ul>Fixed, Ground-Mobile, Airborne, and Space-Based C4ISR Architecture and System Design, Development, Test, and Operation</ul>
   </div>
-</c4isr>
 
-<cRFsys>
+                  <br>
+
+
+
 
     <div class="service-icon">
       <i class="fa fa-photo"></i>
@@ -398,9 +453,11 @@
     <h4 class="service-title">Coherent RF Systems</h4>
     
     <p class="service-description">farSight personnel have unique experience in the design, integration, test, and operation of coherent RF systems including those used for high power, widely separated uplink arraying, deep space RADAR, coherent EW effects generation and projection, and precision SIGINT and MASINT collection.</p>
-</cRFsys>
+
 
     </div> <!-- content id ends here -->
+
+                  <br>
 
   </section>
 
@@ -748,17 +805,7 @@
 
   <!-- Required JavaScript raries -->
 
-  <script>
-  function bigImg(x) {
-    x.style.height = "64px";
-    x.style.width = "64px";
-  }
 
-  function normalImg(x) {
-    x.style.height = "32px";
-    x.style.width = "32px";
-  }
-  </script>
 
 
  
