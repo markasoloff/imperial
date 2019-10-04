@@ -73,11 +73,9 @@
 <link rel="stylesheet" href="css/animate.css">
 
 
-
-
 <!-- <script src="js/wow.min.js"></script>
  -->          
- <script> new WOW().init(); </script>
+ <script> new WOW().init();</script>
 
 
  <!-- <link href="assets/animate.min.css" rel="stylesheet"> -->
@@ -89,6 +87,7 @@
 
   <!-- Main Stylesheet File -->
   <%= stylesheet_link_tag ('style') %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"></script>
  
 </head>
 
@@ -238,6 +237,71 @@
       </div>
     </div>
   </div>
+</section>
+
+
+
+  <!--==========================
+  Card test Section
+  ============================-->
+  <!-- 
+  <label>
+      <input type="checkbox"  />
+      <div class="card">
+          <div class="front">Front</div>
+          <div class="back">Back</div>
+      </div>
+  </label> -->
+
+
+
+<div class="container">
+<div class="row col-md-4">
+<div id="cardWrapper">
+  <div class="card">
+    <div class="card__border"></div>
+    
+    <div class="card__inner">
+      <div class="card__header">
+        <div class="card__icon">
+          <!-- <svg viewBox="0 0 50 50" class="lego">
+            <use xlink:href="#lego"></use>
+          </svg> -->
+        </div>
+        <div class="card__title">Space Systems</div>
+      </div>
+      <div class="card__reveal">
+        farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+  <h4>Mission design and architecture development</h4>
+  <h4>Systems Engineering & Integration</h4>
+  <h4>Science Payload Development</h4>
+  <h4>Spacecraft Bus Development</h4>
+  <h4>Propulsion and Guidance</h4>
+  <h4>Communications and Avionics Systems</h4>
+</div>
+
+<div class="col-md-4">
+   <h4>Hardware and Software Verification and Validation (V&V)</h4>
+                             <h4>Flight and Ground Test Planning and Operations</h4>
+                             <h4>Launch and Early Orbit Phase</h4>
+                             <h4>Space Mission and Payload Operations</h4>
+                             <h4>Ground and space-based communication and navigation systems and supporting networks</h4>
+                             </h4>
+
+</div>
+
+  <!--==========================
+  END OF Card test Section
+  ============================-->
+
+
 
   <!--==========================
   Services Section
@@ -752,6 +816,10 @@
   <!-- Required JavaScript  -->
 
   <script>
+
+    document.getElementById("cardWrapper").onclick = function(){console.log("clicked on card")};
+
+    
   function bigImg(x) {
     x.style.height = "64px";
     x.style.width = "64px";

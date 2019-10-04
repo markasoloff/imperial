@@ -659,6 +659,142 @@ ol li {
 }
 
 
+
+
+/* Card Test Section
+--------------------------------*/
+
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+.hide{ display:none; }
+
+.card{
+  position:relative;
+  margin:2rem auto;
+  
+  width:30rem;
+  transition:box-shadow .2s;
+  
+  &:before,
+  &:after{
+    content:'';
+    position:absolute;
+    z-index:1;
+    top:0;
+  }
+  
+  //Top Border
+  &:before{
+    left:0;
+    width:0;
+    height:3px;
+    background-color:#42b6ff;
+    transition:width .1s;
+  }
+  
+  //Right Border
+  &:after{
+    right:0;
+    width:3px;
+    height:0;
+    background:linear-gradient(#42b6ff, #119df5);
+    transition:height .2s .09s;
+  }
+  
+}
+
+.card__border{
+  
+  &:before, &:after{
+    content:'';
+    position:absolute;
+    z-index:1;
+    bottom:0;
+  }
+  
+  //Bottom Border
+  &:before{
+    right:0;
+    width:0;
+    height:3px;
+    background-color:#119df5;
+    transition:width .35s .28s;
+  }
+  
+  &:after{
+    left:0;
+    height:0;
+    width:3px;
+    background: linear-gradient(#42b6ff, #119df5);
+    transition:height .6s .63s ease-out;
+  }
+  
+}
+
+.card__inner{
+  padding:2rem 1.5rem;
+  // border:2px solid #ddd;
+}
+
+.card__header{
+  margin-bottom:2rem;
+}
+
+.card__icon{
+  width:3.125rem;
+  margin:0 auto 1rem;
+  transition: all .6s ease-in-out;
+}
+
+.card__title{
+  text-align:center;
+  font-size:1.5rem;
+}
+
+.card__reveal{
+  margin-top:-1rem;
+  opacity:0;
+  
+  font-weight:200;
+  text-align:center;
+  // font-size:0.875rem;
+  font-size:2rem;
+
+  letter-spacing:0.5px;
+  
+  transition: all .6s ease-in-out;
+}
+
+
+//Lego Colors
+.lego__face{fill:#627EDF;}
+.lego__bottom{fill:#7390D8;}
+.lego__top{fill:#9FB0DD;}
+
+
+.card:hover{
+  
+  background-color:#fff;
+  box-shadow:0px 5px 8px 0px rgba(32, 40, 61, 0.7);
+  
+  .card__icon{ transform: scale(1.2); }
+  
+  &:before{ width:100%; }
+  &:after{ height:100%; }
+  
+  .card__border:before{ width:100%; }
+  .card__border:after{ height:100%; }
+  
+  .card__reveal{
+    margin-top:0;
+    opacity:1;
+  }
+  
+  
+}
+
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
