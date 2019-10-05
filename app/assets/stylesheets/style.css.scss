@@ -666,7 +666,7 @@ ol li {
 
 
 #flippy-section {
-  background: #f3f3f3;
+  // background: #f3f3f3;
   padding: 30px 20px;
 }
 
@@ -694,9 +694,9 @@ ol li {
   transition: all 0.3s 0s ease-in;
   z-index: 1;
   
-  width: auto;
+  // width: auto;
 
-  // width: calc(33.33333333% - 10px);
+  width: calc(33.33333333% - 10px);
 
 
   cursor: pointer;
