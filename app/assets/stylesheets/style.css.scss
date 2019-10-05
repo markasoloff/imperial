@@ -664,136 +664,313 @@ ol li {
 /* Card Test Section
 --------------------------------*/
 
-*, *:before, *:after{
-  box-sizing:border-box;
+
+#flippy-section {
+  background: #f3f3f3;
+  padding: 30px 20px;
 }
 
-.hide{ display:none; }
+// Dashboard Cards
+.dashboard-cards {
+  position: relative;
+  padding-bottom: 50px;
+  margin: 0 !important;
+}
+.dashboard-cards .card {
+  background: #ffffff;
+  display: inline-block;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  z-index: 20;
+  padding: 0 !important;
+  margin: 5px 5px 10px 5px;
+  position: relative;
+  text-align: left;
 
-.card{
-  position:relative;
-  margin:2rem auto;
+  /*  ^..^   */
+  justify-content: center;
+
+  -webkit-transition: all 0.3s 0s ease-in;
+  transition: all 0.3s 0s ease-in;
+  z-index: 1;
   
-  width:30rem;
-  transition:box-shadow .2s;
-  
-  &:before,
-  &:after{
-    content:'';
-    position:absolute;
-    z-index:1;
-    top:0;
-  }
-  
-  //Top Border
-  &:before{
-    left:0;
-    width:0;
-    height:3px;
-    background-color:#42b6ff;
-    transition:width .1s;
-  }
-  
-  //Right Border
-  &:after{
-    right:0;
-    width:3px;
-    height:0;
-    background:linear-gradient(#42b6ff, #119df5);
-    transition:height .2s .09s;
-  }
-  
+  width: auto;
+
+  // width: calc(33.33333333% - 10px);
+
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dashboard-cards .card:hover {
+      box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+  transition: all 0.3s ease;
+}
+.dashboard-cards .card .card-title {
+  background: #ffffff;
+  padding: 20px 15px;
+  position: relative;
+  z-index: 0;
+}
+.dashboard-cards .card .card-title h2 {
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+.dashboard-cards .card .card-title h2 small {
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+  letter-spacing: -0.025em;
+}
+.dashboard-cards .card .card-description {
+  position: relative;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  padding: 10px 15px 0 15px;
+}
+.dashboard-cards .card .card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px;
+  text-align: center;
+}
+.dashboard-cards .card .card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+.dashboard-cards .card .flap1 {
+  -webkit-transition: all 0.3s 0.3s ease-out;
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+.dashboard-cards .card .flap2 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+.dashboard-cards.showing .card {
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transform: scale(0.88);
+          transform: scale(0.88);
+}
+.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+  opacity: 0.94;
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+}
+.dashboard-cards .card.d-card-show {
+  opacity: 1 !important;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+}
+.dashboard-cards .card.d-card-show .card-flap {
+  background: #ffffff;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+.dashboard-cards .card.d-card-show .flap1 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+.dashboard-cards .card.d-card-show .flap2 {
+  -webkit-transition: all 0.3s 0.2s ease-out;
+  transition: all 0.3s 0.2s ease-out;
+}
+.dashboard-cards .card .task-count {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  background: #ecf0f1;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #333333;
+  font-weight: 600;
+  transition: all .2s ease;
 }
 
-.card__border{
-  
-  &:before, &:after{
-    content:'';
-    position:absolute;
-    z-index:1;
-    bottom:0;
-  }
-  
-  //Bottom Border
-  &:before{
-    right:0;
-    width:0;
-    height:3px;
-    background-color:#119df5;
-    transition:width .35s .28s;
-  }
-  
-  &:after{
-    left:0;
-    height:0;
-    width:3px;
-    background: linear-gradient(#42b6ff, #119df5);
-    transition:height .6s .63s ease-out;
-  }
-  
+// Task List
+.dashboard-cards .task-list {
+  padding: 0 !important;
 }
-
-.card__inner{
-  padding:2rem 1.5rem;
-  // border:2px solid #ddd;
+.dashboard-cards .task-list li {
+  padding: 10px 0;
+  padding-left: 10px;
+  margin: 3px 0;
+  list-style-type: none;
+  border-bottom: 1px solid #e9ebed;
+  border-left: 3px solid #f36525;
+  transition: all .2s ease;
 }
-
-.card__header{
-  margin-bottom:2rem;
+.dashboard-cards .task-list li:hover {
+  background: #ecf0f1;
+  transition: all .2s ease;
 }
-
-.card__icon{
-  width:3.125rem;
-  margin:0 auto 1rem;
-  transition: all .6s ease-in-out;
+.dashboard-cards .task-list li span {
+  float: right;
+  color: #f36525;
+  margin-right: 5px;
 }
-
-.card__title{
-  text-align:center;
-  font-size:1.5rem;
+.dashboard-cards.showing .card.d-card-show .task-count {
+  color: #ffffff;
+  background: #f36525;
+  transition: all .2s ease;
 }
-
-.card__reveal{
-  margin-top:-1rem;
-  opacity:0;
-  
-  font-weight:200;
-  text-align:center;
-  // font-size:0.875rem;
-  font-size:2rem;
-
-  letter-spacing:0.5px;
-  
-  transition: all .6s ease-in-out;
+.dashboard-cards .card-actions .btn {
+  color: #333;
+}
+.dashboard-cards .card-actions .btn:hover {
+  color: #f36525;
 }
 
 
-//Lego Colors
-.lego__face{fill:#627EDF;}
-.lego__bottom{fill:#7390D8;}
-.lego__top{fill:#9FB0DD;}
 
 
-.card:hover{
+
+
+
+/* beginning of border css */
+
+
+// *, *:before, *:after{
+//   box-sizing:border-box;
+// }
+
+// .hide{ display:none; }
+
+// .card{
+//   position:relative;
+//   margin:2rem auto;
   
-  background-color:#fff;
-  box-shadow:0px 5px 8px 0px rgba(32, 40, 61, 0.7);
+//   width:30rem;
+//   transition:box-shadow .2s;
   
-  .card__icon{ transform: scale(1.2); }
+//   &:before,
+//   &:after{
+//     content:'';
+//     position:absolute;
+//     z-index:1;
+//     top:0;
+//   }
   
-  &:before{ width:100%; }
-  &:after{ height:100%; }
+//   //Top Border
+//   &:before{
+//     left:0;
+//     width:0;
+//     height:3px;
+//     background-color:#42b6ff;
+//     transition:width .1s;
+//   }
   
-  .card__border:before{ width:100%; }
-  .card__border:after{ height:100%; }
+//   //Right Border
+//   &:after{
+//     right:0;
+//     width:3px;
+//     height:0;
+//     background:linear-gradient(#42b6ff, #119df5);
+//     transition:height .2s .09s;
+//   }
   
-  .card__reveal{
-    margin-top:0;
-    opacity:1;
-  }
+// }
+
+// .card__border{
+  
+//   &:before, &:after{
+//     content:'';
+//     position:absolute;
+//     z-index:1;
+//     bottom:0;
+//   }
+  
+//   //Bottom Border
+//   &:before{
+//     right:0;
+//     width:0;
+//     height:3px;
+//     background-color:#119df5;
+//     transition:width .35s .28s;
+//   }
+  
+//   &:after{
+//     left:0;
+//     height:0;
+//     width:3px;
+//     background: linear-gradient(#42b6ff, #119df5);
+//     transition:height .6s .63s ease-out;
+//   }
+  
+// }
+
+// .card__inner{
+//   padding:2rem 1.5rem;
+//   // border:2px solid #ddd;
+// }
+
+// .card__header{
+//   margin-bottom:2rem;
+// }
+
+// .card__icon{
+//   width:3.125rem;
+//   margin:0 auto 1rem;
+//   transition: all .6s ease-in-out;
+// }
+
+// .card__title{
+//   text-align:center;
+//   font-size:1.5rem;
+// }
+
+// .card__reveal{
+//   margin-top:-1rem;
+//   opacity:0;
+  
+//   font-weight:200;
+//   text-align:center;
+//   // font-size:0.875rem;
+//   font-size:2rem;
+
+//   letter-spacing:0.5px;
+  
+//   transition: all .6s ease-in-out;
+// }
+
+
+// //Lego Colors
+// .lego__face{fill:#627EDF;}
+// .lego__bottom{fill:#7390D8;}
+// .lego__top{fill:#9FB0DD;}
+
+
+// .card:hover{
+  
+//   background-color:#fff;
+//   box-shadow:0px 5px 8px 0px rgba(32, 40, 61, 0.7);
+  
+//   .card__icon{ transform: scale(1.2); }
+  
+//   &:before{ width:100%; }
+//   &:after{ height:100%; }
+  
+//   .card__border:before{ width:100%; }
+//   .card__border:after{ height:100%; }
+  
+//   .card__reveal{
+//     margin-top:0;
+//     opacity:1;
+//   }
   
   
-}
+// }
 
 /* Subscribe Section
 --------------------------------*/
