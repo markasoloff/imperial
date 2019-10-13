@@ -215,7 +215,7 @@ ul {
   padding: 20px 0 2px;
   position: sticky;
   position: -webkit-sticky;
-  z-index: 2;
+  z-index: 1;
   top: 0;
 
 }
@@ -663,7 +663,9 @@ ol li {
 
 /* Card Test Section
 --------------------------------*/
+#hideable {
 
+}
 
 #flippy-section {
   // background: #f3f3f3;
@@ -681,22 +683,22 @@ ol li {
   display: inline-block;
   -webkit-perspective: 1000;
           perspective: 1000;
-  z-index: 20;
+  z-index: 0;
   padding: 0 !important;
   margin: 5px 5px 10px 5px;
   position: relative;
-  text-align: left;
-
+  /*text-align: left;*/
   /*  ^..^   */
+  text-align: center;
+
   justify-content: center;
 
   -webkit-transition: all 0.3s 0s ease-in;
   transition: all 0.3s 0s ease-in;
-  z-index: 1;
-  
-  // width: auto;
+  z-index: 0;
+  width: auto;
 
-  width: calc(33.33333333% - 10px);
+  /*width: calc(33.33333333% - 10px);*/
 
 
   cursor: pointer;
@@ -719,7 +721,7 @@ ol li {
   padding: 0;
 }
 .dashboard-cards .card .card-title h2 small {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   margin-top: 8px;
   letter-spacing: -0.025em;
@@ -835,9 +837,6 @@ ol li {
 
 
 
-
-
-
 /* beginning of border css */
 
 
@@ -855,8 +854,8 @@ ol li {
 //   transition:box-shadow .2s;
   
 //   &:before,
-//   &:after{
-//     content:'';
+//   after{
+//     content:'';&:
 //     position:absolute;
 //     z-index:1;
 //     top:0;
