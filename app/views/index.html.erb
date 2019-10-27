@@ -22,36 +22,12 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>   -->
- 
 
-  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
- 
- <!-- <script src="/jquery.min.js"></script> -->
 
   <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
   
 <%= javascript_include_tag('application')%>
 
-<!--   <script src="assets/sizzle.min.js"></script>
- -->
-  <!-- <link href="favicon.ico" rel="shortcut icon">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest"> -->
-
-
-   <!-- Template Specisifc Custom Javascript File -->
-
-   <!-- <script src="assets/contactform.js"></script> -->
-
-<!-- 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.4/sizzle.js"></script> -->
-<!-- <script src="assets/jquery.js"></script> -->
-<!-- <script src="assets/application.js"></script>
- --><!-- <link href="assets/application.css"> -->
 
 
 
@@ -88,6 +64,18 @@
   <!-- Main Stylesheet File -->
   <%= stylesheet_link_tag ('style') %>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"></script>
+
+
+  <style> 
+   @font-face {
+     font-family: "modernSans";
+     src: url(ModernSans-Light.otf);
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a, div, article, button {
+    font-family: "modernSans";
+  }
+  </style>
  
 </head>
 
@@ -101,11 +89,12 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-          <h1 style="font-family: Raleway, sans-serif; font-weight: 200; font-size: 4em;"> FarSight Technologies</h1>
+          <h1 style="font-family: modernSans; font-size: 4em; font-weight: lighter;"> 
+          FarSight Technologies</h1>
       <div class="wow fadeIn">
         <div class="hero-logo">
             
-          <h3 style="font-family: Raleway, sans-serif; font-weight: 200; font-size: 2em; padding-top: 3em"> Do the impossible </h3>
+          <h3 style="font-size: 2em; padding-top: 3em; color: grey;"> Do the impossible </h3>
 
 
         </div>
@@ -113,9 +102,6 @@
           <br>
           <br>
           <br>
-     <!--    <h3 style="font-family: Josefin Sans, sans-serif; font-weight: 100; font-size: 2em; justify-content: right"> Extraordinary tools for world-class challenges in </h3> -->
-
-          <!-- Josefin Sans, sans-serif; font-weight: 900; font-style: italic;  -->
         </div>
 
         <br>

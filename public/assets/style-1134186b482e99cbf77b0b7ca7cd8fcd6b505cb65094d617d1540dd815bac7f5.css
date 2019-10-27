@@ -7,10 +7,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+ @font-face {
+   font-family: modernSans;
+   src: url(ModernSans-Light.otf);
+}
+
 body {
   background: #fff;
   color: #b7b7b7;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
 }
 
 a {
