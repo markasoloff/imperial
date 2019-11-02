@@ -7,7 +7,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
- @font-face {
+.lr {
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+}
+
+@font-face {
    font-family: "modernSans";
    src: url(ModernSans-Light.otf);
 }
@@ -16,6 +22,7 @@ body {
   background: #fff;
   color: #111;
   font-family: "modernSans";
+  src: url(ModernSans-Light.otf);
 }
 
 a {
@@ -39,6 +46,7 @@ h1 {
   text-align: center;
   // font-family: "Raleway", sans-serif;
   font-family: "modernSans";
+  src: url(ModernSans-Light.otf);
   font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;

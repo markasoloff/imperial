@@ -148,22 +148,6 @@
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <!-- <li><a href="#testimonials">Testimonials</a></li> -->
           <li><a href="#team">Team</a></li>
-         <!--  <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul> -->
           </li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -183,22 +167,22 @@
           <div class="section-title-divider"></div>
           <div class="col-md-12 service-item">
 
-          <p class="about-title" style="font-size: 110%; text-align: left;">farSight Technologies is a dedicated team of experienced engineers, technologists, and operations experts. Decades of hands-on and in-the-field experience with partnerships spanning academia, research institutes, and government allows farSight to bring just the right skills to solving our clients’ challenges.
+          <p class="about-title" style="font-size: 1em; text-align: left;">farSight Technologies is a dedicated team of experienced engineers, technologists, and operations experts. Decades of hands-on and in-the-field experience with partnerships spanning academia, research institutes, and government allows farSight to bring just the right skills to solving our clients’ challenges.
           </p>
         </div>
         <!-- <div class=container>  -->
         <!-- <div class="col-sm-1 service-item"></div> -->
        
       </div>
-          <!-- </section> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
+
     <div class="container about-container wow fadeInUp">
       <div class="row">
 
-        <div class="col-lg-6 about-img">
+        <br>
+        <br>
+        <br>
+
+        <div class="col-lg-6 about-img" style="padding-left: 0;">
           <%= image_tag("WB sundown.jpg") %>
         </div>
 
@@ -208,7 +192,7 @@
            <div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay=".15s">
              <!-- <div class="about-bullets"> -->
            <ul TYPE="square">
-         <div style="padding-left: 2em;">
+         <div style="font-size: 1em;">
            <li>Space Exploration</li>
            <li>Homeland Security</li>
            <li>Defense</li>
@@ -224,9 +208,6 @@
     </div>
   </div>
 </section>
-
-
-
 
   <!--==========================
   Services Section
@@ -254,12 +235,14 @@
       <div class='dashboard-cards'>
         <div class='card' style="justify-content: center;">
 
-    <div class='card-title' style="color:white; background-image: url(<%= image_path('ISS.jpg')%>);
-    height: 300px; width: auto; background-size: cover; background-position: center;"> 
-      <h2>
+
+    <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)
+              ), url(<%= image_path('ISS.jpg')%>); height: 300px; width: auto; background-size: cover; background-position: center;"> 
+      <h2 class='lr'>
         Space Systems
       </h2>
-      <article>
+      <br>
+      <article class='lr'>
         farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
       </article>
     
@@ -296,12 +279,15 @@
     <div class='dashboard-cards'>
       <div class='card' style="justify-content: center;">
 
-  <div class='card-title' style="color:white;background-image: url(<%= image_path('hero-bg.jpg')%>);
+  <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)
+              ), url(<%= image_path('hero-bg.jpg')%>);
   height: 300px; width:auto; background-position: right;"> 
-    <h2>
+  
+   <h2 class='lr'>
        Cyber / Information Assurance
     </h2>
-    <article>
+    <br>
+    <article class='lr'>
       farSight personnel possess expertise in offensive and defensive cyber as well as risk assessment methodologies. Additionally, farSight personnel are intimately familiar with Federal requirements and policies regarding cybersecurity and information assurance. Whether it's performing upfront risk assessments or red-teaming an operating network, farSight is ready to support your mission. Specific areas of expertise include:
     </article>
   
@@ -336,12 +322,15 @@
             <div class='dashboard-cards'>
               <div class='card' style="justify-content: center;">
 
-          <div class='card-title' style="color:white;background-image: url(<%= image_path('ISS013-E-54329.jpg')%>);
+          <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)
+              ), url(<%= image_path('ISS013-E-54329.jpg')%>);
           height: 300px; background-position: center; width: auto; margin: 1px;"> 
-            <h2>
+                  
+            <h2 class='lr'>
               Space Control
             </h2>
-            <article>
+            <br>
+            <article class='lr'>
               farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
             </article>
           
@@ -366,21 +355,18 @@
         </div>
       </div>
 
-
-
-
-
-
           <div class='col-md-6'>
             <div class='dashboard-cards'>
               <div class='card' style="justify-content: center;">
 
-          <div class='card-title' style="color:white; background-image: url(<%= image_path('ISS_Comm_Antenna.jpg')%>);
-          height: 300px; background-position: center; width: auto; background-size: cover;"> 
-            <h2>
+          <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)
+              ), url(<%= image_path('ISS_Comm_Antenna.jpg')%>);
+          height: 300px; background-position: center; width: auto; background-size: cover;">                  
+            <h2 class='lr'>
               Coherent RF Systems
             </h2>
-            <article>
+            <br>
+            <article class='lr'>
               farSight personnel have unique experience in the design, integration, test, and operation of coherent RF systems including those used for high power, widely separated uplink arraying, deep space RADAR, coherent EW effects generation and projection, and precision SIGINT and MASINT collection.
             </article>
           
@@ -413,12 +399,15 @@
             <div class='dashboard-cards'>
               <div class='card' style="justify-content: center;">
 
-          <div class='card-title' style="color:white;background-image: url(<%= image_path('FREESTAR.jpg')%>); background-size: cover;
+          <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)
+              ), url(<%= image_path('FREESTAR.jpg')%>); background-size: cover;
           height: 300px; width: auto;"> 
-            <h2>
+
+            <h2 class='lr'>
               C4ISR
             </h2>
-            <article>
+            <br>
+            <article class='lr'>
               farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
             </article>
           
@@ -458,330 +447,9 @@
 </div>
     <!-- container ender   -->
 </div>
-
-
-
-
-<!-- 
-      <div class="row">
-          
-        <h4 style="color: black; text-align: center; font-size: 30px; font: Raleway, sans-serif; padding-top: 20px;">Space Systems</h4>
-
-      </div>
-
-        <div class="row">
-
-          <div class="col-md-12 service-item">
-            <h4 class="section-description" style="justify-content: left; font-size: 1.5em; text-align: left; margin-top: 10px;">
-             farSight personnel are intimately involved with the design, test, and operation of robotic and human space flight systems. farSight personnel have hands-on expertise in the following space-related areas:
-            </h4>
-          </div>
-
-        </div>
-            
-    
-<div clas="row">
-
-
-    <div class="col-md-6" style="color: black; text-align: left;">
-                             <h4>Mission design and architecture development</h4>
-                             <h4>Systems Engineering & Integration</h4>
-                             <h4>Science Payload Development</h4>
-                             <h4>Spacecraft Bus Development</h4>
-                             <h4>Propulsion and Guidance</h4>
-                             <h4>Communications and Avionics Systems</h4>
-    </div>
-
-    <div class="col-md-6" style="color: black; text-align: left;">
-
-                             <h4>Hardware and Software Verification and Validation (V&V)</h4>
-                             <h4>Flight and Ground Test Planning and Operations</h4>
-                             <h4>Launch and Early Orbit Phase</h4>
-                             <h4>Space Mission and Payload Operations</h4>
-                             <h4>Ground and space-based communication and navigation systems and supporting networks</h4>
-                             </h4>
-    </div>
-</div>
-    
-<div class="row">
-
-  <div class="col-md-12">
-              <h4 style="color: black; text-align: center; font-size: 30px; font: Raleway, sans-serif; padding-top: 20px;">Cyber / Information Assurance</h4>
-  </div>
-
-</div>
-
-<div class="row">
-
-  <div class="col-md-12 service-item">
-    <p class="section-description" style="font-size: 1.5em; text-align: left; margin-top: 10px;">farSight personnel possess expertise in offensive and 
-                defensive cyber as well as risk assessment methodologies. Additionally, farSight personnel are intimately familiar with Federal requirements and policies regarding cybersecurity and information assurance. Whether it's performing upfront risk assessments or red-teaming an operating network, farSight is ready to support your mission. Specific areas of expertise include:
-              </p>
-  </div>
-</div>
-
-
-
-<div class="row">
-  <div class="col-md-10" style="color: black; text-align: left;">
-
-      <h4>Defensive Cyber and Computer Network Operations (CNO)</h4>
-      <h4>Red-Team and Penetration Testing</h4>
-      <h4>Threat and Vulnerability Analysis</h4>
-      <h4>Secure network design, integration, test, and operation (including National Security Systems)</h4>
-      <h4>Federal cyber and information protection interpretation and compliance (FIPS policies, CNSS instructions, FISMA and HIPAA)</h4> 
-      </h4>
-  </div>
-</div>
-
-<br>
-
-
-<div class="row">
-
-  <div class="col-md-12">
-              <h4 style="color: black; text-align: center; font-size: 30px; font: Raleway, sans-serif; padding-top: 20px;">Space Control</h4>
-  </div>
-
-</div>
-
-
- <div class="row">
-
-        <div class="col-md-12 service-item">
-          <p class="section-description" style="font-size: 1.5em; text-align: left; margin-top: 10px;">
-          farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
-          </p>
-        </div>
-
-</div>
-
-<div class="row">
-  <div class="col-md-12" style="color: black; text-align: left;">
-
-
-            <h4>Space Surveillance Systems (RADAR, LIDAR)</h4>
-            <h4>Counterspace Techniques and Defensive Mitigations</h4>
-            <h4>Maneuver Detection and Object Characterization</h4>
-  </div>
-</div>
-                    <br>
-
-<div class="row">
-  <div class="col-md-12">
-          <h4 style="color: black; text-align: center; font-size: 30px; font: Raleway, sans-serif; margin-left: 15px;">C4ISR – Command, Control, Communications, Intelligence, Surveillance, and Reconnaissance</h4>
-  </div>
-
-
-</div>
-          
-<div class="row">
-            <div class="col-md-12 service-item">
-              <p class="section-description" style="font-size: 1.5em; text-align: left; margin-top: 10px;">
-          farSight personnel have decades of experience in the design, integration, test, and operations of advanced and special application C4ISR systems. farSight has practical C4ISR experience ranging from capability concept specification, through assembly, integration, and test, to deployed operations. farSight-developed systems are operating in all mission domains from fixed and ground-mobile, through airborne UAV and manned platforms, to space-based systems. farSight personnel have expertise in delay/disruption tolerance techniques for disadvantaged networks as well as RF and signal design for low probability of intercept communications. Specific areas of expertise include:
-          </p>
-            </div>
-</div>
-
-
-<div class="row">
-  
-  <div class="col-md-6" style="color: black; text-align: left;"> 
-    <h4>Delay / Disruption Tlierant Networking (DTN)</h4>
-    <h4>Assured Position, Navigation, and Timing (PNT)</h4>
-    <h4>Disadvantaged User Communications</h4>
-    <h4>ISR collection, processing, and dissemination architectures and systems including SIGINT, ELINT, MASINT, and IMINT</h4>
-  </div>
-
-  <div class="col-md-6" style="color: black; text-align: left;">
-    <h4>LPI/LPD Communications System and Signal Design</h4>
-    <h4>High Assurance Communications</h4>
-    <h4>Fixed, Ground-Mobile, Airborne, and Space-Based C4ISR Architecture and System Design, Development, Test, and Operation</h4>
-  </div>
-</div>
-
-                  <br>
-<div class="row">
-  <div class="col-md-12">
-    <h4 style="color: black; justify-content: center; font-size: 30px; font: Raleway, sans-serif; margin-left: 15px;">Coherent RF Systems</h4>
-  </div>
-</div>
-
-<div class="row">
-            <div class="col-md-12 service-item">
-
-              <p class="section-description" style="font-size: 1.5em; text-align: left; margin-top: 10px;">farSight personnel have unique experience in the design, integration, test, and operation of coherent RF systems including those used for high power, widely separated uplink arraying, deep space RADAR, coherent EW effects generation and projection, and precision SIGINT and MASINT collection.</p>
-            </div>
-</div>
-                  <br>
- -->
+  <br>
   </section>
 
-  <!--==========================
-  Subscribe Section
-  ============================
-   <section id="subscribe">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="subscribe-title">Subscribe For Updates</h3>
-          <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-        </div>
-        <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
- -->
-  <!--==========================
-  Porfolio Section
-  ============================-->
- <!--  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Portfolio</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-1.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 1</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-2.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 2</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-3.jpg')%>);">
-            <div class="details">
-              <h4>Portfolio 3</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-4.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 4</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-5.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 5</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-6.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 6</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-7.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 7</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(<%= image_path('portfolio-8.jpg')%>);"> 
-            <div class="details">
-              <h4>Portfolio 8</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
- -->
-  <!--==========================
-  Testimonials Section
-  ============================-->
-<!--   <section id="testimonials">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Testimonials</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic">
-            <%= image_tag("client-1.jpg")%> 
-            </div>
-            <h4>Saul Goodman</h4>
-            <span>Lawless Inc</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><div class="pic">
-            <% image_tag "quote_sign_left.png" %>
-            </div>
-            </b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small> <% image_tag "quote_sign_right.png" %>
-            </small>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b> 
-            <%= image_tag "quote_sign_left.png" %>
-            </b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small>
-            <% image_tag "quote_sign_right.png" %>
-            </small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic">
-            <% image_tag "client-2.jpg" %>
-            </div>
-            <h4>Sara Wilsson</h4>
-            <span>Odeo Inc</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
 
   <!--==========================
   Team Section
