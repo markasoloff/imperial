@@ -29,7 +29,10 @@ Rails.application.configure do
   config.serve_static_assets = true
   config.assets.digest = true
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "http://imperial15243.herokuapp.com/" }
   # >..<
+
 
   # Compress JavaScripts and CSS.
   # config.assets.js_compressor = :uglifier

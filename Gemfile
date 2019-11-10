@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.5'
 
 # >..<
 # gem 'webpacker', '~> 3.5'
+gem 'sendgrid-ruby'
+gem 'figaro'
 gem 'sticky-rails'
 gem 'superfish-rails'
 gem 'jquery-easing-rails'
@@ -32,7 +34,6 @@ gem 'wow-rails'
 gem 'font-awesome-rails'
 gem 'erubis', '>=2.7.0'
 gem 'haml', '>=4.0'
-
 
 
 # Use Redis adapter to run Action Cable in production
