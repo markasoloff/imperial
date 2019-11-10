@@ -33,6 +33,16 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "http://imperial15243.herokuapp.com/" }
   # >..<
 
+  ActionMailer::Base.smtp_settings = {
+  :user_name => ENV['SENDGRID_USERNAME'],
+  :password => ENV['SENDGRID_PASSWORD'],
+  :domain => 'heroku.com',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+  }
+
 
   # Compress JavaScripts and CSS.
   # config.assets.js_compressor = :uglifier
