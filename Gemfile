@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.5'
 
 # >..<
 # gem 'webpacker', '~> 3.5'
+gem "loofah", ">= 2.3.1"
+gem "nokogiri", ">= 1.10.4"
 gem 'sendgrid-ruby'
 gem 'figaro'
 gem 'sticky-rails'
