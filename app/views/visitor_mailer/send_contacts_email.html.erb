@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hi from <%= @contact.name %></h1>
+    <br>
+    <h3>Sender's email address: <%= @contact.email %> </h3>
+    <p>
+      This sample mail was sent using smtp. 
+      
+      Sender's message: <%= @contact.body %>
+    </p>
+  </body>
+</html>

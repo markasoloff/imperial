@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'contact_form/new'
+  get 'contact_form/create'
+  resources :contacts
   # STEP 1: A ROUTE triggers a controller action
   # verb "/urls" => "namespace/controllers#action"
 
@@ -27,6 +30,6 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy' 
 
 
-  resources :admins, :sessions, only: [:new, :create, :destroy]
+  resources :contact_forms, :admins, :sessions, only: [:new, :create, :destroy]
   
 end
