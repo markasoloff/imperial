@@ -588,13 +588,7 @@
         </div>
       </div>
 
-<!-- 
-   <%= simple_form_for(@contact, html: { class: 'form-inline' }) do |f| %>
-     <%= f.input :name %>
-     <%= f.input :email %>
-     <%= text_area :body, size: "60x12" %>
-     <%= f.button :submit %>
-   <% end %> -->
+
 
 
      
@@ -627,6 +621,15 @@
       </div> -->
     </div>
   </section>
+
+  <!-- Set the action parameter to your FORM_ID. --> 
+<form action="https://smartforms.dev/submit/5dd9fbdded25000605199d01" method="POST">
+  <!-- You can include any type of input here. Just don't forget to set the name parameter. --> 
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <input type="text" name="message">
+  <button type="submit">Send</button>
+</form>
 
   <!--==========================
   Footer

@@ -1,5 +1,22 @@
-<h1>New Contact</h1>
+<h1 id="page_title">Say Hello!</h1>
 
-<%= render 'form', contact: @contact %>
+<div class="skinny_wrapper wrapper_padding">
+  <%= form_for @contact do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, required: true %>
 
-<%= link_to 'Back', contacts_path %>
+    <br>
+
+    <%= f.label :email %><br>
+    <%= f.email_field :email, required: true %>
+
+    <br>
+
+    <%= f.label :body %><br>
+    <%= f.text_area :body, as: :text %>
+
+   
+
+    <%= f.submit 'Send Message', class: "button" %>
+  <% end %>
+</div>

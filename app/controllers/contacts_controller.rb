@@ -6,32 +6,18 @@ class ContactsController < ApplicationController
 
  def create
    begin
-     @contact = Contact.new(params[:contact])
+     @contact = Contact.new(contact_params)
      @contact.request = request
      if @contact.deliver
-       flash.now[:notice] = 'Thank you for your message!'
+       flash.now[:error] = nil
      else
-       # render :new
-       flash.now[:notice] = 'Something went wrong. Message not sent.'
+       flash.now[:notice] = 'Cannot send message.'
+       render :new
      end
    rescue ScriptError
      flash[:error] = 'Sorry, this message appears to be spam and was not delivered.'
    end
  end
-
-  def edit
-    @contact = Contact.find(params[:id])
-  end
-
-
-  def update
-    @contact = Contact.find(params[:id])
-    if @contact.update(contact_params)
-      redirect_to contacts_path
-    else
-      render 'edit'
-    end
-  end
 
   private
 
