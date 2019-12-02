@@ -19,6 +19,7 @@ require "font-awesome-rails"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module Imperial
   class Application < Rails::Application
     config.generators.assets = false
@@ -26,6 +27,8 @@ module Imperial
         config.generators.helper = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

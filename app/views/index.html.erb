@@ -22,8 +22,6 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
 
-
-  <link href="<%= image_path('favicon.ico') %>" rel="shortcut icon" />
   
 <%= javascript_include_tag('application')%>
 
@@ -70,13 +68,10 @@
 
 
   <style> 
-   @font-face {
-     font-family: "modernSans";
-     src: url(ModernSans-Light.otf);
-  }
-
+ 
   h1, h2, h3, h4, h5, h6, p, a, div, article, button {
     font-family: "modernSans";
+    src: url('ModernSans-Light.otf');
   }
 
 
@@ -110,7 +105,8 @@
   <section id="hero">
     <div class="container">
     <div class="hero-container">
-          <h1 style="font-family: modernSans; font-size: 4em; font-weight: lighter;"> 
+          <h1 style="font-family: 'modernSans';
+  src:url('ModernSans-Light.otf'); font-size: 4em; font-weight: lighter;"> 
           FarSight Technologies</h1>
       <div class="wow fadeIn">
         <div class="hero-logo">
@@ -150,16 +146,13 @@
   Header Section
   ============================-->
   <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <a href="#hero"> <% image_tag("templogo.png") %></a>
-       
-
-
-        <!-- Uncomment below if you prefer to use a text image -->
-        <!--<h1><a href="#hero">Header 1</a></h1>-->
+    <div class="container-fluid">
+      <!-- <nav class="navbar"> -->
+      <div id="logo" class="pull-left" >
+        <a class="navbar-brand" href="#" style="transform: translate(0%, -30%);"><%= image_tag("farsight-logo_white.png") %>
+         </a>
       </div>
+
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -230,7 +223,7 @@
   Services Section
   ============================-->
   <section id="services">
-    <div class="container wow fadeInUp">
+    <div class="container wow fadeInUp" style="margin: 0;">
       <div class="row">
         <div class="col-md-12">
           <h3 class="section-title">Our Services</h3>
@@ -238,14 +231,11 @@
         </div>
       </div>
 
-<!-- <div class="container wow fadeInUp"> -->
-     <!-- <div class="container"> -->
 <br>
 
   <!--==========================
   Card test Section
   ============================-->
-<!-- <div id="flippy-section"> -->
   <div class="container">
   <div class='row'>
     <div class='col-md-6'>
@@ -492,12 +482,6 @@
 
             <h4>Arnold White</h4>
             <span>Chief Executive Officer</span>
-           <!--  <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div> -->
           </div>
         </div>
 
@@ -508,12 +492,6 @@
             </div>
             <h4>Sarah Jhinson</h4>
             <span>Product Manager</span>
-           <!--  <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div> -->
           </div>
         </div>
 
@@ -524,12 +502,6 @@
             </div>
             <h4>Rex Anderson</h4>
             <span>CTO</span>
-            <!-- <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div> -->
           </div>
         </div>
 
@@ -540,12 +512,6 @@
             </div>
             <h4>Amanda Jenson</h4>
             <span>Accountant</span>
-            <!-- <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div> -->
           </div>
         </div>
 
@@ -593,6 +559,7 @@
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
+            <!--  submits form data to form-data.com -->
              <form action="https://www.form-data.com/_functions/submit/ja9ip3swulz10ekj76sgi" method="post" role="form" class="contactForm">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
