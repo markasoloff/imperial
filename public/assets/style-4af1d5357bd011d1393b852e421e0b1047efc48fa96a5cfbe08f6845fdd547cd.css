@@ -7,6 +7,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 .lr {
   color: white;
   font-size: 16px;
@@ -16,7 +17,7 @@
 
 @font-face {
   font-family: 'modernSans';
-  src:asset-url('ModernSans-Light.otf');
+  src: /assets/ModernSans-Light-20074ac0c3dba20600e2d5db7c3d650b343d13f7e39f3dba4d9a15701db7840f.otf;
   src:asset-url('ModernSans-Light.eot');
   src:asset-url('ModernSans-Light.eot?#iefix') format('embedded-opentype'),
     asset-url('ModernSans-Light.svg#ModernSans-Light') format('svg'),
@@ -30,7 +31,8 @@ body {
   background: #fff;
   color: #111;
   font-family: "modernSans";
-  src: asset-url('ModernSans-Light.otf');
+  // src: asset-url('ModernSans-Light.otf');
+  src: /assets/ModernSans-Light-20074ac0c3dba20600e2d5db7c3d650b343d13f7e39f3dba4d9a15701db7840f.otf;
 }
 
 a {
@@ -54,7 +56,8 @@ h1 {
   text-align: center;
   // font-family: "Raleway", sans-serif;
   font-family: "modernSans";
-  src: asset-url('ModernSans-Light.otf');
+  src: /assets/ModernSans-Light-20074ac0c3dba20600e2d5db7c3d650b343d13f7e39f3dba4d9a15701db7840f.otf;
+  // src: asset-url('ModernSans-Light.otf');
   font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
