@@ -13,18 +13,11 @@
   z-index: 1;
 }
 
-
 @font-face {
-  font-family:'modernSans';
-  src: url('<%= ModernSans-Light.otf %>');
-  src:asset_path('ModernSans-Light.eot');
-  src:asset_path('ModernSans-Light.eot?#iefix') format('embedded-opentype'),
-    asset_path('ModernSans-Light.svg#ModernSans-Light') format('svg'),
-    asset_path('ModernSans-Light.woff') format('woff'),
-    asset_path('ModernSans-Light.ttf') format('truetype');
+  font-family: "modernSans";
+  src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
 }
-
 
 body {
   background: #fff;
@@ -43,16 +36,19 @@ a:hover, a:active, a:focus {
 }
 
 p {
+  font-family: "modernSans";
+  src: font-url("ModernSans-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-size: 1em;
   padding: 0;
   margin: 0 0 30px 0;
-  font-size: 1em;
 }
 
 h1 {
   text-align: center;
   // font-family: "Raleway", sans-serif;
   font-family: "modernSans";
-  src: asset_path('ModernSans-Light.otf');
+  src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
@@ -62,7 +58,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "modernSans";
-  src: asset_path('ModernSans-Light.otf');
+  src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
@@ -70,10 +66,23 @@ h2, h3, h4, h5, h6 {
 
 li {
   color: #111;
+  font-family: "modernSans";
+  src: font-url("ModernSans-Light.ttf") format("truetype");
+  font-weight: lighter;
+
 }
 
 ul {
   color: #111;
+  font-family: "modernSans";
+  src: font-url("ModernSans-Light.ttf") format("truetype");
+  font-weight: lighter;
+}
+
+article {
+  font-family: "modernSans";
+  src: font-url("ModernSans-Light.ttf") format("truetype");
+  font-weight: lighter;
 }
 
 
@@ -455,8 +464,9 @@ ul {
   display: inline-block;
   color: #fff;
   font-family: "modernSans";
-  src: url(ModernSans-Light.otf);
-  font-weight: 300;
+  src: font-url("ModernSans-Light.ttf") format("truetype");
+  font-weight: lighter;
+  // font-weight: 300;
   font-size: 14px;
   outline: none;
 }
@@ -1115,9 +1125,11 @@ ol li {
 }
 
 #subscribe .subscribe-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "modernSans";
+  src: font-url("ModernSans-Light.ttf") format("truetype");
+  font-weight: lighter;
   text-transform: uppercase;
-  font-weight: 500;
+  // font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
