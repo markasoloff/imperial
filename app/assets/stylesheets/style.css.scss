@@ -20,12 +20,12 @@
 }
 
 body {
-  background: #fff;
-  color: #111;
+  background: #333;
+  color: white;
 }
 
 a {
-  color: #03C4EB;
+  color: white;
   transition: 0.5s;
 }
 
@@ -39,6 +39,7 @@ p {
   font-family: "modernSans";
   src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
+  color: white;
   font-size: 1em;
   padding: 0;
   margin: 0 0 30px 0;
@@ -52,7 +53,7 @@ h1 {
   font-weight: lighter;
   margin: 0 0 20px 0;
   padding: 0;
-  font-color: #111;
+  font-color: white;
 }
 
 
@@ -60,12 +61,13 @@ h2, h3, h4, h5, h6 {
   font-family: "modernSans";
   src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
+  color: white;
   margin: 0 0 20px 0;
   padding: 0;
 }
 
 li {
-  color: #111;
+  color: white;
   font-family: "modernSans";
   src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
@@ -73,7 +75,7 @@ li {
 }
 
 ul {
-  color: #111;
+  color: white;
   font-family: "modernSans";
   src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
@@ -83,6 +85,7 @@ article {
   font-family: "modernSans";
   src: font-url("ModernSans-Light.ttf") format("truetype");
   font-weight: lighter;
+  color: white;
 }
 
 
@@ -154,7 +157,7 @@ article {
 .container{
   width: 100%;
   max-width: 100%;
-  margin: auto;
+  // margin: auto;
   position: relative;
   text-align: center;
 }
@@ -344,6 +347,7 @@ article {
 #header {
   background: #111;
   padding: 20px 0 2px;
+  border-bottom: 5px solid #2b73a5;
   position: sticky;
   position: -webkit-sticky;
   z-index: 1;
@@ -622,13 +626,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-title {
   font-size: 32px;
-  color: #111;
+  color: white;
   text-align: center;
 }
 
 .section-description {
   // font-size: 3em;
-  color: #111;
+  color: white;
   // text-align: center;
   margin-bottom: 40px;
 }
@@ -636,7 +640,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #03C4EB;
+  background: #2b73a5;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -644,7 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: #fff;
+  background: #333;
   padding: 80px 0;
 }
 
@@ -667,17 +671,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-content {
-  background: #fff;
+  background: #333;
 }
 
 #about .about-title {
-  color: #333;
+  color: white;
   font-weight: 700;
   font-size: 28px;
 }
 
 #about .about-text {
-  color: #111;
+  color: white;
   line-height: 26px;
   margin-bottom: 15px;
 }

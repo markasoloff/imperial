@@ -1,0 +1,1411 @@
+/*
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
+  Author: BootstrapMade
+  Author URL: https://bootstrapmade.com
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/* line 11, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.lr {
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+/* line 23, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body {
+  background: #333;
+  color: white;
+}
+
+/* line 28, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+a {
+  color: #03C4EB;
+  transition: 0.5s;
+}
+
+/* line 33, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+a:hover, a:active, a:focus {
+  color: #03c5ec;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 39, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+p {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  font-size: 1em;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+/* line 48, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+h1 {
+  text-align: center;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-color: #111;
+}
+
+/* line 60, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+h2, h3, h4, h5, h6 {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* line 68, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+li {
+  color: #111;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+/* line 76, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+ul {
+  color: #111;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+/* line 83, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+article {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+/* Preloader */
+/* line 91, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /*background: #fff url("/preloader.svg") no-repeat center center;*/
+  background-image: #fff url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSc4MHB4JyBoZWlnaHQ9JzgwcHgnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0idWlsLXJpcHBsZSI%2BPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9Im5vbmUiIGNsYXNzPSJiayI%2BPC9yZWN0PjxnPiA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiBkdXI9IjJzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgYmVnaW49IjBzIiBrZXlUaW1lcz0iMDswLjMzOzEiIHZhbHVlcz0iMTsxOzAiPjwvYW5pbWF0ZT48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgc3Ryb2tlPSIjZWJlYmViIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI%2BPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGJlZ2luPSIwcyIga2V5VGltZXM9IjA7MC4zMzsxIiB2YWx1ZXM9IjA7MjI7NDQiPjwvYW5pbWF0ZT48L2NpcmNsZT48L2c%2BPGc%2BPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ib3BhY2l0eSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGJlZ2luPSIxcyIga2V5VGltZXM9IjA7MC4zMzsxIiB2YWx1ZXM9IjE7MTswIj48L2FuaW1hdGU%2BPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIHN0cm9rZT0iIzAzQzRFQiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InIiIGR1cj0iMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBiZWdpbj0iMXMiIGtleVRpbWVzPSIwOzAuMzM7MSIgdmFsdWVzPSIwOzIyOzQ0Ij48L2FuaW1hdGU%2BPC9jaXJjbGU%2BPC9nPjwvc3ZnPg%3D%3D) no-repeat center center;
+}
+
+/* Back to top button */
+/* line 105, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  /* line 119, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+/* line 124, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.back-to-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+/* line 130, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.back-to-top:hover {
+  background: #03C4EB;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# LOADER
+--------------------------------------------------------------*/
+/* LOADER GRID */
+/* line 141, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.one {
+  width: 100%;
+}
+
+/* LOADER COLUMNS */
+/* line 145, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+/* line 151, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.col:first-of-type {
+  margin-left: 0;
+}
+
+/* line 155, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+/* CLEARFIX */
+/* line 165, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+/* line 171, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 175, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* line 179, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.row {
+  margin: 30px 0;
+}
+
+/* line 183, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.three {
+  background-color: #eee;
+  padding: 50px 0;
+}
+
+/* ALL LOADERS */
+/* line 190, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* LOADER 1 */
+/* line 200, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#loader-1:before, #loader-1:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 10px solid transparent;
+  border-top-color: #2b73a5;
+}
+
+/* line 212, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#loader-1:before {
+  z-index: 100;
+  animation: spin 1s infinite;
+}
+
+/* line 217, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#loader-1:after {
+  border: 10px solid #a2cae4;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+/* line 240, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero {
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/Earth-and-Sun-ead839928a1f456c5ef3762a6374b56f2264cef4a514799c7dbe33d3dd41f143.jpg);
+  background-size: cover;
+}
+
+@media (min-width: 1024px) {
+  /* line 255, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero {
+    background-attachment: fixed;
+  }
+}
+/* line 260, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .hero-logo {
+  text-align: center;
+}
+
+/* line 264, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .hero-logo img {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* line 269, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .hero-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 276, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero h1 {
+  padding-top: .5em;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 284, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+/* line 290, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero h2 {
+  color: #77abff;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  /* line 296, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  /* line 301, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero h2 .rotating {
+    display: block;
+  }
+}
+/* line 306, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .rotating > .animated {
+  display: inline-block;
+}
+
+/* line 310, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .actions a {
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+/* line 320, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-get-started {
+  background: none;
+  border: 2px solid #77abff;
+  color: #fff;
+}
+
+/* line 326, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-get-started:hover {
+  background: #77abff;
+  border: 2px solid #77abff;
+  color: #fff;
+}
+
+/* line 332, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-services {
+  border: 2px solid #77abff;
+  color: #fff;
+}
+
+/* line 337, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-services:hover {
+  background: #77abff;
+  border: 2px solid #77abff;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/* line 345, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header {
+  background: #111;
+  padding: 20px 0 2px;
+  border-bottom: 5px solid #2b73a5;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 1;
+  top: 0;
+}
+
+/* line 356, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo {
+  float: left;
+  z-index: 2;
+}
+
+/* line 361, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+/* line 369, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo h1 a, #header #logo h1 a:hover {
+  color: #fff;
+}
+
+/* line 373, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo img {
+  margin: 0;
+  max-height: 45px;
+}
+
+@media (max-width: 768px) {
+  /* line 380, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #header {
+    height: 80px;
+  }
+
+  /* line 383, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #header #logo h1 {
+    font-size: 26px;
+  }
+
+  /* line 386, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+/* .is-sticky #header {
+  background: rgba(0, 0, 0, 0.85);
+} */
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+/* line 399, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 405, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+/* line 413, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* line 418, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu > li {
+  float: left;
+}
+
+/* line 422, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+/* line 427, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* line 432, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+/* line 437, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+/* line 441, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 450, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+/* line 455, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#nav-menu-container {
+  float: right;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  /* line 461, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #nav-menu-container {
+    display: none;
+  }
+}
+/* Nav Meu Styling */
+/* line 467, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  font-size: 14px;
+  outline: none;
+}
+
+/* line 480, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+  color: #03C4EB;
+}
+
+/* line 484, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 489, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+/* line 494, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li:first-child {
+  border-top: 0;
+}
+
+/* line 498, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li:hover {
+  background: #f6f6f6;
+}
+
+/* line 502, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li a {
+  color: #333;
+}
+
+/* line 506, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+/* line 511, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+}
+
+/* line 525, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 530, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+/* Mobile Nav Styling */
+/* line 536, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+/* line 549, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 555, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li {
+  position: relative;
+}
+
+/* line 559, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+/* line 571, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+/* line 575, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+/* line 579, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 588, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #03C4EB;
+}
+
+/* line 592, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul .menu-item-active {
+  color: #03C4EB;
+}
+
+/* line 596, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+/* line 608, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+/* line 612, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+/* line 616, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Common
+--------------------------------*/
+/* line 625, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.section-title {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+}
+
+/* line 631, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.section-description {
+  color: #111;
+  margin-bottom: 40px;
+}
+
+/* line 638, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #03C4EB;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Get Started Section
+--------------------------------*/
+/* line 648, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about {
+  background: #333;
+  padding: 80px 0;
+}
+
+/* line 653, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-img {
+  overflow: hidden;
+}
+
+/* line 657, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 662, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #about .about-img {
+    height: auto;
+  }
+
+  /* line 665, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+/* line 671, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-content {
+  background: #333;
+}
+
+/* line 675, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-title {
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* line 681, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-text {
+  color: white;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+/* line 687, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-bullets {
+  margin-left: auto;
+}
+
+/* line 691, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Services Section
+--------------------------------*/
+/* line 697, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAkACQAAD%2F2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz%2F2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz%2FwAARCAEKAVsDASIAAhEBAxEB%2F8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL%2F8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4%2BTl5ufo6erx8vP09fb3%2BPn6%2F8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL%2F8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3%2BPn6%2F9oADAMBAAIRAxEAPwD8G6KTfRvr6GzMBaKTfRvoswFoNJvoUlwDg49aLMRJHE0WTwc1LHGSVOffFIx%2BU%2FSpYfmEY9v6Vuo9iKjaWhJASFP15r67%2FYN%2F4Iw%2FHX9vfT7XV%2FD2hW%2FhnwPO24%2BK%2FEEjW2nuuSGMAUGS5IIIxEp6ckV8kwR77gADjHT1r90f%2BDX79t7%2FAIT74E%2BJPgVrl676r4Edtb8OLM5LPpszYuIU9opjuAHaU1uoXS7nm4urOnTlUjuj2n9jP%2FggR8CP2REtNU1y2k%2BLPjKAKf7S163VNPtZO5t7EZQexlLnvgV9oajPuthABshhQRxRqAqQoOAqqAAqj0GBVvUyFbBxuztP0%2FxrIubgeaRu5I4rvw8ZqUlJaaWPk62IVaKfM2%2BpWvLjfGvy9ulc1qrFLgDr15rW1K6Ecf3jkdBXN6jeGUOT8uOhrri2ndHByqV4vbzI726KTKcfXnt6V%2FPX%2FwAFcf2a%2FwDhmv8Abp8V2VpF5eieJWXXtLKrhfKnyXVe3yuGFf0A6ldLKgXdlsc1%2Bdv%2FAAcA%2Fs8Q%2FEL9nvQPiJbWrSat4G1AWV7KnJfT7nIG72SYZz%2Ft1NRNxbtrc78ll7KvyXtfT1PxyntsxL83f0%2BtUZ4CkrfMPXp1rbutLMcxycKF7Vm3VjtiznoTz9M15ko33PsYSbeplzPnbnHrVeSM5Yg8Z6Yq%2FcINq8dRmqsicnjjNc01Z2OynJWsQbz7fnSo29AamSJWXpUKo6DG09a55RSWhoLRRhv7how39w1NmAE4FN3H2%2FOlKsw%2B4an8lfSqjG%2B4yuJflz74pS3PalEJ8zG3jdn8KlESsfu8UuXUCDcfb86RpCo7fnVnyV9KPIX0q%2BRAQyRtEOoOTiiNDMuQQKkWVJzjr3p2BCh7DrT5EIgkVoiOQc0BT5e7I9cU9p436gn8KcSvlZ%2Fh69KXIgG2zH5%2BnX19qEgaNgcg4p0JRydvaluAWi4657U%2BVDFx8p5HNMggMLct2xUPkuOzfnU1wpdRtz%2BFMRLmimQArFz%2BtO3imMWim%2BYPejzB707MCH7U%2FoPzr6P%2FAGfJM%2FCPS%2F8AeuP%2FAEfJXzptQ9q%2Bjv2fIwfhHpfA%2B%2Fcf%2BlElc2JT5UVDc%2Bb%2FALKf7xo%2Byn%2B8acJ8z7efTpUldBBD9lP940j2%2B1Cdx4GanoPNAFdB5r4B7Z4%2FCpY4dkW2lCYk9qdQAiR%2BYWGcYxU8ZCsgyODj9DUDIGNS244j%2FX8jWtLciUeY0dNjEtznPfHH0r2b9hn9qXU%2F2JP2qfB3xO0wu48OXyjUbdDj7dYyHZcwn2ZGY%2BxGe1eM6fIsMm7khT2rSsrgREZDdzx6Hjr%2BNdcYvdHNOCd4s%2Frl0zxRp3i%2Fw1p2s6Jdxajoms2sWpafdxnK3NvMgljcfVWGR2II7VnaldiWXK9V5%2Btfnz%2Fwbyftln4yfsq3%2FwAMdZvRJrnwskX7CJD80ulTsSg9cRSFgOOAwr71v7uP5vpXfS95HwGJpSw1ZprToUtUmZE3ctjJwO%2FNY1%2FM3ksSpXI796tXN8iNj5iWPBFYOqah5MjKM5Pr%2BFUtGYSm220vMq6nPt6%2BnUV5%2FwDGj4b6f8b%2FAIV%2BJvB2on%2FRPE2mzWLMy5ETMP3bY9Q4U%2FhXY6lJ0PtzisG%2FuB5ZK7hg8E9q1TuRzSi41Fps0z%2Bczxt4OvfA3i3VdC1SN7bUdFu5tPuYn4ZWjbaT%2BJBrmNQAWD8T%2FI19q%2F8ABaj4FH4ZftZ%2F8JPaW4i0n4h2Y1AMq%2FKLyM7LhM%2BuSr49JBXxpPGbcneueexzXBUp6H6DhpqrTVWPUxLq2Ee35j%2FhVOYhUcZzz61oXdszXLdOvrVO4tWG%2FgfgelcM6Wu52xhfUgU4FLTWTaDkY49adWEo8p0ATgVDDcGSTBxg1MeaQIAelSIgkuWSUjjANWKTYCelLQAUUUUAGcUZpH5x9aDGDVxhdXGQWjfMP93%2FAAqaX5kI9aXYKNlV7ICL7Px96nCPMO3OKfso2UeyYDIIhED9fWpN1Jso2UeyYAeRQoCmjZRso9kwBj8p%2BlLik2UtaQjygFFFFWIK%2Bif2fR%2FxaPS%2F96f%2FANHyV87V9E%2Fs%2B%2F8AJI9K%2FwB6f%2F0fJXLivhRcNz5y8j5t2Tnr7U7Deop1Fb8kexI3Deoow3qKdRRyR7ANw3qKRiVHUflT6RxnHsc0ckewDN5%2FyKnsRvbk9BxQk%2Fmg8dBmpIoiCG%2FGrjD%2BVGVRvoW7ME3Hlk8N1%2Fz%2BFatpCrDdzkHjmsq0IE28nG3jHrWrbXKy4ORxXXThLQ53e1z6B%2F4J3%2FtRyfsZftdeEvGrTSR6KtwNO1xAcJJYzkJIz%2BuzIcD%2FAGa%2Fopvr23uo%2FOglE9tMoeCVTxLGQGVx7FSCK%2FlxtZ45ch9rJtIZT0I7g1%2B23%2FBF%2FwDaz%2F4X5%2ByNbeFtSvDP4k%2BGpTSZndsyXFjybaU9zhcoT%2FsiuyEVHXufM59S5oKr2PsC9uyqqwPA5APWsTUr8zuzDqtWLi%2FEcabvve9YWqahsikK9sZHrV1IJJuW3keBTa5ko%2BSIbm4Y3AyR054rI1C92xnJzz1FRP5v2oyPKSkoztJ6e1Zt%2FPv3gOqY%2BbngY781zYOu61JVJQcb9Ga5lhvY1fZOfMfMn%2FBW%2FwCB6%2FGf9kLUb%2B3gV9X8BXS6%2FaMB%2B8lt8CK7jHsYykn%2FAGwr8fb%2B1bYMYIz1x1%2FyK%2FfjWNStPEdnPZm3%2B22l5HJa3S79kTxSIySJu77lJXj%2B9X4iftCfCs%2FBH40eJvB8kMqDQdTltrfecloCS8Bz3zEy8%2B1aOhy%2B7q%2F%2BH2PfyfHe0g4aK1rJem55bf2aRyMQG9eTWbPAGiLHOSM10GotmZvc5rNvgU2e1c1Sk76I%2Bhi3YxJoASOW%2FKq4cgdfzFa10x8xfpVFpTGh4zzXI6be6N6TdyBWLd%2F0pcN6ilD%2Ba5bGOMUtR7OO1jYbhvUUYb1FOopckewDcN6ijDeooMhzSeYT2qvZLsAoUk8mnU0FmPpTvLf1FUqbWyAKKPLf1FHlv6inySAKKPLf1FHlOe4o5GIKb5o9%2FwAqcbd%2FWpMMBRySI9pEh8we%2FwCVHmD3%2FKpvmo%2BajkkHtIkPmD3%2FACpsgaU%2FISPWrHzUFSaOSQe0iV41YuoJb0NLOhjbALdKnwSe%2FNByB1Na8qD2kRq2%2B5erfnX0V%2Bz%2FABAfCXS%2Bv3rjv%2F03kr56FuzL979K%2BifgAn%2FFptM%2F37j%2FANKJK48alyIuEk3ofN2%2F2P5Ub%2FY%2FlU%2B9aN611ezGQb%2FY%2FlRv9j%2BVT719qN60ezAg3%2BxpN5%2Fump8hm%2FCnbKPZoxlUadiqS2TjIzVmDc2wEtjHI%2FCljiMrHnGParCJsUD0pqKRnKTY%2BOASI5I5B%2FpV1LdYyoUcdxVS3P7qT%2FPatCLmVfoa7aWyINPTl%2Fe%2FdPQdq%2BmP%2BCYP7UEn7Kn7XOh6tdS%2BX4d8QgaHrJc%2FKkMrARy%2F8Ak2knsCa%2Bb7MYZv93NatoovbZo3X5XXaQD1zXdBKUWmc2IoxnScJbM%2Fo5vbgrM2RlUOBxWNeX6vv8sZ57V87%2F8ABOL9qi6%2BPn7JWjzan9s1fxV4Vc%2BG9R%2BdfMuWiRTBcMc5HmQlCzMPvJJ1xXsmoW0uoKw1G4R4webW2Bjhz%2FtOMPJ%2Bg68Htzwi4Q9ne%2FmfC4%2BLp15QirJ9BNY8VGZzHZwm9kBG8o%2BIozju%2FQn2Gax720bUAPtzCdQd32dDtiB9%2B7fjV66vI7WFI4o0jSNcKsSgbB7eg9qwbvUd9ySjbo%2Bm48VlLEU4zVKcvelt8updGg6lJ1OX3ae%2FnfZBqU4I2BFQY4AHAFfnx%2FwWH%2BDy2fjjwx8QLeMGLWbc6NfsF48%2BBWeIsfUxZA%2F651986hqGXPyduu7hfc%2B1eH%2FtmeGbX42fs%2F8AiLwxa5utS2Jf6bID8lveW581P%2B%2BgCn%2FA6utVpU0pVKiitrd7nRlTnCry06XNfr2XY%2FJXUdLUOeOlY1%2FafMowc8gGuzuYUniD%2BWUDjIU%2FeX2PvWHqNsgC44rrdHRpn2vOr2RzVxYksPn5qlJbKM5QkZ61tva4nYbumO1ULu32Qsc%2Fxf1rzpUEuprGVjMkt038JxjtUe2P%2B6aujAX86rqRgciuWVNczL9qyLbH%2FdNG2P8AumpuPUUcf7NL2aD2rItif3aVSI%2Fu5FPIB7ijC%2B351Ye1Y0ybh3pTNnpS4X1FDAFf4aNA9qxS5UcqfSk8%2FwBqV5fMx90c5PNLHb%2Bauc98dKQe1Y3z%2FagPvb9Kk%2Bx%2F7X6UfZCP4v0o0B1G9BKKd9lb%2B%2F8ApR9lb%2B%2F%2BlBkRxlMtv65pX2ZGzrnmnG0JP3v0o%2Bx%2F7X6VtGmmrgJQTil%2Bxn%2B%2F%2BlPht%2FLJyc5o9ku4yLf7H8qC2R0P5VY2D0o8selP2SArbmH8T19E%2FAAkfCbTOv37j%2F0okr5%2F2Adq%2Bg%2FgCf8Ai0%2Bmf79x%2FwClElcOOppQVu5pT3PnPyT%2FAHT%2BdHkH%2B6fzqzk0ZNdfs5GZW8g%2F3T%2BdHkt%2FdP51ZyaMn0o9nICsImU%2FdP50u18fdqxk%2BlIxOKPZyCxWMTHsfwNWY1OwZJzjmnDpQTiui1wH26ZSTPOD%2FStCGJRIvHUVQtBuD88Z5%2FKrliTKgbdz0%2FStIxdzCW5pWDgOVJbPbmtnSm8twGyDWHZZWb71bNjkuGPOTiu%2FDprRnPVbPqf%2FAIJeftKt8Af2m7W0vZ1i8PeNVXRtRMjkLHIWLWsvoNkhK%2B4lev1a1K5dTICoyOPb8P1r8FoYvPhkUllyPvL1X3HuOo98V%2Btv7LH7V9p8Yv2aNB17VLrfr9rGdM1iENmV7yIDMgXssqMkn1dh2qcxpqklXcrR6nz2aUOb%2BHHmmz2TUb3K4AQsFGfWuT8VeP7PSZPLP%2BkTqMCOJuAf9o9MfSuQ8S%2FEe91%2BUxRFrC2bgonLv%2FvN%2FhXPkGNsA54zmvi8w4giv3eGV7dT0Mv4dm7VK8rX3ia2t%2BLb3XpP30gSNukMXCge56ms5ZfKcMOqcj8OaiLEDsKT7UEOM96%2BXrVqlWfPVfMz62hQhSXJTVkfnj%2B1l8Jv%2BFW%2FG3WLKOJYrC9f%2B0LLaOBHKdxA%2Bj7v0ryLULADa3U88GvtT%2Fgop4DXW%2FDGleJbdMzaZL9jujnOYZPuH8Hx%2FwB9V8c6jZOpH1OK%2FV8rqRxmChUW60fyPGr0lTrckTldSt2G47f1xiqE1qXQ%2FJ%2BfetzULN%2Fn9%2BKzZ0eGDJx2p1YRi7I0uY80B8z5FwMcgf596jECHnAqzLG6yfJyCO9RzQ%2BQgIJOTiuVwdzaOxH5Cf3R%2BVHkJ%2FdH5Uu4UbhU8j7DE8hP7o%2FKjyE%2Fuj8qXcKNwo5H2ATyE%2Fuj8qPIT%2B6Pypdwo3CjkfYBPIT%2B6PypVj29OPpRuFI3zED1PNHI%2BwC7fc0bfc1N9i%2F22qEff25P3se%2BKPZ%2BQw2%2B5o2%2B5pZ18iXGSflzz61ItnuUHc3IzR7PyAiC4NLUv2L%2FAG2o%2Bxf7bU%2BRiIqACzYUZx1qX7F%2FttT4bfySTknPrRysCspz%2BBxS1ILXeScsMml%2Bxc%2FfauhUmBFyWAAyTX0J8Aoj%2FwAKo035f47j%2FwBKJK8BS18uUHJOK%2Bg%2FgGpHwp03B%2F5aXH%2FpRJXnZlTapL1NKe587%2BTJ%2FdH50eTJ%2FdH51Z84ejflR5w9%2FwAq9X6vEzK3kyf3R%2BdHkyf3R%2BdWfOHv%2BVHnD%2Fa%2FKj6vECt5Mn90fnR5Mn90fnVnzh6N%2BVHnD3%2FKj6vECt5Mn90fnSpEwcFgMD%2FA1Y84e%2F5UeYG7H8qaoJAMPyk8Y4q1EfKZf6fhUKRrLknPpzU8Z3uo549RVqkrmMty5EDgHHU9a2dPm2IMqeTgVjxsTH368cVp6dIcJu%2FveldtKmr3M5RT3Og0k7osj6jP4177%2Bw98VH8CfEo6VcuEsPE8Yt2P9y4TJib8csv%2FAAL2r590mQhDzgD%2FAArf0i7mt5IZYmZZYSJI3XgxsPun88V6NTAQxuFnhZL4lb%2FIxUvZz5kfpR%2FaDA9cc9M0yTVTG3%2BBrg%2FhV8Q0%2BJPgPTNVRgJpY%2FKukHSOdeHA9uhH%2B9W%2FNKxk%2B92r8Iq4d0qkqU94u33H0cZqcVJbM2Z9ZxH1PX1%2BtU5tZy55rOaQuv3uM9hVLUp0s1WeSULb5ClupLdgB3%2FCo5EMb490SDxx4M1LR7viDUbZ4GYjOw4%2BVvwbB%2FCvz71nRLnSb6SznUpcWsjRSqw5DKcGvva61a5vXYKfskRBw%2BB5kg9QOQn45J9q%2BXf2p%2FBzaP8AEQ3yZMOtJ54ZjzvHD5%2FIV9xwPieWvUwkvtao4MwXuqa6Hheq27x7unJyOaxL%2B1dCMkcAcV1uqadu3BiB%2BNYt7bRsVBz0xxX3NXDPmPOhNvc5y8t2aPbxnrmq%2FlswxhTWze2H7%2F5OBiqH2cp97%2F69efUwru5Gyk0UXGw%2FcFKcf3BU88CmZuv%2BNMEC571g6Dew%2BdkYGf4BSf8AABU8do24HP7vP6VPHAkZOBn8aXsei3DnZUEWR9wUeQf7qVaFoScjHqKX7K%2B3r%2BNaxwkmg52UN3%2FTMUucH7la7afhj0pPsB%2F2ar6mxe0Zl%2Bc392kU7m%2B5zWr9gP8As02S2VUPXPrij6kx87M9oHY8qKGLovQcVa8pf9qlWFQ3ej6mw52VEZnHQUuH9BVp4lLcZ6dqYJMLyDn6UfV49Q52QYf0FGH9BU%2Fmj3%2FKgyA9j%2BVHsIBzsgWN8cAUvlyeg%2FOpvNHv%2BVHmj3%2FKr5EHOyEpIB0H51778BSV%2BFWnf9dLj%2F0okrwjzR7%2FAJV7v8Bh%2FwAWr07%2FAK6XH%2FpRJXmZrFexXr%2BjNqDu9Twnyj%2FzzP6UogLHoF%2BtXMZONvzelNeHn5l%2FMV7LhJHOVfs3ulNEJyeM%2B46Vc8hSeFzThCQP9Wfyq%2FYzApNAV9G9hQsBYfwj2NXVt9p%2F1Z%2FKkNtuP%2BrP5UexmIpmEqegb6dqPKP9xv0q6sGz%2FlmfypfLP9w%2FlR7GYFLyDIp6L25qUJvIX25qZ4hn5lxSeT5fOzHbNONGSdwbsrk%2BnLldnvnNaUZzcD0z%2FSqFnGNgIHfrWlDEpfPOPWuqnB3uZ%2B1RpaWM%2Bd%2FvGt3SpfK29%2F8A63%2F66wrAAPJjpmtvTlyU9a9rCxdrnJUnGzPef2RPHR0TxZcaJc3AFpq6h4t3RJ1HAH%2B8Dg%2FSvoprpYt2RtVBk5OAPc54H518S%2BHL06fqFtcxNtmtXWRTnBG05r6y0HxFb%2FELRrfVwzGK7QYgJ3RwSAYYEDqa%2FNvEDJpUcRHH0lpU0fqv%2BAevlWK9pD2ct0L42%2BKWneEtP82e5ghXqjOGczHniKMDdIffhQccmvD%2FABx8atZ8WXLRaZHNYpOfIyHV7y5%2F2CUB2epCAc9TXefHTwdY69qdnqkuoxaeEhFtcSSpuklQcr5ajlmByMdMYrgG8TweHbea30C1exaQbZL%2BUBrycex6R%2FRa9PhLIcJUw8MRh6bq1nu5K0Ia21fX5XZjj8XNPknK0fJ6nWeCPH4%2BFPgKGw8StIl2kpe3tg%2Fm3axk9ZR%2FB1%2FiqX9pHw6niz4f%2FbIgJ5NMIuVdecwsMHH4HOK8sa2JMhKFvNbdJuyxkPqSeterfDbWV1vwSLWY72tw1tKGOTsKkD9DT4l4deU1KWb03zNTvPSys%2By6LsZYPMPrClh5dtD5g1e0WRiAvQA%2FnWDeWGyQHaR8teheKfDL6Pqt5ZlSDbSGPOPveh%2FLFc3f6awkzgnjpivu54eFWkpw1T2OTmV2mceVdpG%2BXvWfJaO825iF7c109xpx8tjjYc49%2BlZ9xArJgjvXlSwOmxvGtG1jAntiJzyP8KRrXcfmwfTFatxpqySFgKZ%2FY%2F0%2FOuSWFt0L9qjM%2ByZGOMdMVNb6fkH5O%2FtV6HThHMpxnac%2FWr0Fvuz8h61pHA32G6kUrmVDp480fJ2qdtMGPuY%2FKte20l5JOAee1XItBYxfcauiGXPsZ%2B3iYp07J%2B4aP7N%2F2D%2BldP8A2OWbhM0h0dg2NhzW39ly7GPNHucz%2FZv%2Bwf0ps2n4iOVNdRJo5j%2B8mPrVW40psN9al5c09UHMrnN%2F2bx90%2FpVN7RlJyuRnpXST6Y6kdcVRayZ8896wqYE2VdMyVtflJHy47GoJFMqjt35Na1zp5Zuvb1qkLEQjLE88da5XhkuhftUVPs59V%2FWj7MfVatvAhUheWIIH17VCLN%2F7slH1byD2yIvs59V9utH2c%2F3l%2FWpY4Nso3BsZ5zTrmAcbQenal9WXYftkQfZznqte6%2FAiI%2F8Ku0%2F5h%2FrLn%2F0okrxSe1Cw52nORXt3wNTHww0%2Fj%2Flpcf%2BlEleTnWHtQTt1X5M3w9ROR4qtk4mLe5OKJrOSVgfT2rT2t6Uu1vT9a%2BteDb3OD267mVHZSRvu9Km2yY6fpV%2FafT9aTa3pVfVJB7ZfzFHZL6fpRsl9P0q9tb0o2t6UfVZB7dfzFHZL6fpRsl9P0q9tb0pdrego%2BqyD2y%2FmMuezec59sdKeYHwMrnFaG1sdKcikPkjij6rIHWW1yrbw%2FugM7cnpV%2B2gzlcjFKkW7B21bhKhjx19q1pYWRjKtGO2oWlu0TcDIatvTraQmPjrzVS0iKdRwelbWnNhU617OFwz5dzknVhvbU0NNt97jnn0r2f9njxS%2BnPPo0zkJcf6Rb5PCyD7w%2FEfyryjSojnOPf8K6fQnks7%2B3uEzvgdZAPUjt%2BNdGc5BHM8uqYOT1a09en4%2FgTRx6oVo1Etju%2FjN4cZ9at9QUuwlQwtuOQrD0HbP8ASuOXT8ryv616hqs8firQeBt%2B0J5san%2BFxzt%2FPj8a5S20Z5IUyvzYyx9PrXi%2BGOZSxOAnl2I%2FiYd2s%2F5bu343Jz%2BgqVaNdLSZzX9nZP3R%2BdbXgWc6VqhjfiK8GMf3mXkVYXSjfgiHG3ODKR8g%2Bnr%2BFTQaO2nQtcMdqxL5jSyHG0euewr1M8lhszpV8nwdqk7e9ZpKHZt%2BTWyMMPUqYZxxdVOKW3n8v8zB%2BLPhg3uqx3irzcrtlIH8Q6V55qXh%2BQfNs5xzXtF5s13To4TJEnnjzUaRxGCdpb%2BLHYVyeseFJIwcqwcDkHse9eP4dylj8p9jV%2BOk3B%2BaWz%2B7T5HpZvajiP8AEk%2FvPJbzQGaFvk71kXPh1hH9zvXqV14fkWFht5zmsq98OSK%2FK8V9PUyhq5wwxMVZnnDaL5bYIwaQ6Pn7qhvWu5n0BvNPyD8RTY%2FD0j52xj3rk%2Fsi%2B5t9dONg8PuzJ8ncGrlv4ectt2de9dfD4akkQfJ0HPtWpY%2BFsMmQelb0Mnk5pGVTFRsclp%2Fhdxhj9MVrQ%2BE2EfQnPtXaaf4Qfyu7DOcbaq%2BKtUtvDl4LCEJeaoSoa2R8mLPTdj%2BI9lHJ9q1xUMNl%2BHlicVLlgt3%2FAJLuZxqym%2BSC1OfuPDghjLtsiUHlmOB%2BdQWGjnU9%2FwBngknCELvCFVLHooJxk%2FSuv8O%2BDnubxLvU7lJvMnXyGLfu1RvlUIoH3TyAQCTg445rsrbQy0F8kskYWAAqxPliGMr8od8BUYEHIXJ9TX5bmPiO%2BflwNNJd5a3%2BS2%2B89ull65b1Hr5HkuoeBtVsWjFxot%2BPNPyBFEjD%2FeUcisp9A%2B0IxRW4YrICpUxN6MDyPyr6JtNInktdPjhiun3Mjs9ixaNgFyWLn7x%2BlZ3xR%2BHX9r29xdQfY4tQ0u3Ny4B%2FezLn5Y2HBYkBuuTxWWU8f1ZVlDMYJwe7jo18tia2AajzU2fO17ojRoykd%2BKxbnSRC%2F3c969IvtEMtsrpudHG5Sw6A%2F5NYepaKwPQdO1fqU8ti480dVZNfPVP7jyqeMd2jirjTvm%2B529KoXGmkoPk711N3puIuvftWTeaeQ2ctt6V49XBNNnZGtdXuYclmyNjZ%2BNAt2J5GPw61pSaYWYnLY69ai%2Bwgnqa5Xhn1L9r5lD7MT%2FBn39aUWueq49qvfYsd2pPsQz1NH1bzF7TzKf2b15r2j4KxbfhvY46eZcd%2FwDpvJXkf2EDu1eyfBqAR%2FDqyGf%2BWk%2F%2FAKPkrweIqHLhU3%2FMvyZ14Sp7%2B%2FQ8y%2Bwn%2B6Pyo%2BwH%2B6PyrqP7Cb%2B6fypP7Bb%2B6a%2FR%2FwCzTwPrMTmo9OLvjA%2FKn%2F2R7D8q6b%2FhHZD2pP8AhHZPSj%2BzQ%2BsxOa%2Fsj2FH9kfSul%2F4RyT0pV8OOGzt96P7ND6zE5n%2ByPYflR%2FZHsPyrrP7FbP3P50v9itn7tH9mh9Zgcl%2FZHt%2BlH9ke36V1v8AYrf3f50f2K392j%2BzQ%2BsxOVTTCMDA%2FKpTpXlyL8o6%2BldJ%2FYrf3ali0F0JylXHL7B9ZgZUdgRGPlH5Vp6bYEeX8o6dcVe0%2FRDlvk%2F%2BtW3p2ildnykV3YfA20aMpV4LUZpOnblA2gZHYV1GjaP8q%2FL29OlLo%2BiM2Pl7V1uieH2kUfL2xXu4XD029TzsRiY8waYG02JVKt5MuWRieAw6j8c%2FpVvSNHXVbmZGkbyo0adIf4WycHI789K6JvAb6pocyQjE5UNA392UEFfzI2%2FRjWD4X8L6x431Ce30yC4Roo1W6Pm%2BUYNzYG49QOCOOuK%2FG%2BJ8pq5PxTSxmEpSqUcR8cItrma3i7NaP3Xrpvc%2BiwWNpYvL5Uak1GdPq9l5lTX%2FALLpF79mjmhZ4htkBbi3PYE%2FdBPpms6DwzqPia8E3%2FIN0y0Bc3d8ucgcl4o84HA%2B%2B%2FTHANbXxW8ZeCf2YbAtrF1%2FautxxtLFYWyB2XjP3eQn%2B83PevPvB3wt%2BLv%2FAAUU1GystBsn0zw7dSLPEo%2Fd20kYILbjw03HX%2BH1rwswpZZhsfWxlaPNWnvh6Uv3cF%2F09qLS191F29EdFCtWnRhCMvcX25bt%2FwB1djR8OeINH8ffE2y0PQL2%2FvhoqNqN%2FqBlLJNkFURpMguCSTtHynFd5qXg8SH%2FAFbRgjO0gAr7dOvals%2F2YPDHwT8C%2FELSIPEU1t4ouddTRo7uOL7RHNYwRhbh0JOFZpWdYyvygIOtb%2BkeJbRLK3ggS5maILE013IpkujgAOwUAbj%2FAFr6ThXxRyTB05UMzXLNttuEfcVtFGNuiX2tbtnPmPD2MqT58MrrbV6vzPPr%2FwAEL5bfKevt%2FhWPqPg0PLyte329nZ6rOIHj8iVmxz93PHH1qW8%2BGMgmJ8h8DvX69lWY5TnGHeLy6opw66bPs0fK414jBVfYYqPK%2FwA%2FQ%2BfZvBC%2BY3y%2FrTLbwazZ2qO2c17tJ8N2ck%2BW1RW%2FwxdSf3R7da7fqVA4%2FwC0Tx%2FTvATuh%2BXqOa3NL%2BHu0p8gr1nSvhizJ%2Fq%2BorC%2BPWuR%2FAn4VX2ueWJL%2Fi206Fmx51y5wo%2Bg5Yn0FTjXgcFhp4vEytCCu35I2pYuVeoqNPWUtEePfFvxh%2FwhzLoOjlW1%2BaJppJoyG%2Fs5ACcgd5SM7QRx1rjfC9hpWgSx28d1GsrYfaLja9y7DksQwLFvmUt97Dt6Ve%2FY3%2BAHib9tH9qPwx8OdHvri21HxheNdapqiDzGtbSEeZdXIzyWVAQi5%2B8UHev1F8FftK%2FBv9it9T%2BGPhT4O%2BFfEXg22e%2FivYNS05J9X8W2tpGxvLu4nmh3Rs5B8vMpG5CqxgYx%2FHHFXHFfO8a6%2B1NaQj2X6t%2FgfqOAyWGEp%2Bzl8XVn59%2BEtBuNaE0VvLJAt5H5TzIpVZSWVY3%2FAHTADhlHAAAG0FQCK9G03wUdaSMRptgv5dsDIv2iFYouCQpxEuX3DgscbeSeaxP2F%2FF2nftD%2BEJn02yurRtCnWCSAv50hWdmW3eN9rEyFfk3AA55NfSdp8LUmjlDoqRXDbLhxeM3llCVEMW8dPlByOpJ9a8I3lCyueIHwmr3LXktvNLsTyrRZ7kKLgfxMI14wx4HHAFTaN4eGk4na20%2B2u5pv3ixJy0hGAv3egHH0Ga9n1z4YPZL9ouLG5je0JWFAqtggcHAxnI6DtWTeeEorAx6vNIsMYUYjZTtC4ycf7Wep6dq6IfCQfHd74XSwE0AjQCOZ0BUcHDngewycetcpq2jB5CNvqK9t8Q%2BGmkSVpFOWckHs2SWyPzrh9a8NeUNwX2r%2BxMuwTjl1FVPi5I39eVH5xLEx9rPlfU8m1PRQoIxxmsa80rzMqVGF5BxivRtY0MjPymsO70gpK3ynpXBiMBzLmO2liY6XOGbTT5bfKOh5xUH9nnPRfyrq5dELbnwMDnHeov7NOfu%2FpXnSy652RrQZzP9nn0Sj%2BzuPup%2BVdD%2FAGPtm3be%2BelLLo5kP3f0qf7MK9pE53%2BzyOyV6n8KYPK8C2i%2F9NJun%2FXZ64v%2Bw2J%2B7%2BlejfDewMPg62XkYeXj%2Ftq9fNcVYDkwcX%2FeX5SOvA1Y%2B1a8v8iT%2FhB2%2FwAig%2BB39%2Fyr6gj%2FAGd7iRgPsePwqQ%2Fs4XP%2FAD6fpX6d7Wgt2j4tY2L2PmMeCD6j8qUeB2I7flX1AP2Zrkj%2FAI9x%2FwB8mpYf2aLpU4tc%2B4Bpe2w66oieOjbQ%2BWv%2BEFfPb8qB4Ef2%2FKvqmP8AZmu5Gx9k7Z6U7%2FhmG7P%2FAC6fpU%2B3w%2FdGX14%2BVD4EfHb8qX%2FhApD%2FAPqr6r%2F4ZgvP%2BfT%2FAMdNWE%2FZfvCg%2FwBFHT%2B7T9vh%2B6J%2BvrufJn%2FCBy46fpUo%2BHxr6v8A%2BGX7sf8ALqP%2B%2BTSf8Mv3n%2FPqP%2B%2BDUvFYZbyRX1%2BPc%2BUR8PyDTv8AhAnY%2FwD1q%2Br0%2FZZvHGfsq%2F8AfJp8X7Ld5Gc%2FZR%2BCmo%2Bu4T%2BZAscnsz5X07wDLkjH6VvaZ4Bm%2BT5T%2FwB8%2FSvpnTf2Wrx1P%2Bjf%2BOmuh0X9lW5wM2zHp2NKWY4WKupoUsXJrQ%2Ba9G8BSuV%2BUn6LXd%2BGvhm8jJlSox0I6mvo3wx%2ByVcug%2F0ZcHnpzXpnhD9j%2BWTYWiZfYCvMxPEuCoqzkrnJOrUlqos%2Bb%2FCHwodgu5Dg%2B3uK6uL9lPTvEd6%2BpLpssOqvGqNqNkzRXJRBgKxH31H%2B0DjtX2D4L%2FY%2BkDqRbsD67a8z%2FbN%2FYKm0Hxt4N8b6l488a%2BGPCd%2FeWfh7UtL0ucW9vdX6zmfTS82M28ckoaIkYDyyQISN1fCcReIOEpUG5Q57dPkdOVYKtXxUaXM4X62Z8c%2BK%2FwDgj5N4f1zVfG2k22ieJdYuJGubfRvEdxKI5pivyn5MjjAIVuDXl2m6Jrfw3vv%2BEg8YT61%2FwsG3DW1pbh%2FsWm6TERh0t4YztKEcZPXvX6mCci5d%2FLw0jlzkclgec55znt2xX56%2Ft3ahG%2F7TWppdW80lrD5aGOKTyzIpXJKtjgknrX87YjPa2JU6UF7OnJ35Y6L%2FADfzZ%2B24PLoU5Rc%2FenHS7t%2FSPGL7VrnVZGlnkkLPwQfrmpfBdqde%2BI2kWCt%2FzELbzQD1LSrhaV%2FDnh%2FV4SP7b1awl37VW8iDoF7ZeLHT%2Fc5r2f8AYK%2FY10nxd431HxFqnilf7F0XUrBzPZyxyyFjKzvJOJcGK3iSN3J27pMIikE15%2B2h7Lstzj9QO7UL5z%2FDcy4PTGGx%2FSvovwfo%2BmeIPD9iyXtm91cRpuiMvzFigJUKec18v%2BNvEkWgeHNT1HY9zFD5jxLnyzPl22dfu7srx1ANeyf8E%2FdG%2Fab%2FAG5des9e0JPhraw%2BG9xiXVNIEdpoyAGAsiR4e5fAGHOVz1INfe8CcTzyarU5dp8umvR%2Bq6HxfGmXRxdCDbso6v7vQ9Ul%2BC4SB55FjhiQbneQ7Y0A9WPAryj4l%2FGXwV8PpYofPk1ie5mjtYRahUt%2FNlDmMPO%2BEVXKFQ3IB69a%2Bt%2FGn%2FBEnxJ8fp3l%2BKnxS8SeIoGgEI0zRrVNM05OSWIjXOT0wx54r5u%2Fbg%2F4IT6N8PfCE95aWi6J8PvCAt7nWfFHirxdIpuIXZC8MUQQrEkQU%2FNguxJCADOf0nMPE%2FGcreFikv7z1%2B5f5n5vl2V4KdVU69RuXZRdvvdj4V%2FaH%2F4KZeOPBXjeWx8MWvgS3ttFaH7XBHMdSa8LLvZfNGF2qvDlOAe9eZfGD9q7xB%2B1vf6Pd6tp1hpFno8LLHZWcjPHLKxG%2BU55yVwAO3Nem%2FFvwJ4curXwv8NR4X%2BHPw3%2BH%2BkwXPjGbxZM015qvi2M2%2FnQWjlSJVknSW3RLZMHdNAX2814%2FwCEvAFzoSWkc1vHbtduDGtqA6q7NxCDnoBxk9QtfluecV5xjIzp18TKVObTcenklp3%2B8%2FUcoyzAUnGpTpKM49evqe6%2F8E5v2iPEX7F37Vnhr4j%2BGdJstbvNGimtrmwuHKpdWswVZV3j7jcKQ3%2Bz71zH%2FBQv4k%2FEL9p340eLbmy8GXugaXPPd3%2Bn2emySz%2BTaOzTtB5oPzKPnc57hscHFek%2FBHwDHoOjhpvvSR%2BczzR7Any4UbBzI2TwOmcZ6V9VfCfT%2FwCydTilEc%2B21Zp5B8pzsZZPKYdS8oYggduB1r5uOGuryPSq4mPN7up8T%2F8ABIz%2FAIJ56%2F8AtFWeqeOLLXNWhGnNu0zwxpeqPpmqa%2BivzcxHKrJboySRsAcgoW4ANfpf8B%2FD%2Bo3vgo6Zqer6D4u1bw%2BYIJWsrQi0smmxMsTyliXl8qRMkZGMHOTWJ8A%2F2T7H4YR6hbeEEXRvtmhrZ6bM7B5NAgupJTciLO4bvJmmiUcBgWyNxJr3X4V%2FDDTPhX8JvDnh2wd4rQhGSd23XV4vzOrzyMNzyBGUHPQYA4GK0pKafvGVaUWvdOG1XwJb6frdwI3ura%2FdUK%2BW26MnkEANkY9%2BtcJ8Q%2FCtxpnhm4juTaXMt48ltAFT%2FVRg%2FMcfjjNfQ2pmKzvbryI4jbR2wdnmQiNVySXJPPY8frWC%2FwAALvVrGTWbm2lR9TIkhgkXb5EPRcL2LfeP1FfT8NYOGIx9NVvgTu%2F8vmeBnmZLB4SUl8TVkfEHir4fMwf5T6cCvOfE3gh4WPGVxyMV9y%2BNfgHNG522rev3fc15T4w%2BBk0JYtb4A45Wv6joZ7QqxSTPyWjipc3vHx9rHg%2Fg4H6VzeoeFHLN8ufwr6i1X4MsqN%2B4J57LXLaj8H5QzbbYjj0r0qdenOO56kMbG583S%2BECAx284z0qH%2FhFW%2Fu%2FpXvN98IriLLG3POe3SqZ%2BFEv%2FPA%2F981r7KD1eh1LGdjxD%2FhGCD0pf%2BEZOf8A61eyy%2FCiXzD%2B4PX0oHwolP8Ayw%2FSq%2Brw3uH148VPhxx9PpXVeEtJaHQIV9Gf%2FwBDau6k%2BFkjLjyD19KjPhBtKPkFCCvOMevP9a%2BQ40owWXxaf21%2F6TI9XKMS5136fqj9zI%2F2QvCKMP8AR3OOMkgZ98YqX%2FhkvwgB%2FwAem7v1FMf4xEMf3kn5U6P4w%2BZ%2Fy1k%2FKv5sdXN2%2FwCKz1lPJltTRY%2F4ZU8HJz9iz6jI%2FwAKfH%2By%2FwCEUXiwIA56gVUPxcz0kkJ9KQ%2FFRm678%2BtRKWbNWdWX3mnt8q%2F58GjH%2BzV4OQnbY7uPUcfpSn9nHweP%2BXD%2FAMeFY0%2FxRZUGXk61Afiz5bYw5%2FE80RpZnJXdWX3mbxeWRdlROkh%2FZ08GoDu04N6ZI4%2FSpf8Ahnnwcoz%2FAGZx%2FvCuW%2F4W77P%2BZqE%2FGTY3zb8DrzT%2BrZo%2FhqS%2B9h9fyxfFRX3HX%2F8ADPvg8dNNj%2F4ER%2FhSf8M%2FeEcf8g6H8x%2FhXIn4zBhwGP1JqZfi%2BjdCwzzyar6rmtrc8vvYfXste1FfcdSvwC8IqONPi%2BmR%2FhT4fgL4SLfNpUSjtyOa5QfFxWON%2FJ%2F2qlHxQx958fjUfU8yW9SX3mtPG5d%2Fz6j9x18PwK8JxEbdMi2%2BuRWhZ%2FBPwzFyNOAHGMEf4Vxen%2FE9JSP30Qx2ZyPzresviQtwiDzbc8fwyE4rF08xjq5s2ji8ubtGmrnWaf8ACLw9bxZWyiBPbcMmuk0X4faRAQBZ8%2F74ri9P8XrNtxMM%2Bgauq8P%2BJ1ZASxzn1rgr0sY43cmd%2BGrYN6KCOw0PwlYW2NkQ9MAfSqvx5%2FZ70L9pL4F%2BLPh5r0cn9i%2BL9Nk06aSMYltWYZjmjPaSOQJIjfwtGp61Loeq%2Baw5wMZrrtKu98EfcFsZP1ryKvtVK02e1RdNrmhoz8QP2MP2ofEXjH4tePvg78TNSsofi38IbufSNVtwqxjxDDC21NVi5ON6lPNXJ2h0cY%2BYVxX%2FAAUM8A6d4i8fHUtOvbNdX0%2BwjOqWzygSqpJ2Pt7cA5JwMc96%2BQ%2F%2BCyXxD1z9nb%2Fgsd8YvHHgueTSfE%2Bj%2BNIpodQhhybY%2FZoDtYH5XWXOxg3BHBrz740%2FtSa3%2B1d4VFprniE6N4VuY11LVIrTH2rUrsgqbeeYkFkTHEYwMEADvXMqT5%2BZbHVCo4u56hbeXOm9JLW4iJKpLFIrq3ODgg4PNXB4w0jwVbyT3d3EJ9gxbxMGduDt3AduD19K%2BcB4kg8SQ%2BD54r6LSppZVZLK1TexTyyDuA3EKMAZIC846811tkv9oOYU%2FfW9wdhX7siYKjnvkEZCYyMgdRztKNtTR12y98VPE118TLyQtNeaJ5DeRbfZpi5tiyqdxB4Zzt53DALFcjGT9xf8ECf2jtT%2BGk3i34T6lpuseNZ4DN4r8H6ouuW2k3XhW3jTN%2B008xwlu3yuyxpKCQcx4PH5keJfjmtrNBp%2Fh21GsazJOIZYlV3W2bk7RjAchwQMEgAEk%2FNgesf8E4Rr37L37a3w%2B%2BIHiq2sPEGkfbWXW9Pm1GSFEtppAjQyEKRI3zF%2FL%2B58mGq1pEwl725%2FTB4F%2Faz8Y2v7FV98WPGnwm8Qf2tAjT6b4Y8Izf25quv25cJbzKhihEbS7gxU8KuScfdHxh%2B1HqH7TF%2F8KPFfxy%2BL%2FwANfhb4P03w0BLoHh7xR4pudcs%2FDdu7rHBHa6TYQKL7W7qaSKFZ57tAHdY0iRWbf%2Bq2jzwajptvcWsga2miWWBlwB5bKCuMdOMflTdS0W31VVW5iguBHLHOqyxLIqyRsHjcBujKyqwPUEZBB5qOdt6kOEWrH4q%2Fsqf8Ell0jwV8Xfj546t7TWfid8QPC3i%2FWfDfhi%2FsXtx8Nr5lj3Qi2diFvikrbgFHkCJFQkHfX5q%2FDLQpr3wpos1vNHbCWzhktFktvOlWSRI%2FLfcWABwHPPTNf1CePvh0dP8AjLpWr29qbvQPEFxJp%2Fia3jBJjeS0kgiuiuCSr5ihkx0xC54RjX89v7XX7Ic37Dn7VmvfDvU7O2t7Owvv7Q8POXcR3mlAM1qUPO4qCI2HO0p7134GUZPlepzYiNrKOhl%2BB7yG41Yf2dIby5uEnljvZwNttyFKAD5SeOAnAPU1718Or63hgmlKzx2OnmK%2BEkZ%2F4%2FZVKoW3D5jxkAd2I9K8A8DwSaglk6rNZ6Q9pIjJws0u5zngfcQE9%2BTzXrHw31dp59Fvo5E%2BxWP7qNZGPlMQP9ZjqAPm29cHnpXpOCZzJWPpzwdry3VkttNdTifxAwuUaO4ZUgU%2FvGjBGCwCbVBH8e4%2FxV6fo2tWNzqKeWksqWULy%2BXFF8x3kEZZzhWUbhknnG7ivnv4ceIbm%2BlMDRzyXmFGjQ2v7ybymYsDGmMks%2BcAD7u0V90fsy%2FsVaj4lhHiD4oWj6VbyyC6TwsJRJJOwC7Wu3GNiccQDk5JcjOwck5qKuzSEeZl39mX9nS5%2BMd0fEuv2Zt%2FCsZRrK3kcGXW3Toz4yvkKemCQ7DI4Fe8eKvhVb6qT%2B6hA7Jjj866i78Rw2kJjiSOKNEVFjQbUQAYAUDoAO1Zd54kTapLYBrnp4nExfNDQnEYXDVI8tZXPJ%2FEv7Nkd9uZYEbnoH6VwHiH9kD7VL8scfIPVuBXvt14qgRG%2BcnJrJufGUD%2FADdCOPrXt4fPcxo%2FBM8aeSZXPyPmPWv2GZ7p2PkRfTPauT1T9gO4lB220Y9Cvevr5%2FF8T87%2Bg6Yqq%2Fiu3kX72O%2FHFepT41zeGiZyy4ZyyW0j4o1T%2Fgn1fGbH2bKjlhg9KyL3%2Fgn3qCuNlhgZPQHmvuv%2FAISS3Bz5rY9M0SeJLaTA3tXbHxFziKtJfn%2FmZf6pZe%2F%2BXlj4Duf2BdQiLn7C3B7A1Sn%2FAGF9Qjcf6Cw%2FA1%2Bhi6zC6D5yQRSPqNtIeSM%2B9dMPEvNb%2B8v6%2B8J8I4dRvGsfnLc%2FsP6jFHn7C%2FXsDXhnxv8AgTdeDviXfae9uUaGK2YjB4328b%2F%2BzV%2BxyXlnKcMi4r4S%2Fb1%2BzH9qfxBsXC%2FZdNwP%2B4dbVz5l4gY7FUVQqR0vffya%2FU1wPDcaNX2kat9Lbeh1kfxYtm2s1xJtPJy4GfqMVJN8aEEp8qSDZ%2FtSc%2Fyr5uOtPAobzH3gfwqW59vWmnxVdDobvHqIyP51%2Brf6sYfqz4L63UWyPo4fFm%2BkUlEjk%2F3ASaqn4p6yucWcxHXla%2Be4PHOqJ8kbX3XgbSRWla%2BIPEl2QA18nf5uOPxpy4bpwV%2FdZX1iUtPeR7pB8VtajG42TENwMgU%2F%2Fha%2BrScmzKH0MQOK8NuvHOpaRa%2FvruXcPu4VeDjvzWRD8ZNUuJQovSzMcciqXDilHmjCP4j9vNOykz6Dm%2BM99bxsHX5uwWAZqBPile3OP3F2S3OPLryLTfiHqR%2F1rWD8fxAc0p%2BMd1pzYuLW2lU9PLzxWVPIGn7sF95dSvNr3m%2FuPXR8T7tSf9GuPf8AdZqay%2BIkycS287Z7CI14xD8T9R1GXMEMoj6sqcnHsK0oPile6e%2F79rtnxwJUEQx%2FOpqZIrNcmpCqreUtD2SLxe1wN32W9H%2B6nFW4dandgfKulHq3evKNM%2BN124xsg68Bm5rf0v4vXt1x5VmPoua8%2BeUVKau4GscZhY9T1LS%2FEzRgbrmW3H91kyDXR6V4m84LtuPMx6JjH515roHxKuVjVRFa5IwWC%2F0rqNJ8ZXGpSRblgIUf88wOv%2F6q8bFZdK%2BsUjrp5lg42dz1rwzPJLACH5YAjIFeheF0lkkTLL07DNeOeHfEBYoWwNnGF6V6X4R8UQJs3%2BYeOqnFfI4%2FCyhokejhc9wkZWbPXfDdufKXLJ1%2BldhZzRrHGMjd2APU15t4f8Z6fbW2%2BT7QV9Nv%2BfevlL%2FgqJ%2FwWH0L9kTw5q%2FgD4ftBr3x01LQ7nUbKyI8y28I2kcTNJqmolciNI0zIkR%2BeTaABl0DfF4nD1VL3kfUZdnWGqy9nSkm%2FI%2BMf24P2X9H%2Fak%2F4LTP8Mv7Xg1Hwlq%2BvrP4q1K2RRDpWpXUH%2Bi2czbcSXCfZ1dEcjl8Dk1%2BXX7b%2FwANPFn7Ef7SHir4VeL%2FAAnounXfhvVV1ASQRSLb6zB1S7jdyflkDBzt4BBHav3s%2FZb%2FAGLIP2dv%2BCZ11p0txfyfHHVLiz%2BJnia%2Fu5ftGonXoXS8RZlzkSKilNvqWAzXz1%2FwU5%2FZxtP%2BCrnwgvviDo%2FhHxvafEmOdNY8NX2s6QunaPpGhxKf9DvHndOJI98hIBwSvSsPq0nq0zvWd4R299PW25%2BR8GlQn4g2erQ3jR382ncW8EG%2BIwZG07wM9c8dT7AVB478Hat8Sb3QtL0a9Wxj8ua6nuEzmX5UXG9T87EEDA44LZwKb4F8R6tr%2Bs3GpTT2ieGrYPZqYlEQZgWDYyTwMEZzjuK9f8A%2FsuyW3wL1nx94315fhf4R8LaffS%2BFrq4tma78U3kUJ%2ByWVlZMRNcRGIlZLghYEYN%2B8JFY9bHrSnGKTb3OY%2BCnwhWXWYvCngfStR17xNdQR3C21pbvPqM7FvmD4BCZDKCvGCsmelfo1%2FwSn%2F4JLeA%2F2hPjR4o0z4o%2BI9KvNT%2BHf2XUJvB2iX6TnE%2FVLq5j4Gx12vGhyGfBYV6b8Gf2ctX%2FAGk9U8Y%2BAvB2v%2BCfgX%2Bz18NTYvrmr%2BHp0j8Q%2BNbS9sIr6LU5L6Q5itJ45mIbfgMk0eMxtXy1%2FwAE2PjTon7C%2FwDwVrtLbQtX%2FtL4beItTuPDdtqRWRItU0y4kIt7oFwvmL5gGJAMMUJBIqlG%2Bxl7eLfLHf8Arrsf0NaJa2ehaNaWFnGlpa2US28ECk4hRQFVRnngDFWJNRWHOHBx1yarSWixyN%2B7ztbGQ2enesLXLyOIcNszkc0o01N2ZlKvJK7Ni78RpCGfcNxHBFeOftY%2Fsv8Aw5%2FbN8HQ6P480WK7eyDPpmqWxEOpaRIeC8E2Mrnupyp7itfxF4imik2281swBwQ7bSK4%2FV%2FH%2Bq20h%2F0RZMdChDD%2BdevhcslNrlPGr5ry6NP7j4S8X%2F8ABv3r%2Bk%2BIc%2BFfjH4fudDRiqW%2BuaLNHc7OweSElXPqQBmur%2BHf%2FBDcRxiDxr8VUurB%2BJbTw%2FpX2diuchBNKxwo6cL0r6mv%2Fi5fW%2F3rBx6kxHGaytR%2BNV1CM%2FZNvH3thx%2BVevSySq9EcUs9pR0d18jsvgR8A%2Fh5%2BzPbk%2BFdERNXaIJLrF5J9q1CUAYOZWHy59ECiuv1Hx4meXctnrjvXgF%2F8cA0jBtq8dSCtYl%2F8cFWL%2FlkRnr5hrqpcM1JaxVzjnn1G3xWPeta8f8Akg4cjOc8E1y2r%2FEVmGPPIye6nFeNXnxmtZeX3DP92Q81g6x8W7PLbZMHtl2z%2FhXqYbhqpH44nPUzWE1eMj2DUPiJOinbODk9cGsS8%2BJt0TkbcDgktjNeL3vxcUS4EczKeSUm4rLm%2BKyKpyt%2Bgz1WXJ%2FlXtU%2BGNL8n4HlVcdrfmPb7j4oXKv0zxyRyBVf%2Fha8q9DntXiL%2FFmzz%2B8l1MN7sKj%2FAOFp6cw%2F4%2FtTT3KA%2FwAq0%2F1Z0u4nM8XJu6Z7kPiw%2Fmjc2ORnjpUw%2BKw%2F57JXhUXxIs7h18vVnXnkS25z%2BJq1B44guCcatbcesTCofDsFuhfXKy2me5xfFk7APMHSpo%2FizsHLn14rw9df3gONQ0xgeQSxUn8%2BlTQ6%2FdSj5X08jPX7QOawfDkOqCGY10%2FiPcoPivsfJkH518fftleNP7U%2FaK1qcNndbWAz9LG3H9K9UfxRPGudtucf3XzXzX%2B0nrD3nxk1OQoATDaD8rWEV5GbZDGlSU0uqX4M9rKcfWnWalLp%2BqNab4leGtHjZ%2Ft%2BrSg8iNbIIAPQknisuf44aHGd4m1gf9MlUAL%2BVfO02uLcKx8qJd3OR2%2FCof7VG%2Fd8u71xX9Gw4epdZN%2FM8JV76pH0O3x3sY7YlYdemGeMMF%2FUHNUJ%2FjJDcxZXT9Tcc%2F66Y%2F8AxVeENrG49E%2FKpI%2FEEMcexoEdv7231reOR0ou%2FwCoOo3ueyw%2FGWzs2BTSrZiOjNIG%2FSrP%2FDRN8kg%2Bz2mmQL6hUz%2FKvDU1UD%2BLb7oOTVm01O1f%2FWSR564dDk%2FWqeU0FvH8xe0ktEezxftH6os7%2BYmnvk8HCjH40%2Bb4sHUWWWezt5CRkhbhlHP0ryuLxTpZiEMlvbnd%2FEinirMclq6AxNP22%2FJwBWay%2BgtomVSUrHo9l8QQkxMcEMDHkbJGz%2FOtlfFg1kBpb2MhSAqgHd%2BtebaXBascyOcEfeSBiR%2BtdVpcVve4K3MQwP8AloCD%2BVYYjDQgvd0OSe2p3mh%2FZ71si7iTt85HFdf4e0UmQbLyzuM%2F3JlO2vONI0%2BKKQES2kmf7q5Ndt4bi4Cbcp2GM15GKhePxfgcNWUFueoeHPDEilj9ss89dpmA%2FDPSu18NeGp5nws2mnp1vo1x19SK878J6f51yI44dzFtoAGTnvXkv7RP%2FBTX4dfs4TXGk6OsvxC8WwM0JsdImT7HauuNwnu%2BUBBIBRNzdsA18fmlaFCPNVqKK80dGFwE8TNQpU7tn274f8K3UDRHzNPlJOFWK8SRmP0UmtHxb460f4PWSXHivW9A8L2zjKS6xqkFgkh9FMrru%2FCvxR%2BOP%2FBSf43%2FABsmuID4pl%2BHugRlR9h8Hl7SdmblUkuyDOcrknG1eOma%2BZfENvD4i1K4ubhH1G%2BmjJluLtzfz3Dbs71llBaM%2BrMST2r8yzDiajFtU1zP7j7DA8B1asf31TkXkfr5%2B3Z%2FwXq%2BGnwOu7bwb4E8ZRa%2F4iv4ZJdS8ReGYo9Xh8OwKpPl2%2FzCGW%2Bk%2B6u5vKg%2F1jhioQ%2FlR8CPFvxa1Lwx42%2BI%2Fhm40HSz4x8Y6X%2FaN1res2t34i1y7guZby1s4BOd5tEeKC4uZpgsJNqkjErF5dYOj6EdSvlWKMWjSHavmXawwjC8s8k%2F3mB2kbR2z2q1H8P%2FAPhP9ZxfWa%2BJXW3QRRRRvM1uN3yp50ilNu5S%2B3cAeeK%2BSxGYzxM1VqR9Ev8AM%2B0y%2Fh6lgqTp0Wr9W92fp5%2Bzt%2B3n%2FwAM8%2BErDwB8JpvDfx3%2BL%2FxEvLZ7zxleXE2h6brOpzoR5%2Fm3xEuppFsYt5A2gAjOTtr7b%2BNXgrxD%2B0D%2BylqXgLxN4og%2F4SDXNNittV1XTLUxW13KGDTKkRJYW8gBTbnO0%2FhX4o%2BHPHHxM%2BI3xT8P3vxI%2BJ%2FiSXStHjj0C5vNZ8PWXiLUtB01JBIfsbzoShV9u4xHzdqjk7QK%2FdX4c%2FBjUn8G6MEv9R1m0NjC8WqXdzHJNqUbIGS5ZlA3F1IbI9a%2BnyqVCtTmsUrK1l%2Bp8LxLl7w1aFSiveb5m%2B7X4H5Y%2FtwL4M%2FYJ%2BKZt%2FDvwJ8FL4lutHjbw3e6lcvrNhbW6IVluRbOixSXbSBlAIIRQOpau78U%2Fs4fCTxL%2BzibjVvFXiX49ftE%2FGPwxBe%2BFnth9r1OxVsPDi2VhHp%2BnIQYpJZyihQ4UcYr6S%2F4LF%2FsPz%2FE39jXVdd0%2FwAm88TfDoPrcUKBvMuLID%2FSo%2BhyVQeYB22GvA%2F%2BDff4yaR%2FYHxC%2BG8fhzQ7jxDK6eIoL82yjUNTssCGWCWT70iwvsdVydizNwK8ylh6McZ9XWsH8N%2F%2BCevLEVKuXrHKT9rGXvJde3ol5HTfsdfsG2fwC8H%2BEvB3xrYeLZdI0tDBY21%2FI%2BkyWiXMrJZXS8LeCzMkTKHBQZJXgtnnf%2BDgz4RnV9F8AfFfRo4bGfw1jw3dS2cSxCKEN5lnJhcYVHXYvHAbjrX3l8VvBC6j4Zg1%2FVtP0bw1p%2FhO5%2B23epXt%2BLW3t7bZiZZWkYBUZCf0xXwX%2FwAFQv2utavf2GYbnw58N4NQ%2BF3iy5fSP%2BE41bz7aSfZKPJe0tJNrtG4IKXRyj7WwOMnpxOEweHoyov5O6bT%2B8xwWMxmLxlPFxlrtJbRa79v1ufoL%2Bwf%2B3HZ%2FtQ%2Fsj%2BBPF1y0M2oXmnrZ6kiqQY72D91MpPc5XP416Fr%2FwAZNPtzt%2Bx6mTz%2FAKuFj%2Btfkl%2Fwb%2F8AxQn1p%2FiL8OprwPCqQeJNKSW58kg%2F6m427sqQf3ZIGOTmvv7xJpmvaWu%2B3vjAq5%2B5dRNn6DbXTk%2BXYbFUYVb2fX1PMzPEYvB42pT57q916HoWt%2FF%2B1u8KkMyditxbH8iTXGaz46iuZmC29s%2BT%2FArD%2BRrhdZ8QeJ47ff8AbJ5uP%2BW0EbAn2w39K5PWPH%2FiC2iZbjQItRGeCEMLfyr67DZDFL3bff8A8MY%2F2tUm%2FwB5r8j1S%2B1dbm2ErRpGT8oUSsP65rC1W4EUW5WRX9Fuj%2FjXiusfFSa2Ui88O6za88eXdDA%2FMg1hp8YLCGb99%2FbVsh5%2BaBJcflXr4fIqqV1%2BFn%2BrOieMoLeJ67q%2Fiq8ViFSaT%2FZEof8AnXL6x4ov%2B%2Bl7weCdma4o%2FFXTZWwddsoMD7lxbBTj6k0J48s2O6DX%2FDz56K52fyrvo4J0vdnH8zmlTVRWuzQ1bxSke7zNIkXPQo7DP4Vzeq%2BN9Nzte1vLfszBmIFdLb6w2pwgi50V8%2FeaO7I%2FIU2fSJrtfl%2Bxyj%2BHE2c%2FpXfTnSirNCWAbWj%2B84O58SaXK%2B1b4xb%2Bf3gPP6VXfU7eRf8AR9bt2b1JO0V1t54auZHw9paMF%2FvDOP0FUZvh9EuS9lb88legr0qOPw%2B13%2BDMZ5Y1uc%2BlxqG791qFtN%2FsmXAP605m1k%2FctI5F67ldT%2BhqW%2F8AAVnKhP2S3DZxxc7f5kVjz%2BBZbYn7MZo5B6XSsB9Oa6oVqEpaW%2Ba%2F4P6GEsA0i%2Bs2rh1L6VenJ%2B8lsx%2FlxS%2F8JDdWjMJbHUE92hZR%2FKsK50XxJZkSRXl0OeGWY5X3yD%2FSprXVPG1mMQardMf7puQM%2FnXS40n1izH6rbdSNN%2FHEcLfOJI%2F99Wwf0pV8dwlc7rfHruqqPGXj23XZNLDKvfeY2H50yfxv4gK%2FwCmaTplx9Y0yf0o9nD%2BWL%2F7eQ%2FYReib%2B40ofGxD%2FwCsx3znb%2BteU%2FF3XjeeP7yTzCcxwDPmZ6QRjrXoK6u92Qk3hqBAef3aj%2BYNeb%2FFS2jHjm6xYiEeXB8gbp%2B5SvmeLI0lg4rls%2BZflI9PJsO4Ylu9%2Fd%2FVHiP9rnH3jR%2FbB%2FvGuf8At59P1pPtx9P1r9b9qjl5GdD%2FAGu3940f2u2M5OPrXOyX7Y49fWtTRNdht5R5ywlM9SuWzUyr2V7DjSbdi6utbuj0v9rMfXGeuav3WqabqULCWWKPuo2dT%2FnNZJuItNnGY4Zos8YY5xUfWVbYv6u%2B5dttSLXC4J61sWF0ecHnPYms6DWdJvAEeCS3fs6t0%2BtaVnYW5Tdb3cbBeSGByawVS%2B6MuRnRaPdyYX5364%2B97V2Hhy5bylduQeMVwemyyRTbSvI6Y78V2PhnUP3SpgH2qJPqjhxa6M9K8NHMgNdxB4lsfB3hy51bV7u303TNPiM1xc3DbY4lHr79gB1rh%2FDF5b29u008kNvFChllkc4WNFGWYnsAOa%2BSf2pv2iLj9pTxLa2Gm%2BdB4P0ufzLCLDFdUkXO6Z0HLZ%2FhB4APvXwfF2e0csw%2FtZaylpGPfz9AyjKJ5hW5I%2FCt2bP7WH7fXiL9oN77wz4Zu7nwv4DyEneF2j1DXVA4MjqN0cPUeUpywIBOGxXg%2BjaFLazWumaRpktxPdt9ls9Ps181J3%2B6GQLnjGMnABUDpzno9K0j93DmR0MqK0aIQFLBi0gUDuG6DqNlfVv7A3gWw0D9nD4ieKNJFtceOJtYstAlkmiFy2m6XKqGV1XG7EpZo3YfdEeOAa%2FnHNczxOMqSxFeV3%2BC9D9ey7A0MNFUqUbI8Qsv%2BCZ3xg8d6XLe28Pha5ubWP7YdDttbt31EArncYlPBKDjkHANePaX4Rke5ZJ4EDQO3mrIgcIy8NnIPzA8fXpiuj%2F4KMftC6l4H%2BI1z4a03Q%2FD%2Fhm4jia0Gp6dOy6lrS%2BY2ZrqRSpj8t0EaxAKAh44rg%2F%2BCafgfUtT%2FaRs7NJLnUbJrWS51JDvnijVvlSTZz8%2FmMME8Zz1rwIUKlRntyxFOmtT0Xw%2F8PtupWxuGMSWjrczBtk4kf8A5Zxsrlse46HIGK9ZsvDVxfact79g1JJbqVBDpBvwiKBwgCrgqPvE9lzXvEHwbg0meGNdPVly0a2kFvFcR%2BbglXnfGQ33iF7YPoKz9X8E%2FwCnSTi303XdUhkYOsAMBsohw6k%2FwZHXPJOK9HB0nTdmcuJxCq7I8Q1HwdDofh2K0exvb%2BSRGwjXkrHzCD5kmN3KjJzntiv0d%2F4JLfH7XNT%2FAGd7zwRqFlcatafDu5Sy0u%2FuJT9ols5l8xI3OCw2EsA2eQcdq%2BMbnw7aeFpRNPd6hZ3mpr8vmLlXboFjByNv419Ef8E6Na1r4a6T46nTUWtory%2Bt1%2F0dVdDtj%2B77kZ57V9Bk%2BHnXxip01d6nzGfuH1RuWjTX4n3KnilHl%2BbRLwAghohdM8bqwKshDDBVlJBB7Gvxr%2BIOn33%2FAAST%2FwCCn0Wp6PYXNz4e0W8%2FtbSbPfsOp6Heb82nmHgSIC0RbnDwIT1r9SI%2F2gNcsoRKNVVyOiyW6%2FMPpnrXyL%2FwWK8OQ%2FtJfAGx8WfuG8SfDlpXV7aEpLPY3DDz0f1VGVX9euOte%2FnvD%2BKeFdWlDWHvbt6LfoeDkOOoUsQ6U3eM1Z3OL1j%2FAIKkeA%2FjX4Wn8ffF6DWPGvimy1iQeE%2FhNbSH%2FhGtIjRUkgv7xn4vJDuPMuVVkwqcA186fGH9vjx1%2B2T8TJp%2Fi9r0mqeGtWh%2Fs%2BLSo1C6d4dTdmGeCLGPNjfBMh%2BYqCOnFeCxQCAkBQp3NkjuSSf8KJEUrhgCDxg96%2FN6uLq1Y2lZL8f68j9AwuXUKDbprfbyPZP2XvihqX7Dn7ZPhrxBqEcMjeHtR%2Bw6lA0YaG6spxskIHQqUZXB9gR0r9pfEHxE0DWeugWe24QOskaYypAIOehBBr8NLLR5%2FjV8NZU2%2Bbr%2FAILscZZiZNS0lT2H8UltnH%2FXM%2F7Nfqx%2FwT1%2FbWtviV%2Bxx4Yt9Yhsr3WvCinw%2FfTSMN8phVfKduP44mQ%2FXNfX8J06%2FK6fs3LqtbHynEypOtF81pJa9TvPFFr4ejhdhZ3SxSKSypJtRf8AAV4z8QdI02eVmttS1W164VLhyB%2BRr1%2Fxf8aNCvllxp2nJ1zzw1eY%2BJ%2FiXokqyH%2BytPYeiMVNfqWXxxMPecJferHyzo05rlumjybVdMuI3Ig8YalCMY2tLIo%2FHmucnOoRZVvEcNyF4Altk%2BYeu7Gf1rvvEXxA8NnIXRTuI5CXP8wa4rVvHOgsdn9jqo7AuG%2FQ19ZRq1ZWUoP7olQwtOKshD4i0xIRFf32nE7um1hn8MkVFLqGiwj%2FAEKWBD2UwK6j9M1n3Wu%2BFp428zRcNj7wK4P61zN83hiYknSbqNs%2FejZg36GvQSv8XMazotLobt34xFrc%2FwCqju%2FTyI2j2%2FkMVc074jlADjU7Nh93dD5o%2FA8Vxp%2F4RSVVWW91O0YdN0kgxTJNK0HUH2W%2FiG4bnABlYfzNaqFJ%2FFF%2FcKPOlZHp0HxX1qyAMOsCdDyqSBoz%2FhUMv7RtzZy7Lywn3%2F30IcfzrzOT4aI8WV1K9aLoNrFh%2FOs%2B6%2BF7NODHeMGxld5K5qvqeCfxflYV8SvhR7Anxq0vVI%2Bbi%2BUnrmPoas2njHTrqPMes4YnG11rw%2F8A4QfWbQ%2FLcj6Cbr%2BFRv4a1iFiTlj3YL1pxy7D39yQnUqr4z3qaa4uBuhv4mDD3qpcnVIRybacHOFdMg14jFLqtlMpWe%2BQoQflB4xz61Y%2F4T3X9PkTbqt8oXoGizVvA2%2BGSZPtvI9TvJ7u0fc%2Bn24Zucxp%2FKnQeOvs67XiEeOpPH8683t%2Fjpr9gxzK1x%2F10gxn8auQ%2FHmZ13XWlRTf3jtFJYKot0rGPPDuelQ%2BPophh1TnsQGz%2BFed%2FE7VIrnxrdOFTBjh6Jgf6lKf%2FwALX0PUj%2B%2FsjCP93ofwrlvFviHSr3XpZLZv3LLGF69kUH9Qa%2BV4vwzjg4%2B6%2FiX5SPWydxdZtPp%2BqPBvtUnpR9sKj5jg%2BlZ%2F2tP8mkN3Hj%2F69fpV0cvsvI0ftwP8Ro%2B2j%2B8fWsw3o3fNjHani8Q9hTuhqFtkakV8JpAHuDEOxPPNbNhGZpP3WpQTeig%2Fdrk55jbruX5O2V%2Ban6dqht0MitNufknIX9KyluOzO9n0O58lZhMkgU8%2FMBjNXdJe50yZWBjbn%2B9uP4CuMtvFFz5SokzESYzvwa1tL1p3wOPQsKqOu5jOMUj0fTtdjuZd4Tyzj5snvXbeFGt7uAPFtjlBwyt2ryjRL9vPQ5XGO3rXb%2BFrszBVY9SD9cc4q%2BTm0XU82orq73Mz9rD4oXWn6fZ%2BEdPLodSjN3qc2dqRW4OFjJ6ne3UDqBXi%2FhrSXnhVIG2XUA3kyZSQgHh5T1WM8lVHXA%2Bla3xC1W68XfEfXNQCebP9ta0s7V%2BUVUAVWJJ%2BX%2BM%2BlO0O3t727Vmt7mQi4KQTPEVeVwm0yF0Iby15wqvjOOor%2BVeMczePzSrL7MXyr0jp%2BPU%2FQ8kwccPg4wtq9WamneFjqjL5VtdodweO2a2EgwzgL0OFyq5CDHGWbnivSPhl4Ou7PV4ZrCeezmgPzvBK0ckmd4XdhiUR0UOMkBVCk5Z3J5vwPoEFytvFHBqt3DNJJbs15ey7RFkme4YschnGOcHhh617D8OLOOea0CmNd0T3KiFQtsmQqxpMdoD7UUAq2SeOOcj4%2BcL3uj2otp3R8VfGP9i3xB%2B0Z%2B2%2F4zhsr2x0fR7RLSbVNcuXNzHBJJbKx2gEGZj1bbwqjcSBX2b%2Bzt%2Bybpf%2FAATy%2BMS%2BEdF8ReI%2FGVvrFjpEniRFa3VdOvLiBpkkEawi4%2BzsNvl7GZGBct93NewaP8LdKtSddbwZpHjnxHGJTp0UtvBZ6fZySeTHPdTeZvN5cBUQxx7Et0SHD%2BcXxXsngPU%2Fij4v0uWf4uajpvjSG4zZWunf8Izo19lF%2BVJDeC0gZAow4hhjiEbHG9hXBClU9pdLQ7ueDjZsztQ8HWcenwW813Z6dJczArZ6QvNwh3MCSPnLfKQcBThjyea4zxD4FGo6ndQwWEel5lQ%2BaRiVPk%2Bby8YwWGD859eDX0HNp0kepWunDSEhtYY8RGeeNUj3gbFJiDnzMI4Az91%2BtcdqnhafVFvF1O%2BaMXDOoktImtoLkKAmJpNzS4AAClWTOOlelD3Xdnnnzj4g0mPwZot1PcvFesimW4DnN4FU4wy4xt444X0ArqfhTYt4P8FRwtYNbz300l9cxQkqsUkh6YHHChRUutaxpGl%2BJLK3kt4YLXTZBd3sPkCXz7j7ywM3Vo1JDNnLFlXnrXRSftKaTtKmDTFz1J07v%2Bv8q%2FYPD7IcRSUszlSb5laPp1Z8RxTjIVbYSElprL9ERW%2BuWyy4ea8jbt%2FFitX7NF4i02e3na5ubK6ha3nhniISeNxtZD2wQaxIv2hdJWUhJdHjz2Fko%2FPgVpaZ8VrDXHXbqOgvIT8oktMKPY881%2Bk151eW0qTS6310PkFh4rZn5ffH74Rz%2FAX41a94Rl8ySPTpw9hM2c3tnIA9vMM%2BsZCn%2Fajaufg0VTHmZdz5%2BVD0zX23%2FwAFLPhbD4y8O6P4506TR73UfD6HTNQj05QkslrI26N2GcMI5C3%2FAAGR%2Favi%2BR2mQh%2FTgDufSvwjG8L0cPip82t3ddEk%2FwA7H3M%2BI6zpQjDRW1fe3TyuX%2FC3iq%2B8D6%2FY6rpJiS%2F0ucTwb13IWAIZGHdXUlWHdSRX1D%2Bxr4g0rwh8bn06zQS%2BCPinp8uo6JBMdx0%2FUrU7p7FiMfvYw7Lt7qYGHDc%2FJxY7NxHCADg44r0H9n34jr4P8S2mjX93BY6dfapbappl9NkxaHrkAYWd03TbBOpezuwMh7edZMeZbxmvRwdWVKUK0VrHRrujyKjXM4yatLZ72vr%2FAMA%2B%2B%2FEOn2EKY2aQM5yFLhh9OetcZrOnaffRHGnvOM4JilYH8Oa9X1mTRNf0%2FwA658IaZp7XKb2t9zk2zn70RIbkq2VznnbnPNedeJvDWiyB2tLP7EyHolxJg%2Fhk1%2BlYLMISjZ3%2FAAOWOGUJ3Z5prGgaczMrw38JzwHlPFcn4g0O2X5Uu%2FcEgsw9utd54m8K292hzK5XjOLl1OfqRXDa%2FwDD%2B0ljIRr3r%2FBqAIz9GUj9a9zC42F7ykzo9kn0OauLeGzYlfIfA4CpnH61XXWnjk4UjnBZbXP65pLr4awwyErPq4O3GSIm%2FMVzureCmtZMHUnj9Gltmix%2BK9a9KNSjJ2lIvlZ0dx4%2Ba1O07GA6Ztv%2FAK1LbeO4LtSHtd3HJEI%2FqP61yMvgy4WPzE8Q2RI5KidlJ%2BuVNZ154avXmBGowyc9VvEAX88VvGnQlqpDsz0GXxOJF228F2jf7IA%2FTNQXXj2%2B0xcPJqEXTG3bj8q4IeHNVj%2B5LA%2FP%2FLO5wfxxUNzoerOcHDnrjzFP65rX6vS7h7x6LD8br6yfj9%2BMf8vEQJ%2FOprf9oDe%2F%2Bk6RaehaJyjH8q8rmtL%2BwBEtvKO%2FGDn%2BdRLd3Mhw0DJ3Hy4rSODoPoZSdQ9ktvjVocz%2FAD2l9Ac9m3havxa7pXiFd0F0645AfI3Zrw9Jbhctjbj5icjIA5qzb6nPEu5Zy3pgdKcsBT%2Bw7CjJrdHrtwsltKWXzZUU5wvzqfyqm%2FiRQSj2SnnjMX%2BNcNpHjjXbFEVLhIomHJIHyit0%2FEy5aBY5F066fH%2FLdTk%2FQisfq9SDtv6Muy7FyTV7KXKmGT1OVxiqN9e2L3JMeQmBwfXAz%2BtUNT8cMyZNrCAD0gujjP8Aumq8GttexCTLDdngkcY4r5rjCE1l8b6e%2Buv92R25ZFfWG%2FL9UeM7l9f1pcg%2Bv51U%2B0RgdOfSmSXwjbjC57Gvqfa%2BRBeD7DkHmlaTzG3E8%2BorP%2FtBO6496Q6iuMAjHuKPa%2BQGktwy9HPIxTfNKpt3e3PWqB1FB93inJdBgGI75JFHtfIDdsZlTZnP4GtzTLtE%2FvdfWuStLoSPlCBjqCeta1jqHyn5hWlOpqc1Smd7o2oKcde%2FFdt4W1UR7DwPmByW6V5XpWq7HHOcjtXWeHtZAmTPzAdR%2BH%2F1666erRwVqe5zi6fdPr2qwxyI7XGpz%2FaVmXa8MZO5cOD%2FABBuMjvWxYfbZoWeO1t4T5hS3AuWY28P8WAFycjJ6%2BlL46D6XdnWIFVrK62RakApLQ7eFm4524%2BVvTrWnoQmnvHvzPbtbFPke0G5ZAuM7c%2Bp4%2FCv5P4tymvluZVaVZaSblF9Gm7%2FAHn6BluMhXw8Zw32a7NHTWf%2FABLoLy7nnzCscdhEIB5KM5wC%2B0EswI%2BTGf4BXrvgxZ4pbtERk0iGKCKOAOFcJukboONvCjrkgDnivIfDMMHh680i0YeY73Hm7lG53CbiVPYZLDBr07wTHJaC5nd1EVtPEr25bMcYCAgBvVd%2FfjmvnGuZHpnuPgHUrNILO7hnfTILSQKkaSYbaRy7IwKgAg4GOe%2FavaPBt%2Fdie8E1%2B5huIfOhL2i7mQ9RwQNxPPHrXgPgPUI9Vtri2ulVYUhEiiSMgzMpPOemB%2BtdjdfEDQvD9haahe3q2f8AZr7I4opWaW69cAH7voT3FVRo1Jy5Ka5m%2Bi3fouoXS1lou57QkN5daHPFdapMhiIdkggjV5WbCxkOQehK9uCprxv9or41ad4dsbjw5Z3Ump6pIhiur6S5MkES9T5cYwodjkE7flIzzXmfxg%2Fa7uPE0n2TRWudOsIyxEjzb5pd3qfQc4HqTXjl34gN%2BzMtxGMk8yP8x%2BtfsHCPhnXqSjjM5XJFaqHV%2BvZeW58nmvEUVejgneX83Reh1Gq6%2FDM7P9tt0T%2B6ZOR9P881g3viOxTkXb5buIs%2Fkd1YE1ss7Mz3y5YdE%2BYVQudDNzIFS%2FJHpsGT9K%2Fa4Sowiop2SPkvq8nq1qdFdeKrNYCqSGUn%2BMhht%2FImov8AhKY44vkuVk4AIVCMVzQ8Pnzdn2i43Z6GLGasL4SljkGLmRieoVBU%2FW6d%2FiZP1aR1P%2FCRWN%2Fp01neWUN3a3cRhkzI6kggjt9c18w%2BI9Dl8Ma9dWMvBt5Ci5%2FiXqp%2FEc19DaR4Q%2F0nH26ZU6oqxfMDXGftM%2FDa6i0yy1uNJbjyAILlwm0spPynA7jpXxnGWGw2LoKtRXv0%2FwAnv6leyqKNjyBm%2FdsOzc%2FjWv8AD%2F4Zax8Zddj0zSoLdmYeVPc3LiK1tlOQzSOe2MYUcsRj1rY8IfBfVNUjW51SC606zxuWFo%2F3tyvX%2FgA%2FWvYfBWlyaRZwwaesFvCOtuvy7sdz6mvlMp4Tq4mn9YxPuQe3d%2FLodUlPWLX%2FAA59FeFNI1Xwz8IdLin1658Tan4ds4bTUrmLEcl1GhCRXAQknABWNieRhT%2FFxzWsfE67E3%2BjNbs%2FaK5Rd5%2FMVyD61qfhLSzqUNtNO6EC509J9n22AkebED2JXp7iuX8G%2FGSDxN4hudJ1Oyt73TWac6TfNLum1KJHO4oQAN0asgYDoQa9GeJweXVaeBr7T0jfv2PSo4WpXg6kFrHc1fHPxS161umkntLLyxwcIvHp2rz3UvjlqLzsDZ2JUdy5X%2BQxXoniHw7CFItJZmi%2FijnYP%2BGa4PxP4ct3QpLp7IOpaN%2Bpr6SnKg18NjJ0am6OfvPjsbSc7tPjRum5JHH9DT7f9oOC7bEnkBOhye%2F4iszWfB2nX0ZCzXMTdf3hBz%2BVc1qvw6jjHyHPPAU12QWFmrxTRsd1L8WNOGX2QjZySAG3fpUU3xZ0TUgv2iC3lDdcxV5vN4Pa3fbvkj9wetU5PDcpdtkhfBx16VvHDUHqB6NJqfhbVGLCMwv03KxAH4VYjt9GMJ%2BzX8Lt6PIOfXqBXlkukSQJ%2FwAfCL7McZp625fGblcepGa0dKP2JP5gegalo0Mg2wNFH3%2BWfj68VQuNKvLCT93c3DjplJM%2FpXMq8KqAb3B%2F2Rinx3KRt%2B7v5Ae%2BPSrjzR6g9ToJLTUZIsticAEgTw5P%2FfQqjc2d3Cc%2BTjd%2FzzeqKam6yJjUp1%2BYY35AzVpdauwf3eoxSH0J%2FwAa3VV9TPkGl5sYYT%2B43ZqNsxODmQ8fxrjFXYtfvy%2B1o7OX15H6Gr9vqMM4xJajf7SDFUq1tbB7Mwll2clsfUVu6DKX0qM%2B7f8AoRqa406CQ7hFGeOhNTafEiWihYo1GTwD7mvk%2BM8QngYpr7a%2FKR6GWw%2Fev0%2FVHhrXcSyEArvyRknnNMkaOU8sp7daXUFHmS8Dr6VFivduxcqJC0bDBZaQLF6r%2BdMxTJxiI%2FSndi5UOmMSqNrL19alt7geQo3Dp0qnin2g%2FwBHWldj5UXbe6EIOOc1qW14qxoQpGQDWLbfek%2Bgq1Ax80cnv%2FKtYNmVWKSOn02%2FBccHOMGul0rVfLQFeDXDaYx3H6n%2BVbumsfL%2FAOBV3U27I5KsY8r0PQtI10gg7s%2Bo%2FvfXNKfC9ptml0%2B8n0SS5IZ0g2tASOeYyCAf92uasXIfqelbELkKvJ6%2BtdWNyfB5lQ9hjaanHzWvyfQ4oYipQfNSdjrtL1DVNMSAw%2F2FdmFSmHjkiBBGCxwSc8V0Gh%2BONYs1eKRtIbzJ%2FNREjlljwEQAHJBOMdxXD2kjANyfzrtPCjmNYmUkN6g818ZX8MuHqc%2BdUpenPK35ncs%2FxrVlJfcdhb%2BNPFGvRKgvbsIM%2Fu40EaHI5wAM4%2FGq8ngjWbwcrt3c5Ymun8MXkrQjMsh4HVjW7eXUgZP3j%2FcH8RrSjSwmVT5cDQhDztr971MsRUrV1%2B%2Bm3%2BX3HlerfDfVQMvIVUDAJQY%2BnFYzfDTUo8tvWQdhjp%2BFe0R3UjWfMjnJwfmNZ8h%2BZvp%2FSnPiHEyjyu1gpYSC0R5NB4B1AgZkt4z%2FABYbmr0XgKaEgtdjA565xXT6mcS1XhY%2Bcn1rzqua1nd6fcehDDx5Srb%2FAA1RMPPqMoDc4QEY%2FHtWna%2BCleMCCcunALsM1p66f9AX%2Fd%2FpVjQJG%2Fs3qfuDv7CvN%2FtGtLqb08LBl%2FR%2FhI1%2BqZ1O2iYrkfJ2%2FwA5rds%2Fgo8Vtj7Z565%2B4CPz5qtoc7gRfM3C4HP1rXvLqRbxcSOPoxrzquZ4lTa5jf6nStsZ%2BpfCzUbSP5XlcEdCyk%2FjxWFefD67kKhoLpD%2FAHwoBP0I%2FwA816JplxI8PLufl7msWa%2BmGrOPNlwWwRuPvTpZziI7GFTDQWp5lr3gPULCSYQ3V0QrElJju3fj0rzTS%2F2dNQ1%2F4m2sEWsHTtNtLibW9Is5DtitdT2fvFEmRtjuUBUrwN3Jr6cvpWGPmPX1rD1W3jaNnKJv8xfm28%2FeB%2FmKxzbD08zoRp4lawfPFrRprX%2FgG%2BDnLCz%2FAHfXf5nlC300se%2BLdFu5MTZ6e3p9KrXupXKpu2iU9NuM17J%2B1HYw2%2Fxg1YpDEhkFu7FUA3M0SEk%2B5PWvNNTiVZkwoHy%2BnvXu0sVKcFLyRCjZtM46%2FwBJt9VjJe3256NEdpz9D2rlNf8Ahdc3EhewkmHf5ua9Gv0CSnAA%2BgqNziM10wxc4jVKMtDxrUvh%2FqoGfPEjryUKkZrDvvDOtWkmWsLojP3ogGA%2FLmvoedQLaI4GTnJx14qmYVa65VeTzxWyx8%2BxjOhFM%2BdbvQ9Rk2%2BbDI3HAdDkVn3Om3MMTHy5ODjBU4619LLZQtI%2BYojyP4BXOavbx%2F2uBsTG08bfauynmE9dCfYI8EWOVj9w5%2F2RSeducAxZ553DoK9c1zT4GjZjBCT67BmuYvLSIP8A6qPr%2FdFehHFXjsc7o67nO2YTEflOpyR%2B7lbpz0wavCNm4NrbuP8AYcArVqWJRNjauM9MVBrFuirHhEHJ6LR7dkuPKNW1dm%2BT%2FvlzyvtVc601i5EqbT2IFU5GKs2CRyapQTN9u%2B83T1rpWwjeh8Wea3%2Br3D0IJFdH4d1IT6RG32Xbln43%2FwC0a5WMYtTXUeGB%2FwASSL%2Fef%2F0Nq%2BW4wf8AsMf8a%2FKR6GW%2FxX6fqj%2F%2F2Q%3D%3D) fixed center center;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+/* line 703, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-item {
+  margin-bottom: 20px;
+}
+
+/* line 707, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-icon {
+  float: left;
+  background: #03C4EB;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #03C4EB;
+}
+
+/* line 716, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* line 737, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.myStyle {
+  color: #111;
+  text-align: center;
+  margin-bottom: 40px;
+  display: inline-block;
+  visibility: visible;
+}
+
+/* line 745, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#myDIV {
+  visibility: hidden;
+}
+
+/* line 749, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+ol {
+  list-style: none;
+}
+
+/* line 752, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+ol li {
+  display: inline-block;
+}
+
+/* line 755, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.fade-in .box {
+  height: 260px;
+  width: 160px;
+  color: #111;
+}
+
+/* line 762, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+/* line 771, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.tabbed {
+  margin-left: 100px;
+}
+
+/* line 775, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-title a {
+  color: #111;
+}
+
+/* line 786, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-description {
+  margin-left: 80px;
+  line-height: 24px;
+  color: #111;
+}
+
+/* Card Test Section
+--------------------------------*/
+/* line 801, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#flippy-section {
+  padding: 30px 20px;
+}
+
+/* line 807, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards {
+  position: relative;
+  padding-bottom: 50px;
+  margin: 0 !important;
+}
+
+/* line 812, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card {
+  background: #ffffff;
+  display: inline-block;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  z-index: 0;
+  padding: 0 !important;
+  margin: 5px 5px 10px 5px;
+  position: relative;
+  /*text-align: left;*/
+  /*  ^..^   */
+  text-align: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s 0s ease-in;
+  transition: all 0.3s 0s ease-in;
+  z-index: 0;
+  width: auto;
+  /*width: calc(33.33333333% - 10px);*/
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* line 838, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card:hover {
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* line 842, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-title {
+  background: #ffffff;
+  padding: 20px 0px;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 849, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-title h2 {
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 855, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-title h2 small {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 8px;
+  letter-spacing: -0.025em;
+}
+
+/* line 861, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-description {
+  position: relative;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  padding: 10px 0px;
+}
+
+/* line 869, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-actions {
+  box-shadow: 0px 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+/* line 876, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/* line 885, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .flap1 {
+  -webkit-transition: all 0.3s 0.3s ease-out;
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+/* line 890, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .flap2 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+/* line 895, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards.showing .card {
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transform: scale(0.88);
+  transform: scale(0.88);
+}
+
+/* line 901, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+  opacity: 0.94;
+  -webkit-transform: scale(0.92);
+  transform: scale(0.92);
+}
+
+/* line 906, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show {
+  opacity: 1 !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+/* line 911, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show .card-flap {
+  background: #ffffff;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+/* line 916, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show .flap1 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+
+/* line 920, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show .flap2 {
+  -webkit-transition: all 0.3s 0.2s ease-out;
+  transition: all 0.3s 0.2s ease-out;
+}
+
+/* line 924, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .task-count {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  background: #ecf0f1;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #333333;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+/* line 940, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list {
+  padding: 0 !important;
+}
+
+/* line 943, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list li {
+  padding: 10px 0;
+  padding-left: 10px;
+  margin: 3px 0;
+  list-style-type: none;
+  border-bottom: 1px solid #e9ebed;
+  border-left: 3px solid #57bedf;
+  transition: all .2s ease;
+}
+
+/* line 952, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list li:hover {
+  background: #ecf0f1;
+  transition: all .2s ease;
+}
+
+/* line 956, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list li span {
+  float: right;
+  color: #f36525;
+  margin-right: 5px;
+}
+
+/* line 961, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards.showing .card.d-card-show .task-count {
+  color: #ffffff;
+  background: #f36525;
+  transition: all .2s ease;
+}
+
+/* line 966, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card-actions .btn {
+  color: #333;
+}
+
+/* line 969, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card-actions .btn:hover {
+  color: #f36525;
+}
+
+/* beginning of border css */
+/* Subscribe Section
+--------------------------------*/
+/* line 1112, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/subscribe-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+/* line 1118, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* line 1124, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-text {
+  color: #fff;
+}
+
+/* line 1128, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-btn-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* line 1133, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-btn {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* line 1150, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-btn:hover {
+  background: #03C4EB;
+  border: 2px solid #03C4EB;
+}
+
+/* Portfolio Section
+--------------------------------*/
+/* line 1157, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio {
+  background: #fff;
+  padding: 80px 0;
+}
+
+/* line 1162, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 260px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* line 1174, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item .details {
+  height: 260px;
+  background: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* line 1184, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item .details h4 {
+  font-size: 16px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translate3d(0, -15px, 0);
+  font-weight: 700;
+  color: #333333;
+}
+
+/* line 1192, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item .details span {
+  display: block;
+  color: #666666;
+  font-size: 13px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translate3d(0, 15px, 0);
+}
+
+/* line 1200, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item:hover .details {
+  opacity: 0.8;
+}
+
+/* line 1204, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item:hover .details h4 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1208, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item:hover .details span {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Testimonials Section
+--------------------------------*/
+/* line 1214, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials {
+  background: #f6f6f6;
+  padding: 80px 0;
+}
+
+/* line 1219, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile {
+  text-align: center;
+}
+
+/* line 1223, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile .pic {
+  border-radius: 50%;
+  border: 6px solid #fff;
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+  width: 260px;
+}
+
+/* line 1232, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile .pic img {
+  max-width: 100%;
+}
+
+/* line 1236, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile h4 {
+  font-weight: 700;
+  color: #03C4EB;
+  margin-bottom: 5px;
+}
+
+/* line 1242, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile span {
+  color: #333333;
+}
+
+/* line 1246, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .quote {
+  position: relative;
+  background: #fff;
+  padding: 60px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* line 1256, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .quote b {
+  display: inline-block;
+  font-size: 22px;
+  left: -9px;
+  position: relative;
+  top: -8px;
+}
+
+/* line 1264, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .quote small {
+  display: inline-block;
+  right: -9px;
+  position: relative;
+  top: 4px;
+}
+
+/* Team Section
+--------------------------------*/
+/* line 1273, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team {
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+
+/* line 1278, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 1283, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+
+/* line 1289, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .pic img {
+  max-width: 100%;
+}
+
+/* line 1293, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* line 1298, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+/* line 1304, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social {
+  margin-top: 15px;
+}
+
+/* line 1308, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social a {
+  color: #b3b3b3;
+}
+
+/* line 1312, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social a:hover {
+  color: #03C4EB;
+}
+
+/* line 1316, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* Contact Section
+--------------------------------*/
+/* line 1323, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+/* line 1328, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .info {
+  color: #333333;
+}
+
+/* line 1332, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .info i {
+  font-size: 32px;
+  color: #03C4EB;
+  float: left;
+}
+
+/* line 1338, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .info p {
+  padding: 0 0 0 50px;
+  line-height: 24px;
+}
+
+/* line 1344, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form #sendmessage {
+  color: #03C4EB;
+  border: 1px solid #03C4EB;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 1354, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 1364, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+/* line 1368, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* line 1376, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* line 1381, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form button[type="submit"] {
+  background: #03C4EB;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/* line 1389, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form button[type="submit"]:hover {
+  background: #25d8fc;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* line 1396, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#footer {
+  background: #111;
+  padding: 30px 0;
+  color: #fff;
+}
+
+/* line 1402, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#footer .copyright {
+  text-align: center;
+}
+
+/* line 1406, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+}
