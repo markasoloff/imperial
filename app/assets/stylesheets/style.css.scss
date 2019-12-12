@@ -155,11 +155,13 @@ article {
 }
 
 .container{
+  display: grid;
   width: 100%;
   max-width: 100%;
   // margin: auto;
   position: relative;
   text-align: center;
+  justify-items: stretch;
 }
 
 /* CLEARFIX */
@@ -1273,7 +1275,7 @@ ol li {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: #RGB(51, 51, 51);
   padding: 80px 0 60px 0;
 }
 
@@ -1328,17 +1330,18 @@ ol li {
 }
 
 #contact .info {
-  color: #333333;
+  color: #fff;
 }
 
 #contact .info i {
   font-size: 32px;
-  color: #03C4EB;
+  color: black;
   float: left;
 }
 
 #contact .info p {
   // padding: 0 0 10px 50px;
+  color: black;
   padding: 0 0 0 50px;
   line-height: 24px;
 }
@@ -1381,7 +1384,7 @@ ol li {
 }
 
 #contact .form button[type="submit"] {
-  background: #03C4EB;
+  background: #2b73a5;
   border: 0;
   padding: 10px 24px;
   color: #fff;
