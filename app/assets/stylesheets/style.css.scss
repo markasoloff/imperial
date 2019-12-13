@@ -802,15 +802,10 @@ ol li {
 
 }
 
-#flippy-section {
-  // background: #f3f3f3;
-  padding: 30px 20px;
-}
 
 // Dashboard Cards
 .dashboard-cards {
   position: relative;
-  padding-bottom: 50px;
   margin: 0 !important;
 }
 .dashboard-cards .card {
@@ -820,7 +815,6 @@ ol li {
           perspective: 1000;
   z-index: 0;
   padding: 0 !important;
-  margin: 5px 5px 10px 5px;
   position: relative;
   /*text-align: left;*/
   /*  ^..^   */
@@ -845,8 +839,6 @@ ol li {
 }
 .dashboard-cards .card .card-title {
   background: #ffffff;
-  padding: 20px 0px;
-  // padding: 20px 15px;
   position: relative;
   z-index: 0;
 }
@@ -859,21 +851,15 @@ ol li {
 .dashboard-cards .card .card-title h2 small {
   display: inline-block;
   font-size: 14px;
-  margin-top: 8px;
   letter-spacing: -0.025em;
 }
 .dashboard-cards .card .card-description {
   position: relative;
   font-size: 14px;
   border-top: 1px solid #ddd;
-  // padding: 10px 15px 0 15px;
-  padding: 10px 0px;
-
 }
 .dashboard-cards .card .card-actions {
   box-shadow: 0px 2px 0px 0 rgba(0, 0, 0, 0.075);
-  // padding: 10px;
-  padding: 10px 0px 10px 0px;
 
   text-align: center;
 }
