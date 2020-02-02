@@ -120,7 +120,8 @@
 
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#team" class="btn-services">Our Services</a>
+          <!-- team & services tags temporarily switched -->
         </div>
       </div>
     <!-- </div> -->
@@ -143,7 +144,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#services">Team</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -189,131 +190,78 @@
   <!--==========================
   Services Section
   ============================-->
-  <section id="services" style="padding: 0 !important; margin: 0 !important;">
-    <div class="container wow fadeInUp" style="padding: 0 !important; margin: 0 !important;">
-      <div class="row" style="padding: 0 !important; margin: 0 !important;">
-        <div class="col-md-12" style="padding: 0 !important; margin: 0 !important;">
-          <div style="margin: 100px 0 50px 0;">
-          <h3 style="color: white; font-size: 2em;">Our Services</h3>
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Services</h3>
           <div class="section-title-divider"></div>
         </div>
+      </div>
+
+      <div class="row-no-gutters">
+        <div class="col-md-6">
+          <div class="member">
+            <div class="pic">
+
+             <%= image_tag('ISS.jpg') %>
+
+
+                </div>
+
+            <h4>Space Systems</h4>
+            <span>Space Systems</span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="member">
+            <div class="pic">
+              <%= image_tag('hero-bg.jpg') %>
+            </div>
+            <h4>Cyber / Information Assurance</h4>
+            <span>Cyber / Information Assurance</span>
+          </div>
+        </div>
+
+      <div class="row-no-gutters">
+        <div class="col-md-4">
+          <div class="member">
+            <div class="pic">
+              <%= image_tag('ISS013-E-54329.jpg') %>
+            </div>
+            <h4>Space Control</h4>
+            <span>Space Control</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="member">
+            <div class="pic">
+              <%= image_tag('FREESTAR.jpg') %>
+            </div>
+            <h4>C4ISR</h4>
+            <span>C4ISR</span>
+          </div>
         </div>
       </div>
-
-<br>
-
-  <!--==========================
-  Card test Section
-  ============================-->
-  <div class="container" style="padding: 0 !important; margin: 0 !important;">
-  <div class='row' style='padding: 0 !important; margin: 0 !important;'>
-   <div class='col-md-12' style="padding: 0 !important; margin: 0 !important;">
-    
-    <div>
-  <div style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)
-              ), url(<%= image_path('ISS.jpg')%>); height: 400px; width: 100%; margin: 0px; display: inline-table; background-size: 100%; background-position: 0 92% "> 
-
-    
-        <h1 style="font-size: 500%;  display: table-cell; vertical-align: middle;">  
-          <a href="#about">Space Systems</a>
-        </h1>
-      </div>
-      
-      <br>
-  
-      </div>
-   
+        <div class="col-md-4">
+          <div class="member">
+            <div class="pic">
+              <%= image_tag('ISS_Comm_Antenna.jpg') %>
+            </div>
+            <h4>Coherent RF Systems</h4>
+            <span>Coherent RF Systems</span>
+          </div>
+        </div>  
+      </div>       
     </div>
-  </div>
-</div>
-
-
-  <div class='col-md-12' style="padding: 0 !important; margin: 0 !important;">
-  <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)
-              ), url(<%= image_path('hero-bg.jpg')%>);
-  height: 400px; width: 100%; background-position: center; display: inline-table;"> 
-  
-      <h1 style="font-size: 500%;  display: table-cell; vertical-align: middle; color: white">
-        <a href="#about">Cyber / Information Assurance</a>
-    </h1>
-    <br>
-  
-  </div>
-
-         
-        </div>
-      </div>
-
-
-        <div class='row' style='padding: 0 !important; margin: 0 !important;'>
-          <div class='col-md-12' style="padding: 0 !important; margin: 0 !important;">
-            
-
-          <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
-              ), url(<%= image_path('ISS013-E-54329.jpg')%>);
-          height: 400px; width: 100%; background-position: center; display: inline-table; background-size: 100%; background-position: 0 50%"> 
-          
-              <h1 style="font-size: 500%;  display: table-cell; vertical-align: middle;">
-              <a href="#about">Space Control</a>
-            </h1>
-            <br>  
-          </div>
-       
-          </div>
-        
-      </div>
-
-</div>
-
-       <div class='col-md-12' style="padding: 0 !important; margin: 0 !important;">
-         
-
-          <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)
-              ), url(<%= image_path('FREESTAR.jpg')%>); background-size: cover;
-          height: 400px; width: 100%; background-position: top; display: inline-table; object-fit: scale-down;"> 
-          
-              <h1 style="font-size: 500%;  display: table-cell; vertical-align: middle;">
-              <a href="#about">C4ISR</a>
-            </h1>
-            <br>
-          
-         
-        </div>
-      </div>
-
-      <div class='col-md-12' style="padding: 0 !important; margin: 0 !important;">
-       
-          <div class='card-title' style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
-              ), url(<%= image_path('ISS_Comm_Antenna.jpg')%>); height: 400px; width: 100%; display: inline-table; background-size: 100%; background-position: top;"> 
-      
-      <h1 style="font-size: 500%;  display: table-cell; vertical-align: middle;">
-              <a href="#about">Coherent RF Systems</a>
-            </h1>
-            <br>
-          
-          </div>
-       
-      </div>
-    </div>
-    <!-- container ender   -->
-
-<div class="row">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-</div>
-  <br>
   </section>
-
 
   <!--==========================
   Team Section
   ============================-->
-  <section id="team">
+  <section id="services">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
