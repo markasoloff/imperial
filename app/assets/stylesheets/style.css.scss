@@ -1316,32 +1316,9 @@ ol li {
   height: 260px;
 }
 
-#team .member .pic .space-control{
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-  background-image: image-url("ISS013-E-54329.jpg"); 
-  background-size: cover;
-}
-
-#team .member .pic .c4isr{
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-  background-image: image-url("FREESTAR.jpg"); 
-  background-size: cover;
-}
-
-#team .member .pic .coherent-rf{
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-  background-image: image-url("ISS_Comm_Antenna.jpg"); 
-  background-size: cover;
-}
-
-
 #team .member .pic img {
+  height: auto;
+  display: block;
   max-width: 100%;
 }
 
