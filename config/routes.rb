@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get "/" => "main#index"
 
   get "services" => "main#services"
+  get "systems" => "main#systems"
+  get "cyber" => "main#cyber"
+  get "control" => "main#control"
+  get "rf" => "main#rf"
+  get "c4isr" => "main#c4isr"
 
 
   # log in page with form:
