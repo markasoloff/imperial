@@ -1,6 +1,6 @@
 class MainController < ApplicationController
 
-  before_action :authenticate_admin, except: [:index, :services]
+  before_action :authenticate_admin, except: [:index, :systems, :cyber, :control, :c4isr, :rf, :services]
 
   def index
     # @contact = Contact.last

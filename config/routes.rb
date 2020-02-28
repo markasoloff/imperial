@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
   # get 'contact_form/new'
   # get 'contact_form/create'
-  # resources :contacts
+  # resources :main
   # STEP 1: A ROUTE triggers a controller action
   # verb "/urls" => "namespace/controllers#action"
 
   get "/" => "main#index"
-
   get "services" => "main#services"
   get "systems" => "main#systems"
   get "cyber" => "main#cyber"

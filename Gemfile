@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
 gem 'mail_form'
 gem "loofah", ">= 2.3.1"
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
 gem 'sendgrid-ruby'
 gem 'figaro'
 gem 'sticky-rails'
