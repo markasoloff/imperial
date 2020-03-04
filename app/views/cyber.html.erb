@@ -42,79 +42,151 @@
 </head>
 <body>
 
-  <!-- cloudinary generated images -->
 
-  
-  <!-- <picture>
-  <img
-  sizes="(max-width: 2400px) 100vw, 2400px"
-  srcset="
-  ISS_wppa29_c_scale,w_200.jpg 200w,
-  ISS_wppa29_c_scale,w_524.jpg 524w,
-  ISS_wppa29_c_scale,w_740.jpg 740w,
-  ISS_wppa29_c_scale,w_900.jpg 900w,
-  ISS_wppa29_c_scale,w_1041.jpg 1041w,
-  ISS_wppa29_c_scale,w_1166.jpg 1166w,
-  ISS_wppa29_c_scale,w_1285.jpg 1285w,
-  ISS_wppa29_c_scale,w_1402.jpg 1402w,
-  ISS_wppa29_c_scale,w_1515.jpg 1515w,
-  ISS_wppa29_c_scale,w_1622.jpg 1622w,
-  ISS_wppa29_c_scale,w_1725.jpg 1725w,
-  ISS_wppa29_c_scale,w_1825.jpg 1825w,
-  ISS_wppa29_c_scale,w_1918.jpg 1918w,
-  ISS_wppa29_c_scale,w_2016.jpg 2016w,
-  ISS_wppa29_c_scale,w_2113.jpg 2113w,
-  ISS_wppa29_c_scale,w_2199.jpg 2199w,
-  ISS_wppa29_c_scale,w_2294.jpg 2294w,
-  ISS_wppa29_c_scale,w_2382.jpg 2382w,
-  ISS_wppa29_c_scale,w_2400.jpg 2400w"
-  src="ISS_wppa29_c_scale,w_2400.jpg"
-  alt="">
-  </picture> -->
-
-<!-- <div class="background">
-<%= image_tag("jared-arango-1-mh6U3qeGQ-unsplash.jpg") %> -->
-
-  <section id="about">
+    <section id="servicePage">  
+      <div id="servicePage">
     <div class="container wow fadeInUp">
       <div class="row">
           <h3 class="section-title">Cyber / Information Assurance</h3>
           <div class="section-title-divider"></div>
-          <div class="col-md-12 service-item">
-            <p class="about-title main">
+          <div class="col-md-12">
+            <div class="row blurb" style="font-size: 1.5em;">
+            <p>
               farSight personnel possess expertise in offensive and defensive cyber as well as risk assessment methodologies. Additionally, farSight personnel are intimately familiar with Federal requirements and policies regarding cybersecurity and information assurance. Whether its performing upfront risk assessments or red-teaming an operating network, farSight is ready to support your mission. Specific areas of expertise include:
             </p>
+            </div>
           </div>
         </div>  
       </div>
       <div>
-        <div class="col-md-12 wow fadeInRight" data-wow-duration=".75s" data-wow-delay=".15s">
-          <div style="font-size: 175%; text-align: left; padding-left: 30%;">
-           <ul>
-            <li>Defensive Cyber and Computer Network Operations (CNO)</li>
-              <br>
-            <li>Red-Team and Penetration Testing</li>
-              <br>
-            <li>Threat and Vulnerability Analysis</li>
-              <br>
-            <li>Secure network design, integration, test, and operation (including National Security Systems)</li>
-              <br>
-            <li>Federal cyber and information protection interpretation and compliance (FIPS policies, CNSS instructions, FISMA and HIPAA)</li>
-           </ul>
-          </div>  
-          </div>
+      <div id="scroll-container">
+        <div class="wrap-container" id="wrap-scroll">
+          <ul id="ul-scroll">
+            <li class="active">
+              <span class="item">
+                Defensive Cyber and Computer Network Operations (CNO)
+              </span>
+            </li>
+            <li>
+              <span class="item">
+      Red-Team and Penetration Testing        </span>
+            </li>
+            <li>
+              <span class="item">
+      Threat and Vulnerability Analysis        </span>
+            </li>
+            <li>
+              <span class="item" style="font-size: 13px;">
+                Secure network design, integration, testing, & operation (including National Security Systems)
+              </span>
+            </li>
+            <li>
+              <span class="item" style="font-size: 13px;">
+      Federal cyber and information protection, interpretation, and compliance        </span>
+            </li>
+            <li>
+              <span class="item">
+                FIPS policies, CNSS instructions, FISMA and HIPAA
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <svg>
+        <defs>
+          <linearGradient id="gradient" x1="0" y1="0%" x2 ="0" y2="50%">
+            <stop stop-color="black" offset="0"/>
+            <stop stop-color="white" offset="1"/>
+          </linearGradient>
+
+          <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+            <rect y="0" width="1" height="1" fill="url(#gradient)" />
+          </mask>
+        </defs>
+      </svg>
+
         </div>
       </div>
     </div>
+  </div>
+  </div>
 </section>
-
-
-<!-- </div>  -->
 
 
  
 
+<script>
+  var scrollW = document.getElementById("wrap-scroll");
+  var scrollUl = document.getElementById("ul-scroll");
+  var itemsScrolled,
+      itemsMax,
+      cloned = false;
 
+  var listOpts = {
+    itemCount: null,
+    itemHeight: null,
+    items: [],
+  };
+
+  function scrollWrap () {
+    
+    itemsScrolled = Math.ceil( (this.scrollTop + listOpts.itemHeight / 2 ) / listOpts.itemHeight);
+   
+    if (this.scrollTop < 1) {
+      itemsScrolled = 0;
+    }
+       
+    listOpts.items.forEach(function (ele) {
+      ele.classList.remove("active");
+    })
+    
+    if (itemsScrolled < listOpts.items.length) {
+      listOpts.items[itemsScrolled].classList.add("active");
+    }
+    
+    if (itemsScrolled > listOpts.items.length - 3) {
+      
+      var node;
+      for ( _x = 0; _x <= itemsMax - 1; _x++ ) {
+        
+        node = listOpts.items[_x];
+        
+        if ( !cloned ) {
+          node = listOpts.items[_x].cloneNode(true);
+        }
+              
+        scrollUl.appendChild(node);
+      }
+      
+      initItems(cloned);
+      cloned = true; 
+      itemsScrolled = 0;
+      
+    }
+  }
+
+  function initItems (scrollSmooth) {
+    
+    listOpts.items = [].slice.call(scrollUl.querySelectorAll("li"));
+    listOpts.itemHeight = listOpts.items[0].clientHeight;
+    listOpts.itemCount = listOpts.items.length;
+    
+    if (!itemsMax) {
+      itemsMax = listOpts.itemCount;
+    }
+    
+    if (scrollSmooth) {
+      var seamLessScrollPoint = ((itemsMax - 3) * listOpts.itemHeight);
+      scrollW.scrollTop = seamLessScrollPoint;
+    }      
+    
+  }
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    initItems();
+    scrollW.onscroll = scrollWrap;
+  });
+</script>
 
 
 </body>

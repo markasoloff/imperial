@@ -20,7 +20,6 @@
 }
 
 body {
- background-image: image-url("what-the-hex-dark.png");
  color: white;
 }
 
@@ -679,6 +678,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 100px;
 }
 
+.branchPageImg {
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+   background-image: image-url("ISS.jpg");
+   font-size: 200px;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+  // background-image: image-url("copter.jpg");
+  // background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
 #about .about-img {
   overflow: hidden;
 }
@@ -726,7 +741,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-/* Services Section
+/* Homepage Services Section
 --------------------------------*/
 #services {
   background-image: image-url("what-the-hex-dark.png");
@@ -834,6 +849,88 @@ ol li {
   background-size: cover;
   background-position: left;
 }
+
+// Service Pages Section
+// ---------------------------------
+      $max-width: 100%;
+      $max-height: 200px;
+      $item-height: 70px; 
+    #servicePage {
+      background-image: image-url("what-the-hex-dark.png");
+      background-size: cover;
+      font-family: "modernSans";
+      src: font-url("ModernSans-Light.ttf") format("truetype");
+      font-weight: lighter;
+      font-weight: 800;
+      padding: 80px 0;
+     }
+
+      .blurb {
+        font-size: 1.7em;
+       color: white;
+       font-weight: 700;
+       text-align: center;
+       padding: 0 70px 5px 70px;
+       }
+      
+
+      #scroll-container{
+        overflow: hidden;
+        max-width: $max-width;
+        margin: auto;
+        height: 50vh;
+        top: 2vh;
+        position: relative;
+        min-height: $max-height;
+      }
+      .wrap-container{
+        position: relative;
+        max-height: $max-height;
+        width: 100%;
+        max-width: $max-width;
+        margin: auto;
+        /* background: #eee; */
+        overflow: auto;
+        padding-right: 20px; // hides scrollbar
+        mask: url(#masking);
+        -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, 
+         color-stop(0.5,  rgba(0,0,0,1)),
+         color-stop(1,  rgba(0,0,0,0)));
+        
+        ul {
+          list-style: none;
+          position: relative;
+          transition: transform .3s;
+          top: $item-height;
+        }
+        ul, ul li{
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        ul li{
+          height: $item-height;
+          line-height: $item-height;
+          transition: transform .3s;
+          overflow: hidden;
+              
+          &:last-of-type{
+            padding-bottom: $item-height;
+          }
+              
+          &.active{
+            .item{
+              transform: scale(2.2);
+            }
+          }
+        }
+        ul li .item{
+          position: relative;
+          transition: transform 200ms;
+          display: inline-block;
+          font-weight: 800;
+        }
+      }
 
 /* Card Test Section
 --------------------------------*/
