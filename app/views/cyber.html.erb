@@ -41,11 +41,34 @@
 
 </head>
 <body>
+  <header id="header">
+
+  <div class="container-fluid">
+    <!-- <nav class="navbar"> -->
+    <div id="logo" class="pull-left" >
+      <a class="navbar-brand" href="/" style="transform: translate(0%, -30%);"><%= image_tag("farsight-logo_white.png") %>
+       </a>
+    </div>
 
 
-    <section id="servicePage">  
-      <div id="servicePage">
-    <div class="container wow fadeInUp">
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li><a href="systems">Space Systems</a></li>
+        <li><a href="cyber">Cyber Assurance</a></li>
+        <li><a href="control">Space Control</a></li>
+        <li><a href="c4isr">C4ISR</a></li>
+        <li><a href="rf">Coherent RF Systems</a></li>
+        <li class="menu-active"><a href="/">Home</a></li>
+      </ul>
+    </nav>
+    <!-- #nav-menu-container -->
+  </div>
+</header>
+
+  <div id="servicePage">
+   <div class="container" style="padding-bottom: -20px;">
+
+    <!-- <div class="container wow fadeInUp"> -->
       <div class="row">
           <h3 class="section-title">Cyber / Information Assurance</h3>
           <div class="section-title-divider"></div>
@@ -58,9 +81,10 @@
           </div>
         </div>  
       </div>
-      <div>
+
+
       <div id="scroll-container">
-        <div class="wrap-container" id="wrap-scroll">
+        <div class="wrap-container wow fadeInUp" id="wrap-scroll" style="justify-items: stretch;">
           <ul id="ul-scroll">
             <li class="active">
               <span class="item">
@@ -76,15 +100,27 @@
       Threat and Vulnerability Analysis        </span>
             </li>
             <li>
-              <span class="item" style="font-size: 13px;">
-                Secure network design, integration, testing, & operation (including National Security Systems)
+              <span class="item">
+                Secure network design, integration, and testing 
               </span>
             </li>
-            <li>
-              <span class="item" style="font-size: 13px;">
-      Federal cyber and information protection, interpretation, and compliance        </span>
+
+              <li>
+                <span class="item">
+                  Network operation (including National Security Systems)
+                </span>
+              </li>
+              <li>
+
+              <span class="item">
+                Federal cyber and information protection </span>
             </li>
             <li>
+                <span class="item">
+                  Federal information interpretation and compliance</span>
+              </li>
+
+              <li>
               <span class="item">
                 FIPS policies, CNSS instructions, FISMA and HIPAA
               </span>
@@ -106,14 +142,7 @@
       </svg>
 
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
 
-
- 
 
 <script>
   var scrollW = document.getElementById("wrap-scroll");

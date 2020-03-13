@@ -857,7 +857,7 @@ ol li {
       $item-height: 70px; 
     #servicePage {
       background-image: image-url("what-the-hex-dark.png");
-      background-size: cover;
+      background-size: 50%;
       font-family: "modernSans";
       src: font-url("ModernSans-Light.ttf") format("truetype");
       font-weight: lighter;
@@ -875,7 +875,8 @@ ol li {
       
 
       #scroll-container{
-        overflow: hidden;
+        // overflow: hidden;
+        overflow: visible;
         max-width: $max-width;
         margin: auto;
         height: 50vh;
@@ -891,6 +892,8 @@ ol li {
         margin: auto;
         /* background: #eee; */
         overflow: auto;
+        // overflow: visible;
+
         padding-right: 20px; // hides scrollbar
         mask: url(#masking);
         -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, 
@@ -913,6 +916,7 @@ ol li {
           line-height: $item-height;
           transition: transform .3s;
           overflow: hidden;
+
               
           &:last-of-type{
             padding-bottom: $item-height;
@@ -928,6 +932,7 @@ ol li {
           position: relative;
           transition: transform 200ms;
           display: inline-block;
+          text-align: center;
           font-weight: 800;
         }
       }
