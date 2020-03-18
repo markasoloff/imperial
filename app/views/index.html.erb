@@ -201,16 +201,76 @@
           <div class="section-title-divider"></div>
         </div>
       </div>
+      <style>
+        /*.column::after {
+          content: '';
+          clear: both;
+          display: block;
+        }*/
+       /* .column div {
+          position: relative;
+          float: left;
+          width: 300px;
+          height: 200px;
+          margin: 0 0 0 25px;
+          padding: 0;
+        }*/
+       /* .column div:first-child {
+          margin-left: 0;
+        }*/
+        /*.column div span {
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          z-index: -1;
+          display: block;
+          width: 300px;
+          margin: 0;
+          padding: 0;
+          color: #444;
+          font-size: 18px;
+          text-decoration: none;
+          text-align: center;
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+          opacity: 0;
+        }*/
+        figure {
+          overflow: hidden;
+        }
+        figure:hover+span {
+          bottom: -36px;
+          opacity: 1;
+        }
+
+        /* Zoom In #1 */
+        .hover01 figure img {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+        }
+        .hover01 figure:hover img {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+
+      </style>
 
       <div class="row no-gutters">
         <div class="col-md-6">
           <div class="member">
             <div class="pic">
-            <a href="systems"> <%= image_tag('ISS.jpg') %></a>
+
+             
+              <div id="demo01" class="hover01">
+                <div>
+                  <figure><a href="systems"> <%= image_tag('ISS.jpg') %></a></figure>
                 </div>
-            <h4>Space Systems</h4>
+                </div>
             <!-- <span>Space Systems</span> -->
           </div>
+            <h4>Space Systems</h4>
         </div>
         <div class="col-md-6">
           <div class="member">
