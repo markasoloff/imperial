@@ -194,6 +194,7 @@
    <div id="services">
     <div class="container wow fadeInUp" style="padding:10px 0 100px 0;">
 
+
   <section id="team">
       <div class="row">
         <div class="col-md-12">
@@ -201,95 +202,42 @@
           <div class="section-title-divider"></div>
         </div>
       </div>
-      <style>
-        /*.column::after {
-          content: '';
-          clear: both;
-          display: block;
-        }*/
-       /* .column div {
-          position: relative;
-          float: left;
-          width: 300px;
-          height: 200px;
-          margin: 0 0 0 25px;
-          padding: 0;
-        }*/
-       /* .column div:first-child {
-          margin-left: 0;
-        }*/
-        /*.column div span {
-          position: absolute;
-          bottom: -20px;
-          left: 0;
-          z-index: -1;
-          display: block;
-          width: 300px;
-          margin: 0;
-          padding: 0;
-          color: #444;
-          font-size: 18px;
-          text-decoration: none;
-          text-align: center;
-          -webkit-transition: .3s ease-in-out;
-          transition: .3s ease-in-out;
-          opacity: 0;
-        }*/
-        figure {
-          overflow: hidden;
-        }
-        figure:hover+span {
-          bottom: -36px;
-          opacity: 1;
-        }
-
-        /* Zoom In #1 */
-        .hover01 figure img {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-          -webkit-transition: .3s ease-in-out;
-          transition: .3s ease-in-out;
-        }
-        .hover01 figure:hover img {
-          -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-        }
-
-      </style>
 
       <div class="row no-gutters">
         <div class="col-md-6">
           <div class="member">
             <div class="pic">
-
+              <div class="hover01">
              
-              <div id="demo01" class="hover01">
-                <div>
                   <figure><a href="systems"> <%= image_tag('ISS.jpg') %></a></figure>
-                </div>
-                </div>
-            <!-- <span>Space Systems</span> -->
+              </div>
+            </div>
+               
           </div>
             <h4>Space Systems</h4>
         </div>
         <div class="col-md-6">
           <div class="member">
             <div class="pic">
-              <a href="cyber"><%= image_tag('hero-bg.jpg') %></a>
+              <div class="hover01">
+              
+               <figure><a href="cyber"><%= image_tag('hero-bg.jpg') %></a></figure>
+              </div>
             </div>
-            <h4>Cyber / Information Assurance</h4>
-            <!-- <span>Cyber / Information Assurance</span> -->
           </div>
+        <h4>Cyber / Information Assurance</h4>
         </div>
+      </div> <!-- row no gutters end -->
 
-    </div>
       <div class="row no-gutters">
         <div class="col-md-4">
           <div class="member">
            <!-- temporary img spacing fix -->
             <!-- <br> -->
             <div class="pic">
-            <a href="control"> <%= image_tag('ISS_Comm_Antenna.jpg') %></a> 
+              <div class="hover01">
+                  <figure><a href="control"> <%= image_tag('ISS_Comm_Antenna.jpg') %></a></figure>
+                </div>
             </div>
             <h4>Space Control</h4>
             <!-- <span>Space Control</span> -->
@@ -299,12 +247,18 @@
         <div class="col-md-4">
           <div class="member">
             <div class="pic">
-              <a href="c4isr"><%= image_tag('FREESTAR.jpg') %></a>
+              <div class="pic">
+                <div class="hover01">
+                 
+              <figure><a href="c4isr"><%= image_tag('FREESTAR.jpg') %></a></figure>
+              </div>
             </div>
             <h4>C4ISR</h4>
             <!-- <span>C4ISR</span> -->
           </div>
         </div>
+      </div>       
+
         <div class="col-md-4">
           <div class="member">
             <div class="pic">
@@ -314,9 +268,12 @@
             <!-- <span>Coherent RF Systems</span> -->
           </div>
         </div>  
-      </div>       
-  </div>    
+
+  </div>   <!-- row no gutters end -->
+
+
   </section>
+  </div>
   </div>
 
   <!--==========================
