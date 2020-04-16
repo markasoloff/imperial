@@ -20,7 +20,12 @@
 }
 
 body {
- color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  color: white;
 }
 
 a {
@@ -671,11 +676,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: auto;
   width: 100%;
   height: 100%;
-   background-image: image-url("DOD.jpg");
+  background-image: image-url("DOD.jpg");
   // background-image: image-url("copter.jpg");
-  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   background-position: left;
-  padding: 100px;
+  // padding: 100px;
 }
 
 .branchPageImg {
@@ -1477,7 +1483,7 @@ figure:hover+span {
 #contact {
   background-image: image-url("what-the-hex-dark.png");
   // background: #f7f7f7;
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 #contact .info {
@@ -1565,3 +1571,11 @@ figure:hover+span {
   font-size: 13px;
   color: #ccc;
 }
+
+// <..> ghost css below
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
