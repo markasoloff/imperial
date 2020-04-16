@@ -96,7 +96,7 @@
     <div class="sidekick"> 
       <%= image_tag("farsight-logo_white.png", :alt => "farsight logo", :style => "position: relative; justify-content: center; max-height: 15rem; max-width: 100%; padding-left: 10px; z-index: 1;") %>
     </div>
-    <div class="container" style="padding: 0;">
+    <!-- <div class="container" style="padding: 0;"> -->
     <div class="hero-container">
           <br>
         <br>
@@ -105,14 +105,12 @@
         <br>
         <br>
         <br>
-      <div>
-        <div class="hero-logo">
+      <div class="hero-logo">
             
           <h3 class="wow fadeIn" data-wow-duration="2.5s"> Do the impossible </h3>
-
-          </div>
-        </div>
-        </div>
+      </div>
+        <!-- </div> -->
+        <!-- </div> -->
         <br>      
         <br>
         <br>
@@ -173,10 +171,10 @@
       </div>
       <div>
         <div class="col-md-12 sundown wow fadeInRight" data-wow-duration="1s" data-wow-delay=".15s">
-          <p class="about-title" style="padding: 10px 0 0 30px; text-align: left; color: white; font-size: 250%;">farSight enables vital missions in:
+          <p class="list">farSight enables vital missions in:
           </p>
           <br>
-          <div style="font-size: 200%; text-align: left; padding: 0 0 20% 55%;">
+          <div class="sublist">
              <ul>
                <li>Space Exploration</li>
                <li>Homeland Security</li>
@@ -257,7 +255,7 @@
 
         <div class="col-md-4">
           <div class="member">
-            <div class="pic">
+            <!-- <div class="pic"> -->
               <div class="pic">
                 <div class="hover01">
                  
@@ -267,13 +265,15 @@
             <h4>C4ISR</h4>
             <!-- <span>C4ISR</span> -->
           </div>
-        </div>
+        <!-- </div> -->
       </div>       
 
         <div class="col-md-4">
           <div class="member">
             <div class="pic">
-              <a href="rf"><%= image_tag('spectral.jpg') %></a>
+              <div class="hover01">
+                  <figure><a href="control"> <%= image_tag('spectral.jpg') %></a></figure>
+                </div>
             </div>
             <h4>Coherent RF Systems</h4>
             <!-- <span>Coherent RF Systems</span> -->

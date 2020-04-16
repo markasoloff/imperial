@@ -247,11 +247,12 @@ article {
 --------------------------------------------------------------*/
 #hero {
   display: table;
-  margin: auto;
+  // margin: auto;
   width: 100%;
   height: 100vh;
   background-image: image-url("Earth-and-Sun.jpg");
-  background-size: cover;
+  // background-size: cover;
+  object-fit: cover;
   background-position: center;
 }
 
@@ -726,6 +727,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
   font-weight: 700;
   font-size: 28px;
+  padding: 10px 0 0 30px; 
+  text-align: left; 
 }
 
 #about .main {
@@ -746,6 +749,45 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-text:last-child {
   margin-bottom: 0;
 }
+
+#about .list {
+  color: white;
+  font-weight: 700;
+  padding: 10px 0 0 30px; 
+  text-align: left;
+}
+ 
+  @media screen and (min-width: 601px) {
+    p.list {
+      font-size: 65px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    p.list {
+      font-size: 8vw;
+    }
+  }
+
+  #about .sublist {
+  color: white;
+  // font-weight: 700;
+  padding: 0 0 20% 55%; 
+  text-overflow: ellipsis;
+  text-align: left;
+}
+ 
+  @media screen and (min-width: 601px) {
+    div.sublist {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    div.subllist {
+      font-size: 7.5vw;
+    }
+  }
 
 /* Homepage Services Section
 --------------------------------*/
@@ -857,6 +899,7 @@ ol li {
 }
 
 figure {
+  object-fit: cover;
   overflow: hidden;
 }
 figure:hover+span {
