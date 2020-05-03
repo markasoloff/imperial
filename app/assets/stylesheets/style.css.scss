@@ -944,11 +944,12 @@ figure:hover+span {
       
 
       #scroll-container{
-        // overflow: hidden;
-        overflow: visible;
-        max-width: $max-width;
+        overflow: hidden;
+        // overflow: visible;
+        // max-width: $max-width;
+        max-width: 90%;
         margin: auto;
-        height: 50vh;
+        height: 60vh;
         top: 2vh;
         position: relative;
         min-height: $max-height;

@@ -41,51 +41,163 @@
 
 </head>
 <body>
+    <header id="header">
 
-  <!-- cloudinary generated images -->
-
-
-<!-- <div class="background">
-<%= image_tag("jared-arango-1-mh6U3qeGQ-unsplash.jpg") %> -->
-
-  <section id="about">
-    <div class="container wow fadeInUp">
-      <div class="row">
-          <h3 class="section-title">Space Control</h3>
-          <div class="section-title-divider"></div>
-          <div class="col-md-12 service-item">
-            <p class="about-title main">
-              farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
-            </p>
-          </div>
-        </div>  
+    <div class="container-fluid">
+      <!-- <nav class="navbar"> -->
+      <div id="logo" class="pull-left" >
+        <a class="navbar-brand" href="/" style="transform: translate(0%, -30%);"><%= image_tag("farsight-logo_white.png") %>
+         </a>
       </div>
-      <div>
-        <div class="col-md-12 wow fadeInRight" data-wow-duration=".75s" data-wow-delay=".15s">
-          <div style="font-size: 175%; text-align: left; padding-left: 30%;">
-           <ul>
-            <li>Space Surveillance Systems (RADAR, LIDAR)</li>
-              <br>
-            <li>Counterspace Techniques and Defensive Mitigations</li>
-              <br>
-            <li>Maneuver Detection and Object Characterization</li>
-            
-           </ul>
+
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="systems">Space Systems</a></li>
+          <li><a href="cyber">Cyber Assurance</a></li>
+          <li><a href="control">Space Control</a></li>
+          <li><a href="c4isr">C4ISR</a></li>
+          <li><a href="rf">Coherent RF Systems</a></li>
+          <li class="menu-active"><a href="/">Home</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+
+    <div id="servicePage">
+     <div class="container" style="padding-bottom: -20px;">
+
+      <!-- <div class="container wow fadeInUp"> -->
+        <div class="row">
+            <h3 class="section-title">Space Control</h3>
+            <div class="section-title-divider"></div>
+            <div class="col-md-12">
+              <div class="row blurb" style="font-size: 1.5em;">
+              <p>
+                farSight personnel are experienced in all aspects of Space Situational Awareness and Space Control including the use of RADAR and LIDAR, orbital debris and space object surveillance and identification (SOSI), offensive and defensive counterspace techniques. farSight has unique experience in applying the principles and methods of Space Systems Assurance to civil and civilian space vehicles and missions. Specific areas of expertise include:
+              </p>
+              </div>
+            </div>
           </div>  
+        </div>
+
+
+        <div id="scroll-container">
+          <div class="wrap-container wow fadeInUp" id="wrap-scroll" style="justify-items: stretch;">
+            <ul id="ul-scroll">
+              <li class="active">
+                <span class="item">
+                  Space Surveillance Systems (RADAR & LIDAR)</span>
+              </li>
+              <li>
+                <span class="item">
+                  Counterspace Techniques</span>
+              </li>
+              <li>
+                <span class="item">
+                  Defensive Mitigations</span>
+              </li>
+              <li>
+                <span class="item">
+                  Maneuver Detection</span>
+              </li>
+
+                <li>
+                  <span class="item">
+                    Object Characterization</span>
+                </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-</section>
+        <svg>
+          <defs>
+            <linearGradient id="gradient" x1="0" y1="0%" x2 ="0" y2="50%">
+              <stop stop-color="black" offset="0"/>
+              <stop stop-color="white" offset="1"/>
+            </linearGradient>
+
+            <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+              <rect y="0" width="1" height="1" fill="url(#gradient)" />
+            </mask>
+          </defs>
+        </svg>
+
+          </div>
 
 
-<!-- </div>  -->
+  <script>
+    var scrollW = document.getElementById("wrap-scroll");
+    var scrollUl = document.getElementById("ul-scroll");
+    var itemsScrolled,
+        itemsMax,
+        cloned = false;
 
+    var listOpts = {
+      itemCount: null,
+      itemHeight: null,
+      items: [],
+    };
 
- 
+    function scrollWrap () {
+      
+      itemsScrolled = Math.ceil( (this.scrollTop + listOpts.itemHeight / 2 ) / listOpts.itemHeight);
+     
+      if (this.scrollTop < 1) {
+        itemsScrolled = 0;
+      }
+         
+      listOpts.items.forEach(function (ele) {
+        ele.classList.remove("active");
+      })
+      
+      if (itemsScrolled < listOpts.items.length) {
+        listOpts.items[itemsScrolled].classList.add("active");
+      }
+      
+      if (itemsScrolled > listOpts.items.length - 3) {
+        
+        var node;
+        for ( _x = 0; _x <= itemsMax - 1; _x++ ) {
+          
+          node = listOpts.items[_x];
+          
+          if ( !cloned ) {
+            node = listOpts.items[_x].cloneNode(true);
+          }
+                
+          scrollUl.appendChild(node);
+        }
+        
+        initItems(cloned);
+        cloned = true; 
+        itemsScrolled = 0;
+        
+      }
+    }
 
+    function initItems (scrollSmooth) {
+      
+      listOpts.items = [].slice.call(scrollUl.querySelectorAll("li"));
+      listOpts.itemHeight = listOpts.items[0].clientHeight;
+      listOpts.itemCount = listOpts.items.length;
+      
+      if (!itemsMax) {
+        itemsMax = listOpts.itemCount;
+      }
+      
+      if (scrollSmooth) {
+        var seamLessScrollPoint = ((itemsMax - 3) * listOpts.itemHeight);
+        scrollW.scrollTop = seamLessScrollPoint;
+      }      
+      
+    }
 
-
+    document.addEventListener("DOMContentLoaded", function(event) {
+      initItems();
+      scrollW.onscroll = scrollWrap;
+    });
+  </script>
 
 </body>
 </html>

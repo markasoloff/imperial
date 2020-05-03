@@ -41,39 +41,164 @@
 
 </head>
 <body>
+    <header id="header">
 
-<%= image_tag("jared-arango-1-mh6U3qeGQ-unsplash.jpg") %> -->
+    <div class="container-fluid">
+      <!-- <nav class="navbar"> -->
+      <div id="logo" class="pull-left" >
+        <a class="navbar-brand" href="/" style="transform: translate(0%, -30%);"><%= image_tag("farsight-logo_white.png") %>
+         </a>
+      </div>
 
-  <section id="about">
-    <div class="container wow fadeInUp">
-      <div class="row">
-          <h3 class="section-title">Coherent RF Systems</h3>
-          <div class="section-title-divider"></div>
-          <div class="col-md-12 service-item">
-            <p class="about-title main">
-              farSight personnel have unique experience in the design, integration, test, and operation of coherent RF systems including those used for high power, widely separated uplink arraying, deep space RADAR, coherent EW effects generation and projection, and precision SIGINT and MASINT collection.
-            </p>
-          </div>
-        </div>  
-      </div>
-      <div>
-       <!--  <div class="col-md-12 wow fadeInRight" data-wow-duration=".75s" data-wow-delay=".15s">
-          <div style="font-size: 175%; text-align: left; padding-left: 30%;">
-          </div>  
-          </div> -->
-        </div>
-      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="systems">Space Systems</a></li>
+          <li><a href="cyber">Cyber Assurance</a></li>
+          <li><a href="control">Space Control</a></li>
+          <li><a href="c4isr">C4ISR</a></li>
+          <li><a href="rf">Coherent RF Systems</a></li>
+          <li class="menu-active"><a href="/">Home</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
     </div>
-</section>
+  </header>
+
+    <div id="servicePage">
+     <div class="container" style="padding-bottom: -20px;">
+
+      <!-- <div class="container wow fadeInUp"> -->
+        <div class="row">
+            <h3 class="section-title">C4ISR</h3>
+              <h4 class="section-title">Command, Control, Communications, Intelligence, Surveillance, and Reconnaissance</h4>
+            <div class="section-title-divider"></div>
+            <div class="col-md-12">
+              <div class="row blurb" style="font-size: 1.5em;">
+              <p>
+                farSight personnel have decades of experience in the design, integration, test, and operations of advanced and special application C4ISR systems. farSight has practical C4ISR experience ranging from capability concept specification, through assembly, integration, and test, to deployed operations. farSight-developed systems are operating in all mission domains from fixed and ground-mobile, through airborne UAV and manned platforms, to space-based systems. farSight personnel have expertise in delay/disruption tolerance techniques for disadvantaged networks as well as RF and signal design for low probability of intercept communications. Specific areas of expertise include:
+              </p>
+              </div>
+            </div>
+          </div>  
+        </div>
 
 
-<!-- </div>  -->
+        <div id="scroll-container">
+          <div class="wrap-container wow fadeInUp" id="wrap-scroll" style="justify-items: stretch;">
+            <ul id="ul-scroll">
+              <li class="active">
+                <span class="item">
+                  Delay / Disruption Tolerant Networking (DTN)</span>
+              </li>
+              <li>
+                <span class="item">
+                  Assured Position, Navigation, and Timing (PNT)</span>
+              </li>
+              <li>
+                <span class="item">
+                  Disadvantaged User Communications</span>
+              </li>
+              <li>
+                <span class="item">
+                  ISR collection, processing, & dissemination architectures / systems</span>
+              </li>
+
+                <li>
+                  <span class="item">
+                    SIGINT, ELINT, MASINT, and IMINT</span>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <svg>
+          <defs>
+            <linearGradient id="gradient" x1="0" y1="0%" x2 ="0" y2="50%">
+              <stop stop-color="black" offset="0"/>
+              <stop stop-color="white" offset="1"/>
+            </linearGradient>
+
+            <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+              <rect y="0" width="1" height="1" fill="url(#gradient)" />
+            </mask>
+          </defs>
+        </svg>
+
+          </div>
 
 
- 
+  <script>
+    var scrollW = document.getElementById("wrap-scroll");
+    var scrollUl = document.getElementById("ul-scroll");
+    var itemsScrolled,
+        itemsMax,
+        cloned = false;
 
+    var listOpts = {
+      itemCount: null,
+      itemHeight: null,
+      items: [],
+    };
 
+    function scrollWrap () {
+      
+      itemsScrolled = Math.ceil( (this.scrollTop + listOpts.itemHeight / 2 ) / listOpts.itemHeight);
+     
+      if (this.scrollTop < 1) {
+        itemsScrolled = 0;
+      }
+         
+      listOpts.items.forEach(function (ele) {
+        ele.classList.remove("active");
+      })
+      
+      if (itemsScrolled < listOpts.items.length) {
+        listOpts.items[itemsScrolled].classList.add("active");
+      }
+      
+      if (itemsScrolled > listOpts.items.length - 3) {
+        
+        var node;
+        for ( _x = 0; _x <= itemsMax - 1; _x++ ) {
+          
+          node = listOpts.items[_x];
+          
+          if ( !cloned ) {
+            node = listOpts.items[_x].cloneNode(true);
+          }
+                
+          scrollUl.appendChild(node);
+        }
+        
+        initItems(cloned);
+        cloned = true; 
+        itemsScrolled = 0;
+        
+      }
+    }
 
+    function initItems (scrollSmooth) {
+      
+      listOpts.items = [].slice.call(scrollUl.querySelectorAll("li"));
+      listOpts.itemHeight = listOpts.items[0].clientHeight;
+      listOpts.itemCount = listOpts.items.length;
+      
+      if (!itemsMax) {
+        itemsMax = listOpts.itemCount;
+      }
+      
+      if (scrollSmooth) {
+        var seamLessScrollPoint = ((itemsMax - 3) * listOpts.itemHeight);
+        scrollW.scrollTop = seamLessScrollPoint;
+      }      
+      
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      initItems();
+      scrollW.onscroll = scrollWrap;
+    });
+  </script>
 
 </body>
 </html>
