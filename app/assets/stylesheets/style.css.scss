@@ -939,7 +939,7 @@ figure:hover+span {
        color: white;
        font-weight: 700;
        text-align: center;
-       padding: 0 70px 5px 70px;
+       padding: 0 70px 0px 70px;
        }
       
 
@@ -956,7 +956,7 @@ figure:hover+span {
       }
       .wrap-container{
         position: relative;
-        max-height: $max-height;
+        max-height: 300px;
         width: 100%;
         max-width: $max-width;
         margin: auto;
@@ -985,6 +985,10 @@ figure:hover+span {
           height: $item-height;
           line-height: $item-height;
           transition: transform .3s;
+          color:#2c72a4;
+          transition-timing-function: ease;
+          transition: color .4s;
+          // -webkit-transition: color .4s ease-in-out;
           overflow: hidden;
 
               
@@ -995,6 +999,7 @@ figure:hover+span {
           &.active{
             .item{
               transform: scale(2.2);
+              color: white;
             }
           }
         }
