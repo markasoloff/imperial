@@ -1,0 +1,1624 @@
+/*
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
+  Author: BootstrapMade
+  Author URL: https://bootstrapmade.com
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/* line 11, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.lr {
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+/* line 23, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* line 32, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+a {
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 37, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+a:hover, a:active, a:focus {
+  color: #03c5ec;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 43, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+p {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  color: white;
+  font-size: 1em;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+/* line 53, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+h1 {
+  text-align: center;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-color: white;
+}
+
+/* line 65, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+h2, h3, h4, h5, h6 {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  color: white;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* line 74, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+li {
+  color: white;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+/* line 82, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+ul {
+  color: white;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+/* line 89, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+article {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  color: white;
+}
+
+/* Preloader */
+/* line 98, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /*background: #fff url("/preloader.svg") no-repeat center center;*/
+  background-image: #fff url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSc4MHB4JyBoZWlnaHQ9JzgwcHgnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0idWlsLXJpcHBsZSI%2BPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9Im5vbmUiIGNsYXNzPSJiayI%2BPC9yZWN0PjxnPiA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiBkdXI9IjJzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgYmVnaW49IjBzIiBrZXlUaW1lcz0iMDswLjMzOzEiIHZhbHVlcz0iMTsxOzAiPjwvYW5pbWF0ZT48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgc3Ryb2tlPSIjZWJlYmViIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI%2BPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGJlZ2luPSIwcyIga2V5VGltZXM9IjA7MC4zMzsxIiB2YWx1ZXM9IjA7MjI7NDQiPjwvYW5pbWF0ZT48L2NpcmNsZT48L2c%2BPGc%2BPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ib3BhY2l0eSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGJlZ2luPSIxcyIga2V5VGltZXM9IjA7MC4zMzsxIiB2YWx1ZXM9IjE7MTswIj48L2FuaW1hdGU%2BPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIHN0cm9rZT0iIzAzQzRFQiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InIiIGR1cj0iMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBiZWdpbj0iMXMiIGtleVRpbWVzPSIwOzAuMzM7MSIgdmFsdWVzPSIwOzIyOzQ0Ij48L2FuaW1hdGU%2BPC9jaXJjbGU%2BPC9nPjwvc3ZnPg%3D%3D) no-repeat center center;
+}
+
+/* Back to top button */
+/* line 112, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  /* line 126, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+/* line 131, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.back-to-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+/* line 137, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.back-to-top:hover {
+  background: #03C4EB;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# LOADER
+--------------------------------------------------------------*/
+/* LOADER GRID */
+/* line 148, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.one {
+  width: 100%;
+}
+
+/* LOADER COLUMNS */
+/* line 152, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+/* line 158, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.col:first-of-type {
+  margin-left: 0;
+}
+
+/* line 162, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.container {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  justify-items: stretch;
+}
+
+/* CLEARFIX */
+/* line 174, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+/* line 180, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 184, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* line 188, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.row {
+  margin: 30px 0;
+}
+
+/* line 192, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.three {
+  background-color: #eee;
+  padding: 50px 0;
+}
+
+/* ALL LOADERS */
+/* line 199, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* LOADER 1 */
+/* line 209, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#loader-1:before, #loader-1:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 10px solid transparent;
+  border-top-color: #2b73a5;
+}
+
+/* line 221, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#loader-1:before {
+  z-index: 100;
+  animation: spin 1s infinite;
+}
+
+/* line 226, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#loader-1:after {
+  border: 10px solid #a2cae4;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+/* line 249, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/Earth-and-Sun-ead839928a1f456c5ef3762a6374b56f2264cef4a514799c7dbe33d3dd41f143.jpg);
+  object-fit: cover;
+  background-position: center;
+}
+
+@media (min-width: 1024px) {
+  /* line 265, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 724px) {
+  /* line 271, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #about {
+    padding: 80px;
+  }
+}
+/* line 276, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .hero-logo {
+  text-align: center;
+}
+
+/* line 280, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .hero-logo img {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* line 285, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .hero-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 292, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero h1 {
+  padding-top: .5em;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 300, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+/* line 306, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero h2 {
+  color: #77abff;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  /* line 312, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  /* line 317, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #hero h2 .rotating {
+    display: block;
+  }
+}
+/* line 322, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .rotating > .animated {
+  display: inline-block;
+}
+
+/* line 326, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .actions a {
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+/* line 336, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero h3 {
+  font-size: 3em;
+  font-weight: normal;
+  padding-top: 3em;
+  color: gray;
+}
+
+/* line 343, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-get-started {
+  background: none;
+  border: 2px solid #77abff;
+  color: #fff;
+}
+
+/* line 349, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-get-started:hover {
+  background: #77abff;
+  border: 2px solid #77abff;
+  color: #fff;
+}
+
+/* line 355, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-services {
+  border: 2px solid #77abff;
+  color: #fff;
+}
+
+/* line 360, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#hero .btn-services:hover {
+  background: #77abff;
+  border: 2px solid #77abff;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/* line 368, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header {
+  background: #111;
+  padding: 20px 0 2px;
+  border-bottom: 5px solid #2b73a5;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 1;
+  top: 0;
+}
+
+/* line 379, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo {
+  float: left;
+  z-index: 2;
+}
+
+/* line 384, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+/* line 392, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo h1 a, #header #logo h1 a:hover {
+  color: #fff;
+}
+
+/* line 396, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#header #logo img {
+  margin: 0;
+  max-height: 45px;
+}
+
+@media (max-width: 768px) {
+  /* line 403, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #header {
+    height: 80px;
+  }
+
+  /* line 406, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #header #logo h1 {
+    font-size: 26px;
+  }
+
+  /* line 409, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+/* .is-sticky #header {
+  background: rgba(0, 0, 0, 0.85);
+} */
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+/* line 422, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 428, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+/* line 436, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* line 441, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu > li {
+  float: left;
+}
+
+/* line 445, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+/* line 450, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* line 455, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+/* line 460, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+/* line 464, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 473, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+/* line 478, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#nav-menu-container {
+  float: right;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  /* line 484, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #nav-menu-container {
+    display: none;
+  }
+}
+/* Nav Meu Styling */
+/* line 490, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  font-size: 14px;
+  outline: none;
+}
+
+/* line 503, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+  color: #03C4EB;
+}
+
+/* line 507, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 512, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+/* line 517, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li:first-child {
+  border-top: 0;
+}
+
+/* line 521, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li:hover {
+  background: #f6f6f6;
+}
+
+/* line 525, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul li a {
+  color: #333;
+}
+
+/* line 529, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+/* line 534, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+}
+
+/* line 548, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 553, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+/* Mobile Nav Styling */
+/* line 559, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+/* line 572, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 578, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li {
+  position: relative;
+}
+
+/* line 582, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+/* line 594, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+/* line 598, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+/* line 602, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 611, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #03C4EB;
+}
+
+/* line 615, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-nav ul .menu-item-active {
+  color: #03C4EB;
+}
+
+/* line 619, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+/* line 631, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+/* line 635, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+/* line 639, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Common
+--------------------------------*/
+/* line 648, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.section-title {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+/* line 654, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.section-description {
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* line 661, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #2b73a5;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Get Started Section
+--------------------------------*/
+/* line 671, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about {
+  background-image: url(/assets/what-the-hex-dark-27a1262ea76b3a25c3279c8177619e26cd35d1cf77f9d9c6a8c94bc6736748f4.png);
+  padding: 80px 0;
+}
+
+/* line 676, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.sundown {
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/DOD-bb5dbfb2cf19d26432a5352de42f02e490ee3d5f4f0af4d96e0a949c77dd5660.jpg);
+  background-position: left;
+}
+
+/* line 689, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.branchPageImg {
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+  background-image: url(/assets/ISS-577ec9fa76e685da0c58d46a7e3a9133616e6ba22f9ea0c1cf5fce6e517d936d.jpg);
+  font-size: 200px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-position: center;
+  padding: 100px;
+}
+
+/* line 705, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-img {
+  overflow: hidden;
+}
+
+/* line 709, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 714, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #about .about-img {
+    height: auto;
+  }
+
+  /* line 717, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+/* line 723, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-content {
+  background: #333;
+}
+
+/* line 727, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-title {
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 10px 0 0 30px;
+  text-align: left;
+}
+
+/* line 735, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .main {
+  font-size: 2em;
+  text-align: left;
+}
+
+/* line 740, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-text {
+  color: white;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+/* line 746, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-bullets {
+  margin-left: auto;
+}
+
+/* line 750, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .about-text:last-child {
+  margin-bottom: 0;
+}
+
+/* line 754, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .list {
+  color: white;
+  font-weight: 700;
+  padding: 10px 0 0 30px;
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  /* line 762, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  p.list {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 768, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  p.list {
+    font-size: 8vw;
+  }
+}
+/* line 773, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#about .sublist {
+  color: white;
+  padding: 0 0 20% 55%;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  /* line 782, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  div.sublist {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 788, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+  div.subllist {
+    font-size: 7.5vw;
+  }
+}
+/* Homepage Services Section
+--------------------------------*/
+/* line 795, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services {
+  background-image: url(/assets/what-the-hex-dark-27a1262ea76b3a25c3279c8177619e26cd35d1cf77f9d9c6a8c94bc6736748f4.png);
+  padding: 80px 0 60px 0;
+}
+
+/* line 801, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-item {
+  margin-bottom: 20px;
+}
+
+/* line 805, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-icon {
+  float: left;
+  background: #03C4EB;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #03C4EB;
+}
+
+/* line 814, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* line 835, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.myStyle {
+  color: #111;
+  text-align: center;
+  margin-bottom: 40px;
+  display: inline-block;
+  visibility: visible;
+}
+
+/* line 843, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#myDIV {
+  visibility: hidden;
+}
+
+/* line 847, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+ol {
+  list-style: none;
+}
+
+/* line 850, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+ol li {
+  display: inline-block;
+}
+
+/* line 853, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.fade-in .box {
+  height: 260px;
+  width: 160px;
+  color: #111;
+}
+
+/* line 860, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+/* line 869, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.tabbed {
+  margin-left: 100px;
+}
+
+/* line 873, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-title a {
+  color: #111;
+}
+
+/* line 884, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#services .service-description {
+  margin-left: 80px;
+  line-height: 24px;
+  color: #111;
+}
+
+/* ^..^ */
+/* line 891, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.space-systems {
+  display: table;
+  margin: auto;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/ISS-577ec9fa76e685da0c58d46a7e3a9133616e6ba22f9ea0c1cf5fce6e517d936d.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+/* line 902, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+figure {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* line 906, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+figure:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+/* Zoom In #1 */
+/* line 912, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.hover01 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+/* line 918, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.hover01 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* line 928, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#servicePage {
+  background-image: url(/assets/what-the-hex-dark-27a1262ea76b3a25c3279c8177619e26cd35d1cf77f9d9c6a8c94bc6736748f4.png);
+  background-size: 50%;
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  font-weight: 800;
+  padding: 80px 0;
+}
+
+/* line 938, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.blurb {
+  font-size: 1.7em;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 70px 0px 70px;
+}
+
+/* line 947, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#scroll-container {
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+  height: 60vh;
+  top: 2vh;
+  position: relative;
+  min-height: 200px;
+}
+
+/* line 958, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container {
+  overflow: visible;
+  position: relative;
+  height: 50vh;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  /* background: #eee; */
+  padding-right: 20px;
+  mask: url(#masking);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, black), color-stop(1, rgba(0, 0, 0, 0)));
+}
+/* line 974, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container ul {
+  list-style: none;
+  position: relative;
+  transition: transform .3s;
+  top: 70px;
+}
+/* line 980, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container ul, .wrap-container ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 985, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container ul li {
+  height: 70px;
+  line-height: 70px;
+  color: #2c72a4;
+  -webkit-transition: transform .3s, color .75s ease-in-out;
+  transition: transform .3s, color .75s ease-in-out;
+  overflow: hidden;
+}
+/* line 996, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container ul li:last-of-type {
+  padding-bottom: 70px;
+}
+/* line 1001, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container ul li.active .item {
+  transform: scale(2.2);
+  color: white;
+  -webkit-transition: transform .3s, color .75s ease-in-out;
+  transition: transform .3s, color .75s ease-in-out;
+}
+/* line 1009, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.wrap-container ul li .item {
+  position: relative;
+  transition: transform 200ms;
+  display: inline-block;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Card Test Section
+--------------------------------*/
+/* line 1026, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards {
+  position: relative;
+  margin: 0 !important;
+}
+
+/* line 1030, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card {
+  background: #ffffff;
+  display: inline-block;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  z-index: 0;
+  padding: 0 !important;
+  position: relative;
+  /*text-align: left;*/
+  /*  ^..^   */
+  text-align: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s 0s ease-in;
+  transition: all 0.3s 0s ease-in;
+  z-index: 0;
+  width: auto;
+  /*width: calc(33.33333333% - 10px);*/
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* line 1055, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card:hover {
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* line 1059, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-title {
+  background: #ffffff;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* line 1065, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-title h2 {
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1071, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-title h2 small {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: -0.025em;
+}
+
+/* line 1076, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-description {
+  position: relative;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+/* line 1081, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-actions {
+  box-shadow: 0px 2px 0px 0 rgba(0, 0, 0, 0.075);
+  text-align: center;
+}
+
+/* line 1086, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/* line 1095, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .flap1 {
+  -webkit-transition: all 0.3s 0.3s ease-out;
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+/* line 1100, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .flap2 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+/* line 1105, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards.showing .card {
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transform: scale(0.88);
+  transform: scale(0.88);
+}
+
+/* line 1111, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+  opacity: 0.94;
+  -webkit-transform: scale(0.92);
+  transform: scale(0.92);
+}
+
+/* line 1116, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show {
+  opacity: 1 !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+/* line 1121, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show .card-flap {
+  background: #ffffff;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+/* line 1126, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show .flap1 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+
+/* line 1130, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card.d-card-show .flap2 {
+  -webkit-transition: all 0.3s 0.2s ease-out;
+  transition: all 0.3s 0.2s ease-out;
+}
+
+/* line 1134, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card .task-count {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  background: #ecf0f1;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #333333;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+/* line 1150, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list {
+  padding: 0 !important;
+}
+
+/* line 1153, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list li {
+  padding: 10px 0;
+  padding-left: 10px;
+  margin: 3px 0;
+  list-style-type: none;
+  border-bottom: 1px solid #e9ebed;
+  border-left: 3px solid #57bedf;
+  transition: all .2s ease;
+}
+
+/* line 1162, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list li:hover {
+  background: #ecf0f1;
+  transition: all .2s ease;
+}
+
+/* line 1166, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .task-list li span {
+  float: right;
+  color: #f36525;
+  margin-right: 5px;
+}
+
+/* line 1171, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards.showing .card.d-card-show .task-count {
+  color: #ffffff;
+  background: #f36525;
+  transition: all .2s ease;
+}
+
+/* line 1176, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card-actions .btn {
+  color: #333;
+}
+
+/* line 1179, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+.dashboard-cards .card-actions .btn:hover {
+  color: #f36525;
+}
+
+/* beginning of border css */
+/* Subscribe Section
+--------------------------------*/
+/* line 1322, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/subscribe-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+/* line 1328, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* line 1334, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-text {
+  color: #fff;
+}
+
+/* line 1338, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-btn-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* line 1343, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-btn {
+  font-family: "modernSans";
+  src: url(/assets/ModernSans-Light-ada50bccd9296f041541d441a9c5b2d87de23c8d70412e2ffaaf9c6f8221e18b.ttf) format("truetype");
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* line 1360, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#subscribe .subscribe-btn:hover {
+  background: #03C4EB;
+  border: 2px solid #03C4EB;
+}
+
+/* Portfolio Section
+--------------------------------*/
+/* line 1367, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio {
+  background: #fff;
+  padding: 80px 0;
+}
+
+/* line 1372, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 260px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* line 1384, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item .details {
+  height: 260px;
+  background: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* line 1394, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item .details h4 {
+  font-size: 16px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translate3d(0, -15px, 0);
+  font-weight: 700;
+  color: #333333;
+}
+
+/* line 1402, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item .details span {
+  display: block;
+  color: #666666;
+  font-size: 13px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translate3d(0, 15px, 0);
+}
+
+/* line 1410, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item:hover .details {
+  opacity: 0.8;
+}
+
+/* line 1414, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item:hover .details h4 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1418, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#portfolio .portfolio-item:hover .details span {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Testimonials Section
+--------------------------------*/
+/* line 1424, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials {
+  background: #f6f6f6;
+  padding: 80px 0;
+}
+
+/* line 1429, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile {
+  text-align: center;
+}
+
+/* line 1433, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile .pic {
+  border-radius: 50%;
+  border: 6px solid #fff;
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+  width: 260px;
+}
+
+/* line 1442, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile .pic img {
+  max-width: 100%;
+}
+
+/* line 1446, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile h4 {
+  font-weight: 700;
+  color: #03C4EB;
+  margin-bottom: 5px;
+}
+
+/* line 1452, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .profile span {
+  color: #333333;
+}
+
+/* line 1456, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .quote {
+  position: relative;
+  background: #fff;
+  padding: 60px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* line 1466, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .quote b {
+  display: inline-block;
+  font-size: 22px;
+  left: -9px;
+  position: relative;
+  top: -8px;
+}
+
+/* line 1474, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#testimonials .quote small {
+  display: inline-block;
+  right: -9px;
+  position: relative;
+  top: 4px;
+}
+
+/* Team Section
+--------------------------------*/
+/* line 1483, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team {
+  padding: 80px 0 0 0;
+}
+
+/* line 1488, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 1493, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+
+/* line 1499, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .pic img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* line 1505, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* line 1510, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+/* line 1516, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social {
+  margin-top: 15px;
+}
+
+/* line 1520, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social a {
+  color: #b3b3b3;
+}
+
+/* line 1524, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social a:hover {
+  color: #03C4EB;
+}
+
+/* line 1528, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* Contact Section
+--------------------------------*/
+/* line 1535, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact {
+  background-image: url(/assets/what-the-hex-dark-27a1262ea76b3a25c3279c8177619e26cd35d1cf77f9d9c6a8c94bc6736748f4.png);
+  padding: 20px 0;
+}
+
+/* line 1541, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .info {
+  color: #fff;
+}
+
+/* line 1545, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .info i {
+  font-size: 32px;
+  color: black;
+  float: left;
+}
+
+/* line 1551, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .info p {
+  color: white;
+  padding: 0 0 0 50px;
+  line-height: 24px;
+}
+
+/* line 1558, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form #sendmessage {
+  color: #03C4EB;
+  border: 1px solid #03C4EB;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 1568, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 1578, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+/* line 1582, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* line 1590, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* line 1595, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form button[type="submit"] {
+  background: #2b73a5;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/* line 1603, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#contact .form button[type="submit"]:hover {
+  background: #25d8fc;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* line 1610, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#footer {
+  background: #111;
+  padding: 30px 0;
+  color: #fff;
+}
+
+/* line 1616, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#footer .copyright {
+  text-align: center;
+}
+
+/* line 1620, /Users/marksoloff/Desktop/freelance/imperial/app/assets/stylesheets/style.css.scss */
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+}

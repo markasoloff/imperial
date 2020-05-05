@@ -25,7 +25,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
-  color: white;
+  background-color: black;
 }
 
 a {
@@ -955,15 +955,15 @@ figure:hover+span {
         min-height: $max-height;
       }
       .wrap-container{
+        // overflow: visible;
         position: relative;
-        max-height: 300px;
+        height: 35vh;
+        max-height: 100%;
         width: 100%;
         max-width: $max-width;
         margin: auto;
         /* background: #eee; */
         overflow: auto;
-        // overflow: visible;
-
         padding-right: 20px; // hides scrollbar
         mask: url(#masking);
         -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, 
@@ -984,10 +984,10 @@ figure:hover+span {
         ul li{
           height: $item-height;
           line-height: $item-height;
-          transition: transform .3s;
+          // transition: transform .3s;
           color:#2c72a4;
-          transition-timing-function: ease;
-          transition: color .4s;
+          -webkit-transition: transform .3s, color .75s ease-in-out;
+                  transition: transform .3s, color .75s ease-in-out;
           // -webkit-transition: color .4s ease-in-out;
           overflow: hidden;
 
@@ -1000,6 +1000,8 @@ figure:hover+span {
             .item{
               transform: scale(2.2);
               color: white;
+              -webkit-transition: transform .3s, color .75s ease-in-out;
+                      transition: transform .3s, color .75s ease-in-out;
             }
           }
         }
