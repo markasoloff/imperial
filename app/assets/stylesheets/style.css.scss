@@ -976,6 +976,7 @@ figure:hover+span {
           transition: transform .3s;
           top: $item-height;
         }
+        
         ul, ul li{
           margin: 0;
           padding: 0;
@@ -1013,6 +1014,17 @@ figure:hover+span {
           font-weight: 800;
         }
       }
+
+      @media screen and (max-width: 700px) {
+        .wrap-container{
+          background-color: white;
+        }
+        li .item {
+          color: green;
+        }
+      }
+      
+
 
 /* Card Test Section
 --------------------------------*/
